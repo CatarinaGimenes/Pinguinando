@@ -5,17 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <script src="mapa.js"></script>
+    <script src="mapaPersonagens.js"></script>
     <title>Personagens</title>
 </head>
 
 <body>
     <section class="blog">
         <div class="elementos-principais">
-            <img class="aba-pinguim" src="../Blog/Fotos/Mascots.png" alt="">
+            <img class="aba-pinguim" src="Fotos/Mascots.png" alt="">
             <div class="corpo">
                 <div class="topo-corpo">
                     <div>
-                        <img id="logo" src="../Blog/Fotos/LOGO.png" alt="">
+                        <img id="logo" src="Fotos/LOGO.png" alt="">
                     </div>
                     <div class="titulo">
                         <h2>Pinguinando</h2>
@@ -26,26 +28,41 @@
                 </div>
                 <div class="infos">
                     <div id="personagens">
-                        <img class="cards" src="../Blog/Fotos/Cards/aunt arctic.png" alt="">
-                        <img class="cards" src="../Blog/Fotos/Cards/Cadence.png" alt="">
-                        <img class="cards" src="../Blog/Fotos/Cards/sensei.png" alt="">
-                        <img class="cards" src="../Blog/Fotos/Cards/Rockhopper.png" alt="">
-                        <img class="cards" src="../Blog/Fotos/Cards/rookie.png" alt="">
-                        <img class="cards" src="../Blog/Fotos/Cards/Herbert.png" alt="">
-                        <img class="cards" src="../Blog/Fotos/Cards/Klutzy.png" alt="">
-                        <img class="cards" src="../Blog/Fotos/Cards/Penguin Band1.png" alt="">
-                        <img class="cards" src="../Blog/Fotos/Cards/Puffle Handler.png" alt="">
-                        <img class="cards" src="../Blog/Fotos/Cards/GammaGal.png" alt="">
-                        <img class="cards" src="../Blog/Fotos/Cards/ShadowGuy.png" alt="">
-                        <img class="cards" src="../Blog/Fotos/Cards/Dot.png" alt="">
+                        <img onclick="redirecionarTIA_ARCTIC()" class="cards" src="Fotos/Cards/aunt arctic.png" alt="">
+                        <img onclick="redirecionarCADENCE()" class="cards" src="Fotos/Cards/Cadence.png" alt="">
+                        <img onclick="redirecionarSENSEI()" class="cards" src="Fotos/Cards/sensei.png" alt="">
+                        <img onclick="redirecionarROCKHOPPER()"  class="cards" src="Fotos/Cards/Rockhopper.png" alt="">
+                        <img onclick="redirecionarROOKIE()" class="cards" src="Fotos/Cards/rookie.png" alt="">
+                        <img onclick="redirecionarHERBERT()" class="cards" src="Fotos/Cards/Herbert.png" alt="">
+                        <img onclick="redirecionarKLUTZY()" class="cards" src="Fotos/Cards/Klutzy.png" alt="">
+                        <img onclick="redirecionarPENGUINBAND()" class="cards" src="Fotos/Cards/Penguin Band1.png" alt="">
+                        <img onclick="redirecionarAGENTETP()" class="cards" src="Fotos/Cards/Puffle Handler.png" alt="">
+                        <img onclick="redirecionarGAMMAGAL()" class="cards" src="Fotos/Cards/GammaGal.png" alt="">
+                        <img onclick="redirecionarSHADOWGUY()" class="cards" src="Fotos/Cards/ShadowGuy.png" alt="">
+                        <img onclick="redirecionarDOT()" class="cards" src="Fotos/Cards/Dot.png" alt="">
                     </div>
                 </div>
             </div>
         </div>
-        <div class="mapa">
-            <div onclick="testar()" class="mapinha"></div>
+        <div onclick="abrirMapa()" class="mapa">
+            <div class="mapinha"></div>
         </div>
+        <div id="blogId"></div>
     </section>
 </body>
 
 </html>
+
+<script>
+    function redirecionarLinhaTempo() {
+        window.location.href = "LinhadoTempo.html"
+    }
+
+    function redirecionarIndex() {
+        window.location.href = "Index.html"
+    }
+
+    function redirecionarCARDJITSU() {
+        window.location.href = "PaginaInicialCADRJITSU.html"
+    }
+</script>

@@ -198,6 +198,11 @@ body {
     height: 400px;
 }
 
+.cards:hover {
+    scale: 1.04;
+    cursor: pointer;
+}
+
 #linha-do-tempo {
     display: flex;
     gap: 30px;
@@ -335,6 +340,79 @@ p.ano {
 }
 
 .dojo:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.xis {
+    position: absolute;
+    height: 50px;
+    top: 10px;
+    right: 9px;
+}
+
+.xis:hover {
+    scale: 1.1;
+}
+
+.imagem-personagens {
+    width: 330px;
+}
+
+#rock {
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+    text-align: center;
+}
+
+.titulo-personagem{
+    font-family: Burbankbig;
+    font-size: 55px;
+    color: #c21717;
+}
+
+#rock p {
+    width: 500px;
+}
+
+.voce-sabia {
+    margin-top: 40px;
+}
+
+.infos-personagem {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.infos-personagem p {
+    width: 400px;
+}
+
+#foto-arctic {
+    height: 300px;
+    align-self: center;
+}
+
+#arct {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    gap: 150px;
+    margin-right: 40px;
+}
+
+.seta {
+    rotate: -90deg;
+    width: 80px;
+    position: fixed;
+    left: 20px;
+}
+
+.seta:hover {
     scale: 1.1;
     cursor: pointer;
 }

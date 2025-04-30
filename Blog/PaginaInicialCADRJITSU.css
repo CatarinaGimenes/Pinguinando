@@ -1,0 +1,94 @@
+@font-face {
+    font-family: ACME;
+    src: url(Fontes/ClubPenguinFonts/A.C.M.E.\ Secret\ Agent\ Bold.ttf);
+}
+
+body {
+    background-color: #33aaff;
+    background-color: #54575a;
+}
+
+div {
+    margin: 0;
+}
+
+.pagina-inteira {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.elementos-principais {
+    display: flex;
+    flex-direction: column;
+}
+
+.corpo {
+    width: 1200px;
+    height: 700px;
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#logo-card {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+#botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+#btn_jogar {
+    font-family: ACME;
+    font-size: 25px;
+    height: 90px;
+    width: 250px;
+    border-radius: 15px;
+    border: 4px outset #b8ac86;
+    color: #888064;
+    background-color: #dfd3ac;
+}
+
+#btn_dashboard {
+    font-family: ACME;
+    font-size: 18px;
+    height: 35px;
+    width: 200px;
+    border-radius: 10px;
+    border: 4px outset #b8ac86;
+    color: #888064;
+    background-color: #dfd3ac;
+}
+
+#esquerda {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#centro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+#direita {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.selos {
+    margin-top: 20px;
+    width: 200px;
+}

@@ -5,17 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <script src="mapa.js"></script>
     <title>Linha do Tempo</title>
 </head>
 
 <body>
     <section class="blog">
         <div class="elementos-principais">
-            <img class="aba-pinguim" src="../Blog/Fotos/PenguinParents.png" alt="">
+            <img class="aba-pinguim" src="Fotos/PenguinParents.png" alt="">
             <div class="corpo">
                 <div class="topo-corpo">
                     <div>
-                        <img id="logo" src="../Blog/Fotos/LOGO.png" alt="">
+                        <img id="logo" src="Fotos/LOGO.png" alt="">
                     </div>
                     <div class="titulo">
                         <h2>Pinguinando</h2>
@@ -48,7 +49,7 @@
                         <div>
                             <p class="ano">2000</p>
                             <div class="div-linhatempo">
-                                <img class="img-tempo" src="../Blog/Fotos/LinhaDoTempo/PenguinChat.png" alt="">
+                                <img class="img-tempo" src="Fotos/LinhaDoTempo/PenguinChat.png" alt="">
                                 <p class="texto">
                                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam illum amet at,
                                     tenetur beatae exercitationem eveniet nihil quam, iste perspiciatis perferendis
@@ -57,7 +58,7 @@
                             </div>
                             <p class="ano">2005</p>
                             <div class="div-linhatempo">
-                                <img class="img-tempo" src="../Blog/Fotos/LinhaDoTempo/2005(2).png" alt="">
+                                <img class="img-tempo" src="Fotos/LinhaDoTempo/2005(2).png" alt="">
                                 <p class="texto">
                                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam illum amet at,
                                     tenetur beatae exercitationem eveniet nihil quam, iste perspiciatis perferendis
@@ -66,7 +67,7 @@
                             </div>
                             <p class="ano">2006</p>
                             <div class="div-linhatempo">
-                                <img class="img-tempo" src="../Blog/Fotos/LinhaDoTempo/2006.png" alt="">
+                                <img class="img-tempo" src="Fotos/LinhaDoTempo/2006.png" alt="">
                                 <p class="texto">
                                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam illum amet at,
                                     tenetur beatae exercitationem eveniet nihil quam, iste perspiciatis perferendis
@@ -75,7 +76,7 @@
                             </div>
                             <p class="ano">2007</p>
                             <div class="div-linhatempo">
-                                <img class="img-tempo" src="../Blog/Fotos/LinhaDoTempo/2007.png" alt="">
+                                <img class="img-tempo" src="Fotos/LinhaDoTempo/2007.png" alt="">
                                 <p class="texto">
                                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam illum amet at,
                                     tenetur beatae exercitationem eveniet nihil quam, iste perspiciatis perferendis
@@ -84,7 +85,7 @@
                             </div>
                             <p class="ano">2012</p>
                             <div class="div-linhatempo">
-                                <img class="img-tempo" src="../Blog/Fotos/LinhaDoTempo/2012.png" alt="">
+                                <img class="img-tempo" src="Fotos/LinhaDoTempo/2012.png" alt="">
                                 <p class="texto">
                                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam illum amet at,
                                     tenetur beatae exercitationem eveniet nihil quam, iste perspiciatis perferendis
@@ -93,7 +94,7 @@
                             </div>
                             <p class="ano">2013</p>
                             <div class="div-linhatempo">
-                                <img class="img-tempo" src="../Blog/Fotos/LinhaDoTempo/2013.png" alt="">
+                                <img class="img-tempo" src="Fotos/LinhaDoTempo/2013.png" alt="">
                                 <p class="texto">
                                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam illum amet at,
                                     tenetur beatae exercitationem eveniet nihil quam, iste perspiciatis perferendis
@@ -102,7 +103,7 @@
                             </div>
                             <p class="ano">2015</p>
                             <div class="div-linhatempo">
-                                <img class="img-tempo" src="../Blog/Fotos/LinhaDoTempo/2015.png" alt="">
+                                <img class="img-tempo" src="Fotos/LinhaDoTempo/2015.png" alt="">
                                 <p class="texto">
                                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam illum amet at,
                                     tenetur beatae exercitationem eveniet nihil quam, iste perspiciatis perferendis
@@ -111,7 +112,7 @@
                             </div>
                             <p class="ano">2017</p>
                             <div class="div-linhatempo">
-                                <img class="img-tempo" src="../Blog/Fotos/LinhaDoTempo/2017.png" alt="">
+                                <img class="img-tempo" src="Fotos/LinhaDoTempo/2017.png" alt="">
                                 <p class="texto">
                                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam illum amet at,
                                     tenetur beatae exercitationem eveniet nihil quam, iste perspiciatis perferendis
@@ -123,10 +124,25 @@
                 </div>
             </div>
         </div>
-        <div class="mapa">
+        <div onclick="abrirMapa()" class="mapa">
             <div class="mapinha"></div>
         </div>
+        <div id="blogId"></div>
     </section>
 </body>
 
 </html>
+
+<script>
+        function redirecionarPersonagens() {
+        window.location.href = "Personagens.html"
+    }
+
+    function redirecionarIndex() {
+        window.location.href = "Index.html"
+    }
+
+    function redirecionarCARDJITSU() {
+        window.location.href = "PaginaInicialCADRJITSU.html"
+    }
+</script>

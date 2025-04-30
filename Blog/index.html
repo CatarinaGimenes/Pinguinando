@@ -5,17 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <script src="mapa.js"></script>
     <title>Pinguinando</title>
 </head>
 
 <body>
-    <section class="blog" id="blogId">
-        <div class="elementos-principais">
-            <img class="aba-pinguim" src="../Blog/Fotos/Icone-pinguin-cachecol-azul.png" alt="">
+    <section class="blog">
+        <div id="ElementosId" class="elementos-principais">
+            <img class="aba-pinguim" src="Fotos/Icone-pinguin-cachecol-azul.png">
             <div class="corpo">
                 <div class="topo-corpo">
                     <div>
-                        <img id="logo" src="../Blog/Fotos/LOGO.png" alt="">
+                        <img id="logo" src="Fotos/LOGO.png">
                     </div>
                     <div class="titulo">
                         <h2>Pinguinando</h2>
@@ -26,7 +27,7 @@
                 </div>
                 <div class="infos">
                     <div id="introducao">
-                        <img class="imagem" src="../Blog/Fotos/imagem.jpeg" alt="">
+                        <img class="imagem" src="Fotos/imagem.jpeg">
                         <p class="texto">
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit nulla molestias ad illum
                             accusamus a alias, corrupti iusto maiores ipsum reiciendis modi sit excepturi officia quod
@@ -43,7 +44,7 @@
                 <div class="infos">
                     <div id="comunidade">
                         <div id="parte1-comunidade">
-                            <img class="imagem" src="../Blog/Fotos/Welcome_to_Club_Penguin_Postcard.webp" alt="">
+                            <img class="imagem" src="Fotos/Welcome_to_Club_Penguin_Postcard.webp">
                             <p class="texto">
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat impedit at vel facilis
                                 aut amet excepturi necessitatibus in qui adipisci sapiente laudantium voluptatibus
@@ -64,13 +65,13 @@
                                 <br>Algumas Fanarts feitas pelos players:
                             </p>
                             <div id="fanarts">
-                                <img class="img-fanart" src="../Blog/Fotos/Fanarts/fanart.webp" alt="">
-                                <img class="img-fanart" src="../Blog/Fotos/Fanarts/Arre_320_-2.webp" alt="">
-                                <img class="img-fanart" src="../Blog/Fotos/Fanarts/GaryCPWiki1.webp" alt="">
+                                <img class="img-fanart" src="Fotos/Fanarts/fanart.webp">
+                                <img class="img-fanart" src="Fotos/Fanarts/Arre_320_-2.webp">
+                                <img class="img-fanart" src="Fotos/Fanarts/GaryCPWiki1.webp">
                                 <img class="img-fanart"
-                                    src="../Blog/Fotos/Fanarts/GIVE_BACK_FRANKY_RIGHT_THIS_INSTANT.webp" alt="">
-                                <img class="img-fanart2" src="../Blog/Fotos/Fanarts/Rockhopper_sensei.PNG.webp" alt="">
-                                <img class="img-fanart" src="../Blog/Fotos/Fanarts/ROCKHOPPER.webp" alt="">
+                                    src="Fotos/Fanarts/GIVE_BACK_FRANKY_RIGHT_THIS_INSTANT.webp">
+                                <img class="img-fanart2" src="Fotos/Fanarts/Rockhopper_sensei.PNG.webp">
+                                <img class="img-fanart" src="Fotos/Fanarts/ROCKHOPPER.webp">
                             </div>
                         </div>
                     </div>
@@ -80,7 +81,7 @@
                 </div>
                 <div class="infos">
                     <div id="festas">
-                        <img class="imagem" src="../Blog/Fotos/Festa_Setembrina_2018_Iceberg.webp" alt="">
+                        <img class="imagem" src="Fotos/Festa_Setembrina_2018_Iceberg.webp">
                         <p class="texto">
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit nulla molestias ad illum
                             accusamus a alias, corrupti iusto maiores ipsum reiciendis modi sit excepturi officia quod
@@ -96,7 +97,7 @@
                 </div>
                 <div class="infos">
                     <div id="parte1-merchandise">
-                        <img class="imagem" src="../Blog/Fotos/merch/su65hz8ikx151.webp" alt="">
+                        <img class="imagem" src="Fotos/merch/su65hz8ikx151.webp">
                         <p class="texto">
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit nulla molestias ad illum
                             accusamus a alias, corrupti iusto maiores ipsum reiciendis modi sit excepturi officia quod
@@ -108,30 +109,33 @@
                     </div>
                     <div class="infos">
                         <div id="parte2-merchandise">
-                            <img class="imagem-merchandise" src="../Blog/Fotos/merch/71qWcfIqNJL._AC_SL1200_.jpg"
-                                alt="">
-                            <img class="imagem-merchandise" src="../Blog/Fotos/merch/LimitedBoxS1.webp" alt="">
-                            <img class="imagem-merchandise"
-                                src="../Blog/Fotos/merch/Plushpenguins6inch-classyshirt-500x500.webp" alt="">
+                            <img class="imagem-merchandise" src="Fotos/merch/71qWcfIqNJL._AC_SL1200_.jpg">
+                            <img class="imagem-merchandise" src="Fotos/merch/LimitedBoxS1.webp">
+                            <img class="imagem-merchandise" src="Fotos/merch/Plushpenguins6inch-classyshirt-500x500.webp">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="mapa">
+        <div onclick="abrirMapa()" class="mapa">
             <div class="mapinha"></div>
         </div>
-        <!-- <div class="tela-inteira">
-            <div class="mapa-inteiro">
-                <img class="montanha" src="../Blog/Fotos/montanha.png">
-                <img class="EPF" src="../Blog/Fotos/EstranhaParafernaliaFalante.png">
-                <img class="farol" src="../Blog/Fotos/farol.png">
-                <img class="catalogo" src="../Blog/Fotos/catalogo.png">
-                <img class="plaza" src="../Blog/Fotos/plaza.png">
-                <img class="dojo" src="../Blog/Fotos/dojo.png">
-            </div>
-        </div> -->
+        <div id="blogId"></div>
     </section>
 </body>
 
 </html>
+
+<script>
+    function redirecionarPersonagens() {
+        window.location.href = "Personagens.html"
+    }
+
+    function redirecionarLinhaTempo() {
+        window.location.href = "LinhadoTempo.html"
+    }
+
+    function redirecionarCARDJITSU() {
+        window.location.href = "PaginaInicialCADRJITSU.html"
+    }
+</script>
