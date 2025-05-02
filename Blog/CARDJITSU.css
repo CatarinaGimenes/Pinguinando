@@ -1,0 +1,34 @@
+body {
+    background-color: #33aaff;
+    background-color: gray;
+}
+
+body {
+    margin: 0;
+}
+
+.pagina-inteira {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#fundo {
+    width: 1170px;
+    height: 738px;
+    background-image: url(Fotos/Fundo-Dojo.png);
+    background-size: cover;
+    position: relative;
+}
+
+#cartas {
+    position: absolute;
+    display: flex;
+    height: 159px;
+    width: 1052px;
+    background-color: rgba(128, 0, 128, 0.568);
+    bottom: 20px;
+    left: 60px;
+}

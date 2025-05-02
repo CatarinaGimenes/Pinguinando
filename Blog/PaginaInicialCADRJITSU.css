@@ -58,6 +58,11 @@ div {
     background-color: #dfd3ac;
 }
 
+#btn_jogar:hover {
+    scale: 0.965;
+    cursor: pointer;
+}
+
 #btn_dashboard {
     font-family: ACME;
     font-size: 18px;
