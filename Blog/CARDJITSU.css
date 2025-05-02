@@ -21,14 +21,41 @@ body {
     background-image: url(Fotos/Fundo-Dojo.png);
     background-size: cover;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: end;
 }
 
 #cartas {
-    position: absolute;
+    margin-bottom: 25px;
     display: flex;
-    height: 159px;
-    width: 1052px;
-    background-color: rgba(128, 0, 128, 0.568);
+    align-items: center;
+    justify-content: center;
+    height: 149px;
+    width: 1032px;
+    /*background-color: rgba(128, 0, 128, 0.568);*/
     bottom: 20px;
-    left: 60px;
+    left: 70px;
+}
+
+.cards {
+    height: 140px;
+    position: absolute;
+}
+
+.cards-after {
+    height: 140px;
+    animation-name: slide-top;
+    animation-duration: 5s;
+}
+
+@keyframes slide-top {
+
+    35% {
+        transform: translate(270px, -350px) scale(1.5);
+    }
+
+    100% {
+        transform: translate(270px, -350px) scale(1.5);
+    }
 }
