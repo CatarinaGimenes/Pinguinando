@@ -1,3 +1,8 @@
+@font-face {
+    font-family: BurbankBig;
+    src: url("Fontes/BurbankBigCondensed/burbankbigcondensed_bold.ttf");
+}
+
 body {
     background-color: #33aaff;
     background-color: gray;
@@ -40,6 +45,7 @@ body {
 
 .cards {
     height: 140px;
+    width: 135px;
     position: absolute;
 }
 
@@ -58,4 +64,68 @@ body {
     100% {
         transform: translate(270px, -350px) scale(1.5);
     }
+}
+
+#X {
+    position: absolute;
+    top: 19px;
+    right: 16px;
+    width: 38px;
+}
+
+#X:hover {
+    scale: 1.1;
+}
+
+#pergunta {
+    position: absolute;
+    top: 16px;
+    right: 222px;
+    width: 730px;
+}
+
+#pergunta:hover {
+    scale: 1.01;
+}
+
+.num {
+    font-family: BurbankBig;
+    font-size: 25px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 40px;
+    left: 18px;
+}
+
+
+#carta1 {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(Fotos/Cartas/Conjunto-1/FOGO-puffle.png);
+}
+
+#carta2 {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(Fotos/Cartas/Conjunto-1/NEVE-squidzoid.png);
+}
+
+#carta3 {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(Fotos/Cartas/Conjunto-1/AGUA-waterslide.png);
+}
+
+#carta4 {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(Fotos/Cartas/Conjunto-1/AGUA-iceberg.png);
+}
+
+#carta5 {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(Fotos/Cartas/Conjunto-1/NEVE-guido.png);
 }

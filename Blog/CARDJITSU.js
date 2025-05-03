@@ -54,8 +54,7 @@ function inicial() {
         var valor = Math.floor(Math.random() * 11) + 2
         var valor_machine = Math.floor(Math.random() * 11) + 2
 
-        btn_carta.innerHTML = `<div style="background-color: bisque;
-         width: 50px; display: flex; justify-content: center;">${valor}</div>`
+        btn_carta.innerHTML = `<div class="num">${valor}</div>`
 
         if (index == 1) {
             valor_carta1 = valor
