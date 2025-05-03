@@ -31,6 +31,28 @@ body {
     align-items: end;
 }
 
+#X {
+    position: absolute;
+    top: 19px;
+    right: 16px;
+    width: 38px;
+}
+
+#X:hover {
+    scale: 1.1;
+}
+
+#pergunta {
+    position: absolute;
+    top: 16px;
+    right: 222px;
+    width: 730px;
+}
+
+#pergunta:hover {
+    scale: 1.01;
+}
+
 #cartas {
     margin-bottom: 25px;
     display: flex;
@@ -58,34 +80,12 @@ body {
 @keyframes slide-top {
 
     35% {
-        transform: translate(270px, -350px) scale(1.5);
+        transform: translate(270px, -350px) scale(1.6);
     }
 
     100% {
-        transform: translate(270px, -350px) scale(1.5);
+        transform: translate(270px, -350px) scale(1.6);
     }
-}
-
-#X {
-    position: absolute;
-    top: 19px;
-    right: 16px;
-    width: 38px;
-}
-
-#X:hover {
-    scale: 1.1;
-}
-
-#pergunta {
-    position: absolute;
-    top: 16px;
-    right: 222px;
-    width: 730px;
-}
-
-#pergunta:hover {
-    scale: 1.01;
 }
 
 .num {
@@ -98,7 +98,6 @@ body {
     top: 40px;
     left: 18px;
 }
-
 
 #carta1 {
     background-size: 100%;
@@ -128,4 +127,30 @@ body {
     background-size: 100%;
     background-repeat: no-repeat;
     background-image: url(Fotos/Cartas/Conjunto-1/NEVE-guido.png);
+}
+
+.cards-sensei {
+    position: absolute;
+    background-image: url(Fotos/Card-Jitsu_card_back.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 60px;
+    width: 50px;
+}
+
+.cards-sensei-after {
+    height: 140px;
+    animation-name: slide-left-top;
+    animation-duration: 5s;
+}
+
+@keyframes slide-left-top {
+    35% {
+        transform: translate(-270px, -350px) scale(3.4);
+    }
+
+    100% {
+        transform: translate(-270px, -350px) scale(3.4);
+    }
 }

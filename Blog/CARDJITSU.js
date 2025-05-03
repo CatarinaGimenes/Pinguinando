@@ -250,6 +250,11 @@ function lancar1() {
         document.getElementById("carta1").outerHTML = ""
     }, 4000)
 
+    document.getElementById("carta1-sensei").classList.add("cards-sensei-after")
+    setTimeout(() => {
+        document.getElementById("carta1-sensei").outerHTML = ""
+    }, 4000)
+
     console.log('vitória:' + won_rounds)
     console.log('derrota:' + lost_rounds)
     console.log('empate:' + tied_rounds)
@@ -290,6 +295,11 @@ function lancar2() {
     document.getElementById("carta2").classList.add("cards-after")
     setTimeout(() => {
         document.getElementById("carta2").outerHTML = ""
+    }, 4000)
+
+    document.getElementById("carta2-sensei").classList.add("cards-sensei-after")
+    setTimeout(() => {
+        document.getElementById("carta2-sensei").outerHTML = ""
     }, 4000)
 
     console.log('vitória:' + won_rounds)
@@ -333,6 +343,10 @@ function lancar3() {
     setTimeout(() => {
         document.getElementById("carta3").outerHTML = ""
     }, 4000)
+    document.getElementById("carta3-sensei").classList.add("cards-sensei-after")
+    setTimeout(() => {
+        document.getElementById("carta3-sensei").outerHTML = ""
+    }, 4000)
 
     console.log('vitória:' + won_rounds)
     console.log('derrota:' + lost_rounds)
@@ -375,6 +389,10 @@ function lancar4() {
     setTimeout(() => {
         document.getElementById("carta4").outerHTML = ""
     }, 4000)
+    document.getElementById("carta4-sensei").classList.add("cards-sensei-after")
+    setTimeout(() => {
+        document.getElementById("carta4-sensei").outerHTML = ""
+    }, 4000)
 
     console.log('vitória:' + won_rounds)
     console.log('derrota:' + lost_rounds)
@@ -416,6 +434,10 @@ function lancar5() {
     document.getElementById("carta5").classList.add("cards-after")
     setTimeout(() => {
         document.getElementById("carta5").outerHTML = ""
+    }, 4000)
+    document.getElementById("carta5-sensei").classList.add("cards-sensei-after")
+    setTimeout(() => {
+        document.getElementById("carta5-sensei").outerHTML = ""
     }, 4000)
 
     console.log('vitória:' + won_rounds)
