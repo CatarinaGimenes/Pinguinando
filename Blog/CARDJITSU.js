@@ -1,3 +1,5 @@
+var partida_acontecendo = false
+
 // Definindo os valores das cartas do player
 var valor_carta1 = 0
 var valor_carta2 = 0
@@ -216,6 +218,11 @@ function vencer() {
 
 // Funções específicas para cada carta
 function lancar1() {
+    if (partida_acontecendo) {
+        return
+    }
+
+    partida_acontecendo = true
     rodada++
     tipo_player = fogo
     jogada_maquina()
@@ -271,13 +278,17 @@ function lancar1() {
             setTimeout(() => {
                 fundo.removeChild(novaDiv)
                 numero_estatico.innerHTML = won_rounds
+                partida_acontecendo = false
             }, 3000)
         } else if (resultado_rodada == jogador_perdeu) {
             novaDiv.classList.add("cartas-contagem-negativo")
             setTimeout(() => {
                 fundo.removeChild(novaDiv)
                 numero_estatico2.innerHTML = lost_rounds
+                partida_acontecendo = false
             }, 3000)
+        } else if (resultado_rodada == empate) {
+            partida_acontecendo = false
         }
         fundo.appendChild(novaDiv)
     }, 3500)
@@ -290,6 +301,11 @@ function lancar1() {
 }
 
 function lancar2() {
+    if (partida_acontecendo) {
+        return
+    }
+
+    partida_acontecendo = true
     rodada++
     tipo_player = gelo
     jogada_maquina()
@@ -343,13 +359,17 @@ function lancar2() {
             setTimeout(() => {
                 fundo.removeChild(novaDiv)
                 numero_estatico.innerHTML = won_rounds
+                partida_acontecendo = false
             }, 3000)
         } else if (resultado_rodada == jogador_perdeu) {
             novaDiv.classList.add("cartas-contagem-negativo")
             setTimeout(() => {
                 fundo.removeChild(novaDiv)
                 numero_estatico2.innerHTML = lost_rounds
+                partida_acontecendo = false
             }, 3000)
+        } else if (resultado_rodada == empate) {
+            partida_acontecendo = false
         }
         fundo.appendChild(novaDiv)
     }, 3500)
@@ -361,6 +381,11 @@ function lancar2() {
 }
 
 function lancar3() {
+    if (partida_acontecendo) {
+        return
+    }
+
+    partida_acontecendo = true
     rodada++
     tipo_player = agua
     jogada_maquina()
@@ -413,13 +438,17 @@ function lancar3() {
             setTimeout(() => {
                 fundo.removeChild(novaDiv)
                 numero_estatico.innerHTML = won_rounds
+                partida_acontecendo = false
             }, 3000)
         } else if (resultado_rodada == jogador_perdeu) {
             novaDiv.classList.add("cartas-contagem-negativo")
             setTimeout(() => {
                 fundo.removeChild(novaDiv)
                 numero_estatico2.innerHTML = lost_rounds
+                partida_acontecendo = false
             }, 3000)
+        } else if (resultado_rodada == empate) {
+            partida_acontecendo = false
         }
         fundo.appendChild(novaDiv)
     }, 3500)
@@ -431,6 +460,11 @@ function lancar3() {
 }
 
 function lancar4() {
+    if (partida_acontecendo) {
+        return
+    }
+
+    partida_acontecendo = true
     rodada++
     tipo_player = agua
     jogada_maquina()
@@ -483,13 +517,17 @@ function lancar4() {
             setTimeout(() => {
                 fundo.removeChild(novaDiv)
                 numero_estatico.innerHTML = won_rounds
+                partida_acontecendo = false
             }, 3000)
         } else if (resultado_rodada == jogador_perdeu) {
             novaDiv.classList.add("cartas-contagem-negativo")
             setTimeout(() => {
                 fundo.removeChild(novaDiv)
                 numero_estatico2.innerHTML = lost_rounds
+                partida_acontecendo = false
             }, 3000)
+        } else if (resultado_rodada == empate) {
+            partida_acontecendo = false
         }
         fundo.appendChild(novaDiv)
     }, 3500)
@@ -501,6 +539,11 @@ function lancar4() {
 }
 
 function lancar5() {
+    if (partida_acontecendo) {
+        return
+    }
+
+    partida_acontecendo = true
     rodada++
     tipo_player = gelo
     jogada_maquina()
@@ -553,13 +596,17 @@ function lancar5() {
             setTimeout(() => {
                 fundo.removeChild(novaDiv)
                 numero_estatico.innerHTML = won_rounds
+                partida_acontecendo = false
             }, 3000)
         } else if (resultado_rodada == jogador_perdeu) {
             novaDiv.classList.add("cartas-contagem-negativo")
             setTimeout(() => {
                 fundo.removeChild(novaDiv)
                 numero_estatico2.innerHTML = lost_rounds
+                partida_acontecendo = false
             }, 3000)
+        } else if (resultado_rodada == empate) {
+            partida_acontecendo = false
         }
         fundo.appendChild(novaDiv)
     }, 3500)
