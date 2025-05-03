@@ -3,6 +3,11 @@
     src: url("Fontes/BurbankBigCondensed/burbankbigcondensed_bold.ttf");
 }
 
+@font-face {
+    font-family: ACME;
+    src: url(Fontes/ClubPenguinFonts/A.C.M.E.\ Secret\ Agent\ Bold.ttf);
+}
+
 body {
     background-color: #33aaff;
     background-color: gray;
@@ -245,4 +250,106 @@ body {
     position: absolute;
     top: 17px;
     left: 2px;
+}
+
+.cartas-contagem-estatica {
+    width: 80px;
+    height: 80px;
+    background-image: url("Fotos/Starter_Deck.webp");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    transform: translate(450px, -640px);
+}
+
+.numero_estatico {
+    font-family: ACME;
+    font-size: 30px;
+    position: absolute;
+    transform: translate(505px, -655px);
+}
+
+.cartas-contagem-estatica2 {
+    width: 80px;
+    height: 80px;
+    background-image: url("Fotos/Starter_Deck.webp");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    transform: translate(-520px, -640px);
+}
+
+.numero_estatico2 {
+    font-family: ACME;
+    font-size: 30px;
+    position: absolute;
+    transform: translate(-465px, -655px);
+}
+
+.cartas-contagem {
+    width: 80px;
+    height: 80px;
+    background-image: url("Fotos/Starter_Deck.webp");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    transform: translate(0px, -400px);
+    animation-name: win-animation;
+    animation-duration: 4s;
+}
+
+.cartas-contagem-negativo {
+    width: 80px;
+    height: 80px;
+    background-image: url("Fotos/Starter_Deck.webp");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    transform: translate(0px, -400px);
+    animation-name: lost-animation;
+    animation-duration: 4s;
+}
+
+@keyframes win-animation {
+    0% {
+        transform: translate(0px, -400px) rotateY(-180deg);
+    }
+    35% {
+        transform: translate(0px, -400px) scale(2.5) rotateY(-180deg);
+    }
+
+    70% {
+        transform: translate(450px, -640px) rotateY(0deg);
+    }
+
+    100% {
+        transform: translate(450px, -640px) rotateY(0deg);
+    }
+}
+
+@keyframes lost-animation {
+    0% {
+        transform: translate(0px, -400px) rotateY(-180deg);
+    }
+    35% {
+        transform: translate(0px, -400px) scale(2.5) rotateY(-180deg);
+    }
+
+    70% {
+        transform: translate(-520px, -640px) rotateY(0deg);
+    }
+
+    100% {
+        transform: translate(-520px, -640px) rotateY(0deg);
+    }
+}
+
+#fundo2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }

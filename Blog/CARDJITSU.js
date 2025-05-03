@@ -249,8 +249,6 @@ function lancar1() {
         tied_rounds++
     }
 
-    vencer()
-
     // div_club.innerHTML = `Rodada ${rodada}- Você lançou uma carta tipo fogo, de valor ${valor_carta1}, <br>
     // seu oponente lançou uma carta tipo ${tipo_string_machine}, de valor ${valor_machine1}, <br>
     // <b> você ${string_rodada}! </b>`
@@ -264,6 +262,26 @@ function lancar1() {
     setTimeout(() => {
         document.getElementById("carta1-sensei").outerHTML = ""
     }, 4000)
+
+
+    setTimeout(() => {
+        var novaDiv = document.createElement("div")
+        if (resultado_rodada == jogador_win) {
+            novaDiv.classList.add("cartas-contagem")
+            setTimeout(() => {
+                fundo.removeChild(novaDiv)
+                numero_estatico.innerHTML = won_rounds
+            }, 3000)
+        } else if (resultado_rodada == jogador_perdeu) {
+            novaDiv.classList.add("cartas-contagem-negativo")
+            setTimeout(() => {
+                fundo.removeChild(novaDiv)
+                numero_estatico2.innerHTML = lost_rounds
+            }, 3000)
+        }
+        fundo.appendChild(novaDiv)
+    }, 3500)
+
 
     console.log('vitória:' + won_rounds)
     console.log('derrota:' + lost_rounds)
@@ -304,8 +322,6 @@ function lancar2() {
         tied_rounds++
     }
 
-    vencer()
-
     // div_club.innerHTML = `Rodada ${rodada}- Você lançou uma carta tipo gelo, de valor ${valor_carta2}, <br>
     // seu oponente lançou uma carta tipo ${tipo_string_machine}, de valor ${valor_machine2}, <br>
     // <b> você ${string_rodada}! </b>`
@@ -319,6 +335,24 @@ function lancar2() {
     setTimeout(() => {
         document.getElementById("carta2-sensei").outerHTML = ""
     }, 4000)
+
+    setTimeout(() => {
+        var novaDiv = document.createElement("div")
+        if (resultado_rodada == jogador_win) {
+            novaDiv.classList.add("cartas-contagem")
+            setTimeout(() => {
+                fundo.removeChild(novaDiv)
+                numero_estatico.innerHTML = won_rounds
+            }, 3000)
+        } else if (resultado_rodada == jogador_perdeu) {
+            novaDiv.classList.add("cartas-contagem-negativo")
+            setTimeout(() => {
+                fundo.removeChild(novaDiv)
+                numero_estatico2.innerHTML = lost_rounds
+            }, 3000)
+        }
+        fundo.appendChild(novaDiv)
+    }, 3500)
 
     console.log('vitória:' + won_rounds)
     console.log('derrota:' + lost_rounds)
@@ -359,8 +393,6 @@ function lancar3() {
         tied_rounds++
     }
 
-    vencer()
-
     // div_club.innerHTML = `Rodada ${rodada}- Você lançou uma carta tipo água, de valor ${valor_carta3}, <br>
     // seu oponente lançou uma carta tipo ${tipo_string_machine}, de valor ${valor_machine3}, <br>
     // <b> você ${string_rodada}! </b>`
@@ -373,6 +405,24 @@ function lancar3() {
     setTimeout(() => {
         document.getElementById("carta3-sensei").outerHTML = ""
     }, 4000)
+
+    setTimeout(() => {
+        var novaDiv = document.createElement("div")
+        if (resultado_rodada == jogador_win) {
+            novaDiv.classList.add("cartas-contagem")
+            setTimeout(() => {
+                fundo.removeChild(novaDiv)
+                numero_estatico.innerHTML = won_rounds
+            }, 3000)
+        } else if (resultado_rodada == jogador_perdeu) {
+            novaDiv.classList.add("cartas-contagem-negativo")
+            setTimeout(() => {
+                fundo.removeChild(novaDiv)
+                numero_estatico2.innerHTML = lost_rounds
+            }, 3000)
+        }
+        fundo.appendChild(novaDiv)
+    }, 3500)
 
     console.log('vitória:' + won_rounds)
     console.log('derrota:' + lost_rounds)
@@ -413,8 +463,6 @@ function lancar4() {
         tied_rounds++
     }
 
-    vencer()
-
     // div_club.innerHTML = `Rodada ${rodada}- Você lançou uma carta tipo água, de valor ${valor_carta4}, <br>
     // seu oponente lançou uma carta tipo ${tipo_string_machine}, de valor ${valor_machine4}, <br>
     // <b> você ${string_rodada}! </b>`
@@ -427,6 +475,24 @@ function lancar4() {
     setTimeout(() => {
         document.getElementById("carta4-sensei").outerHTML = ""
     }, 4000)
+
+    setTimeout(() => {
+        var novaDiv = document.createElement("div")
+        if (resultado_rodada == jogador_win) {
+            novaDiv.classList.add("cartas-contagem")
+            setTimeout(() => {
+                fundo.removeChild(novaDiv)
+                numero_estatico.innerHTML = won_rounds
+            }, 3000)
+        } else if (resultado_rodada == jogador_perdeu) {
+            novaDiv.classList.add("cartas-contagem-negativo")
+            setTimeout(() => {
+                fundo.removeChild(novaDiv)
+                numero_estatico2.innerHTML = lost_rounds
+            }, 3000)
+        }
+        fundo.appendChild(novaDiv)
+    }, 3500)
 
     console.log('vitória:' + won_rounds)
     console.log('derrota:' + lost_rounds)
@@ -467,8 +533,6 @@ function lancar5() {
         tied_rounds++
     }
 
-    vencer()
-
     // div_club.innerHTML = `Rodada ${rodada}- Você lançou uma carta tipo gelo, de valor ${valor_carta5}, <br>
     // seu oponente lançou uma carta tipo ${tipo_string_machine}, de valor ${valor_machine5}, <br>
     // <b> você ${string_rodada}! </b>`
@@ -481,6 +545,24 @@ function lancar5() {
     setTimeout(() => {
         document.getElementById("carta5-sensei").outerHTML = ""
     }, 4000)
+
+    setTimeout(() => {
+        var novaDiv = document.createElement("div")
+        if (resultado_rodada == jogador_win) {
+            novaDiv.classList.add("cartas-contagem")
+            setTimeout(() => {
+                fundo.removeChild(novaDiv)
+                numero_estatico.innerHTML = won_rounds
+            }, 3000)
+        } else if (resultado_rodada == jogador_perdeu) {
+            novaDiv.classList.add("cartas-contagem-negativo")
+            setTimeout(() => {
+                fundo.removeChild(novaDiv)
+                numero_estatico2.innerHTML = lost_rounds
+            }, 3000)
+        }
+        fundo.appendChild(novaDiv)
+    }, 3500)
 
     console.log('vitória:' + won_rounds)
     console.log('derrota:' + lost_rounds)
