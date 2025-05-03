@@ -50,11 +50,13 @@ function inicial() {
 
     while (index <= 5) {
         btn_carta = document.getElementById(`carta${index}`)
+        btn_tras = document.getElementById(`tras${index}`)
 
         var valor = Math.floor(Math.random() * 11) + 2
         var valor_machine = Math.floor(Math.random() * 11) + 2
 
         btn_carta.innerHTML = `<div class="num">${valor}</div>`
+        btn_tras.innerHTML = `<div class="numM">${valor_machine}</div>`
 
         if (index == 1) {
             valor_carta1 = valor
@@ -230,6 +232,14 @@ function lancar1() {
         }
     }
 
+    if (tipo_machine == agua) {
+        document.getElementById("tras1").classList.add("water")
+    } else if (tipo_machine == fogo) {
+        document.getElementById("tras1").classList.add("fire")
+    } else if (tipo_machine == gelo) {
+        document.getElementById("tras1").classList.add("ice")
+    }
+
     // Definindo vencedores
     if (resultado_rodada == jogador_win) {
         won_rounds++
@@ -276,6 +286,14 @@ function lancar2() {
         } else if (valor_carta2 == valor_machine2) {
             resultado_rodada = empate
         }
+    }
+
+    if (tipo_machine == agua) {
+        document.getElementById("tras2").classList.add("water")
+    } else if (tipo_machine == fogo) {
+        document.getElementById("tras2").classList.add("fire")
+    } else if (tipo_machine == gelo) {
+        document.getElementById("tras2").classList.add("ice")
     }
 
     if (resultado_rodada == jogador_win) {
@@ -325,6 +343,14 @@ function lancar3() {
         }
     }
 
+    if (tipo_machine == agua) {
+        document.getElementById("tras3").classList.add("water")
+    } else if (tipo_machine == fogo) {
+        document.getElementById("tras3").classList.add("fire")
+    } else if (tipo_machine == gelo) {
+        document.getElementById("tras3").classList.add("ice")
+    }
+
     if (resultado_rodada == jogador_win) {
         won_rounds++
     } else if (resultado_rodada == jogador_perdeu) {
@@ -371,6 +397,14 @@ function lancar4() {
         }
     }
 
+    if (tipo_machine == agua) {
+        document.getElementById("tras4").classList.add("water")
+    } else if (tipo_machine == fogo) {
+        document.getElementById("tras4").classList.add("fire")
+    } else if (tipo_machine == gelo) {
+        document.getElementById("tras4").classList.add("ice")
+    }
+
     if (resultado_rodada == jogador_win) {
         won_rounds++
     } else if (resultado_rodada == jogador_perdeu) {
@@ -415,6 +449,14 @@ function lancar5() {
         } else if (valor_carta5 == valor_machine5) {
             resultado_rodada = empate
         }
+    }
+
+    if (tipo_machine == agua) {
+        document.getElementById("tras5").classList.add("water")
+    } else if (tipo_machine == fogo) {
+        document.getElementById("tras5").classList.add("fire")
+    } else if (tipo_machine == gelo) {
+        document.getElementById("tras5").classList.add("ice")
     }
 
     if (resultado_rodada == jogador_win) {

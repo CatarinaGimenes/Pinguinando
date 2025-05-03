@@ -72,7 +72,6 @@ body {
 }
 
 .cards-after {
-    height: 140px;
     animation-name: slide-top;
     animation-duration: 5s;
 }
@@ -131,26 +130,119 @@ body {
 
 .cards-sensei {
     position: absolute;
-    background-image: url(Fotos/Card-Jitsu_card_back.webp);
+    /*    background-image: url(Fotos/Card-Jitsu_card_back.webp);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    */
     height: 60px;
     width: 50px;
 }
 
+.frente {
+    position: absolute;
+    background-image: url(Fotos/Card-Jitsu_card_back.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+
+    backface-visibility: hidden;
+}
+
 .cards-sensei-after {
-    height: 140px;
     animation-name: slide-left-top;
     animation-duration: 5s;
+
+    transform-style: preserve-3d;
+    transition: 1.5s;
 }
 
 @keyframes slide-left-top {
     35% {
-        transform: translate(-270px, -350px) scale(3.4);
+        transform: translate(-270px, -350px) scale(3.7);
+    }
+
+    60% {
+        transform: translate(-270px, -350px) scale(3.7) rotateY(180deg);
     }
 
     100% {
-        transform: translate(-270px, -350px) scale(3.4);
+        transform: translate(-270px, -350px) scale(3.7) rotateY(180deg);
     }
+}
+
+#tras1 {
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+#tras2 {
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+#tras3 {
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+#tras4 {
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+#tras5 {
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+.water {
+    position: absolute;
+    background-image: url(Fotos/Cartas/Conjunto-1/MACHINE-Agua-sensei.png);
+    background-size: cover;
+    height: 100%;
+    width: 115%;
+
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+.ice {
+    position: absolute;
+    background-image: url(Fotos/Cartas/Conjunto-1/MACHINE-Neve-herbert.png);
+    background-size: cover;
+    height: 100%;
+    width: 115%;
+
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+.fire {
+    position: absolute;
+    background-image: url(Fotos/Cartas/Conjunto-1/MACHINE-Fogo-dragao.png);
+    background-size: cover;
+    height: 100%;
+    width: 115%;
+
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+.numM {
+    font-family: BurbankBig;
+    font-size: 11px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 17px;
+    left: 2px;
 }
