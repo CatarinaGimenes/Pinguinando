@@ -15,7 +15,7 @@ function abrirLogin() {
                             <h2>Escolha um nome para seu pinguim:</h2>
                             <input type="text" class="inserir" id="nome_usuario" maxlength="32" onkeyup="mostrar()">
                             <h2>Crie uma senha bem segura:</h2>
-                            <input type="password" class="inserir">
+                            <input type="password" class="inserir" maxlength="32">
                             <h2>Escolha uma cor:</h2>
                             <div id="todas-cores">
                                 <div class="cores">
@@ -44,10 +44,38 @@ function abrirLogin() {
                     <div id="final-corpo">
                         <button id="btn_continue">Continue</button>
                     </div>
-                    <h2 id="entrarlogin">Já tem uma conta? <a href="index.html">Faça Login!</a></h2>
+                    <h2 onclick="irlogin()" id="entrarlogin">Já tem uma conta? Faça Login!</h2>
                 </div>
             </div>
     `
+}
+
+function irlogin() {
+    blogLogin.innerHTML = `
+                <div class="tela-inteira">
+                <div class="aba-login">
+                    <div class="campos">
+
+                        <div class="campo">
+                            <h2>Nome do Pinguim:</h2>
+                            <input type="text" class="pwd">
+                        </div>
+                        <div class="campo">
+                            <h2>Senha:</h2>
+                            <input type="password" class="pwd">
+                        </div>
+                    </div>
+                    <div>
+                        <button id="btn_entrar">Entrar</button>
+                        <h2 onclick="fecharlogin()" id="fechar-login">Fechar</h2>
+                    </div>
+                </div>
+            </div>
+    `
+}
+
+function fecharlogin() {
+    blogLogin.innerHTML = ""
 }
 
 function fecharcadastro() {

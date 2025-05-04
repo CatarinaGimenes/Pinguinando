@@ -13,6 +13,11 @@
     src: url("../Blog/Fontes/ClubPenguinFonts/A.C.M.E.\ Secret\ Agent\ Bold.ttf");
 }
 
+@font-face {
+    font-family: BarnetSans;
+    src: url("Fontes/BarnetSans-Regular.otf");
+}
+
 /*Fontes que serão usadas no blog :)*/
 
 body {
@@ -278,6 +283,7 @@ p.ano {
     left: 133px;
     top: 175px;
 }
+
 .montanha:hover {
     scale: 1.1;
     cursor: pointer;
@@ -335,7 +341,7 @@ p.ano {
     position: absolute;
     height: 43px;
     top: 173px;
-    right: 402px; 
+    right: 402px;
 }
 
 .dojo:hover {
@@ -365,7 +371,7 @@ p.ano {
     text-align: center;
 }
 
-.titulo-personagem{
+.titulo-personagem {
     font-family: Burbankbig;
     font-size: 55px;
     color: #c21717;
@@ -613,8 +619,8 @@ p.ano {
     color: #5087ad;
 }
 
-#entrarlogin a {
-    color: #5087ad;
+#entrarlogin:hover {
+    cursor: pointer;
 }
 
 #xis {
@@ -629,5 +635,100 @@ p.ano {
 
 #xis:hover {
     scale: 1.1;
+    cursor: pointer;
+}
+
+.aba-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 470px;
+    width: 400px;
+    border: 3px solid #003366;
+    background: #4173e8;
+    background: radial-gradient(circle, rgba(65, 115, 232, 1) 0%, rgba(41, 106, 217, 1) 14%, rgba(17, 76, 143, 1) 100%);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 8px 24px;
+    gap: 40px;
+}
+
+.aba-login .campos {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.aba-login .campo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.aba-login h2 {
+    font-family: BarnetSans;
+    font-size: 26px;
+    font-style: normal;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    margin: 0;
+}
+
+.pwd {
+    width: 250px;
+    height: 40px;
+    border: 1.7px solid rgb(65, 65, 65);
+    font-family: BarnetSans;
+    font-size: 20px;
+    color: #333333;
+    border-radius: 7px;
+}
+
+#caixas {
+    display: flex;
+    align-self: center;
+    gap: 10px;
+}
+
+#boxes {
+    display: flex;
+    flex-direction: column;
+}
+
+#btn_entrar {
+    height: 80px;
+    width: 250px;
+    border-radius: 20px;
+    border: 2.4px solid #003366;
+    box-shadow: rgba(17, 17, 26, 1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    background: #5aa4ed;
+    background: linear-gradient(180deg, rgba(90, 164, 237, 1) 0%, rgba(9, 83, 153, 1) 48%, rgba(10, 93, 171, 1) 82%, rgba(96, 168, 235, 1) 100%);
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#btn_entrar:hover {
+    background: #2d8ceb;
+    background: linear-gradient(180deg, rgba(45, 140, 235, 1) 0%, rgba(7, 70, 130, 1) 48%, rgba(10, 81, 148, 1) 82%, rgba(27, 130, 227, 1) 100%);
+}
+
+#fechar-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    height: 60px;
+    width: 140px;
+}
+
+#fechar-login {
+    font-size: 20px;
+    margin: 0;
+    justify-self: center;
+}
+
+#fechar-login {
     cursor: pointer;
 }
