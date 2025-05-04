@@ -182,37 +182,35 @@ function jogada_maquina() {
 function vencer() {
     if (rodada == 5) {
         if (won_rounds > lost_rounds) {
-            div_vitoria.innerHTML += `<b> Player venceu!!! </b>`
+            fundo.innerHTML += `
+        <div id="finalizar">
+            <p>Você Venceu!!</p>
+            <button onclick="jogardnovo()" class="botao" id="btn_jogar">Jogar Novamente</button>
+            <button class="botao" id="btn_dash">Dashboard</button>
+            <button onclick="sair()" class="botao" id="btn_sair">Sair</button>
+        </div>
+            `
         }
         if (lost_rounds > won_rounds) {
-            div_vitoria.innerHTML += `<b> Player perdeu :(, vitória da Máquina </b>`
+            fundo.innerHTML += `
+            <div id="finalizar">
+                <p>Que pena, você perdeu!</p>
+                <button onclick="jogardnovo()" class="botao" id="btn_jogar">Jogar Novamente</button>
+                <button class="botao" id="btn_dash">Dashboard</button>
+                <button onclick="sair()" class="botao" id="btn_sair">Sair</button>
+            </div>
+                `
         }
         if (lost_rounds == won_rounds) {
-            div_vitoria.innerHTML += `<b> O jogo deu empate! Tente mais uma vez, a segunda tentativa
-            sempre dá sorte </b>`
+            fundo.innerHTML += `
+            <div id="finalizar">
+                <p>Empate!</p>
+                <button onclick="jogardnovo()" class="botao" id="btn_jogar">Jogar Novamente</button>
+                <button class="botao" id="btn_dash">Dashboard</button>
+                <button onclick="sair()" class="botao" id="btn_sair">Sair</button>
+            </div>
+                `
         }
-    }
-
-    // Transformando os tipos das cartas (3, 2, 1) em strings (Fogo, água e gelo)
-    if (tipo_machine == fogo) {
-        tipo_string_machine = "fogo"
-    }
-    if (tipo_machine == gelo) {
-        tipo_string_machine = "gelo"
-    }
-    if (tipo_machine == agua) {
-        tipo_string_machine = "água"
-    }
-
-    // Transformando os resultados em strings
-    if (resultado_rodada == jogador_win) {
-        string_rodada = "ganhou"
-    }
-    if (resultado_rodada == jogador_perdeu) {
-        string_rodada = "perdeu"
-    }
-    if (resultado_rodada == empate) {
-        string_rodada = "empatou"
     }
 }
 
@@ -256,10 +254,6 @@ function lancar1() {
         tied_rounds++
     }
 
-    // div_club.innerHTML = `Rodada ${rodada}- Você lançou uma carta tipo fogo, de valor ${valor_carta1}, <br>
-    // seu oponente lançou uma carta tipo ${tipo_string_machine}, de valor ${valor_machine1}, <br>
-    // <b> você ${string_rodada}! </b>`
-
     document.getElementById("carta1").classList.add("cards-after")
     setTimeout(() => {
         document.getElementById("carta1").outerHTML = ""
@@ -279,6 +273,7 @@ function lancar1() {
                 fundo.removeChild(novaDiv)
                 numero_estatico.innerHTML = won_rounds
                 partida_acontecendo = false
+                vencer()
             }, 3000)
         } else if (resultado_rodada == jogador_perdeu) {
             novaDiv.classList.add("cartas-contagem-negativo")
@@ -286,9 +281,11 @@ function lancar1() {
                 fundo.removeChild(novaDiv)
                 numero_estatico2.innerHTML = lost_rounds
                 partida_acontecendo = false
+                vencer()
             }, 3000)
         } else if (resultado_rodada == empate) {
             partida_acontecendo = false
+            vencer()
         }
         fundo.appendChild(novaDiv)
     }, 3500)
@@ -338,10 +335,6 @@ function lancar2() {
         tied_rounds++
     }
 
-    // div_club.innerHTML = `Rodada ${rodada}- Você lançou uma carta tipo gelo, de valor ${valor_carta2}, <br>
-    // seu oponente lançou uma carta tipo ${tipo_string_machine}, de valor ${valor_machine2}, <br>
-    // <b> você ${string_rodada}! </b>`
-
     document.getElementById("carta2").classList.add("cards-after")
     setTimeout(() => {
         document.getElementById("carta2").outerHTML = ""
@@ -360,6 +353,7 @@ function lancar2() {
                 fundo.removeChild(novaDiv)
                 numero_estatico.innerHTML = won_rounds
                 partida_acontecendo = false
+                vencer()
             }, 3000)
         } else if (resultado_rodada == jogador_perdeu) {
             novaDiv.classList.add("cartas-contagem-negativo")
@@ -367,9 +361,11 @@ function lancar2() {
                 fundo.removeChild(novaDiv)
                 numero_estatico2.innerHTML = lost_rounds
                 partida_acontecendo = false
+                vencer()
             }, 3000)
         } else if (resultado_rodada == empate) {
             partida_acontecendo = false
+            vencer()
         }
         fundo.appendChild(novaDiv)
     }, 3500)
@@ -418,10 +414,6 @@ function lancar3() {
         tied_rounds++
     }
 
-    // div_club.innerHTML = `Rodada ${rodada}- Você lançou uma carta tipo água, de valor ${valor_carta3}, <br>
-    // seu oponente lançou uma carta tipo ${tipo_string_machine}, de valor ${valor_machine3}, <br>
-    // <b> você ${string_rodada}! </b>`
-
     document.getElementById("carta3").classList.add("cards-after")
     setTimeout(() => {
         document.getElementById("carta3").outerHTML = ""
@@ -439,6 +431,7 @@ function lancar3() {
                 fundo.removeChild(novaDiv)
                 numero_estatico.innerHTML = won_rounds
                 partida_acontecendo = false
+                vencer()
             }, 3000)
         } else if (resultado_rodada == jogador_perdeu) {
             novaDiv.classList.add("cartas-contagem-negativo")
@@ -446,9 +439,11 @@ function lancar3() {
                 fundo.removeChild(novaDiv)
                 numero_estatico2.innerHTML = lost_rounds
                 partida_acontecendo = false
+                vencer()
             }, 3000)
         } else if (resultado_rodada == empate) {
             partida_acontecendo = false
+            vencer()
         }
         fundo.appendChild(novaDiv)
     }, 3500)
@@ -497,10 +492,6 @@ function lancar4() {
         tied_rounds++
     }
 
-    // div_club.innerHTML = `Rodada ${rodada}- Você lançou uma carta tipo água, de valor ${valor_carta4}, <br>
-    // seu oponente lançou uma carta tipo ${tipo_string_machine}, de valor ${valor_machine4}, <br>
-    // <b> você ${string_rodada}! </b>`
-
     document.getElementById("carta4").classList.add("cards-after")
     setTimeout(() => {
         document.getElementById("carta4").outerHTML = ""
@@ -518,6 +509,7 @@ function lancar4() {
                 fundo.removeChild(novaDiv)
                 numero_estatico.innerHTML = won_rounds
                 partida_acontecendo = false
+                vencer()
             }, 3000)
         } else if (resultado_rodada == jogador_perdeu) {
             novaDiv.classList.add("cartas-contagem-negativo")
@@ -525,9 +517,11 @@ function lancar4() {
                 fundo.removeChild(novaDiv)
                 numero_estatico2.innerHTML = lost_rounds
                 partida_acontecendo = false
+                vencer()
             }, 3000)
         } else if (resultado_rodada == empate) {
             partida_acontecendo = false
+            vencer()
         }
         fundo.appendChild(novaDiv)
     }, 3500)
@@ -576,10 +570,6 @@ function lancar5() {
         tied_rounds++
     }
 
-    // div_club.innerHTML = `Rodada ${rodada}- Você lançou uma carta tipo gelo, de valor ${valor_carta5}, <br>
-    // seu oponente lançou uma carta tipo ${tipo_string_machine}, de valor ${valor_machine5}, <br>
-    // <b> você ${string_rodada}! </b>`
-
     document.getElementById("carta5").classList.add("cards-after")
     setTimeout(() => {
         document.getElementById("carta5").outerHTML = ""
@@ -597,6 +587,7 @@ function lancar5() {
                 fundo.removeChild(novaDiv)
                 numero_estatico.innerHTML = won_rounds
                 partida_acontecendo = false
+                vencer()
             }, 3000)
         } else if (resultado_rodada == jogador_perdeu) {
             novaDiv.classList.add("cartas-contagem-negativo")
@@ -604,9 +595,11 @@ function lancar5() {
                 fundo.removeChild(novaDiv)
                 numero_estatico2.innerHTML = lost_rounds
                 partida_acontecendo = false
+                vencer()
             }, 3000)
         } else if (resultado_rodada == empate) {
             partida_acontecendo = false
+            vencer()
         }
         fundo.appendChild(novaDiv)
     }, 3500)
