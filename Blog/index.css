@@ -435,3 +435,14 @@ p.ano {
     background-image: url("../Blog/Fotos/EPF_Phone_New_Message.webp");
     cursor: pointer;
 }
+/*
+#corpo-login {
+    position: fixed;
+    height: 600px;
+    width: 800px;
+    background-color: #1568bc;
+    align-self: center;
+    border-radius: 30px;
+    border: 2.5px solid rgb(171, 171, 171);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}*/
