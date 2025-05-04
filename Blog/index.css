@@ -268,7 +268,6 @@ p.ano {
     height: 700px;
     background-image: url("../Blog/Fotos/Map_June_2015.png");
     background-size: cover;
-    background-color: purple;
     border: 9px solid white;
     position: relative;
 }
@@ -414,5 +413,25 @@ p.ano {
 
 .seta:hover {
     scale: 1.1;
+    cursor: pointer;
+}
+
+.telefone {
+    position: fixed;
+    left: 22px;
+    bottom: 30px;
+}
+
+.telefoninho {
+    width: 115px;
+    height: 115px;
+    background-image: url("../Blog/Fotos/EPF_Spy_Phone_icon.webp");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.telefoninho:hover {
+    background-image: url("../Blog/Fotos/EPF_Phone_New_Message.webp");
     cursor: pointer;
 }
