@@ -435,14 +435,199 @@ p.ano {
     background-image: url("../Blog/Fotos/EPF_Phone_New_Message.webp");
     cursor: pointer;
 }
-/*
+
 #corpo-login {
     position: fixed;
     height: 600px;
     width: 800px;
-    background-color: #1568bc;
+    background-color: #fffbcb;
     align-self: center;
     border-radius: 30px;
-    border: 2.5px solid rgb(171, 171, 171);
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}*/
+    border: 2.5px solid #e4c35a;
+    box-shadow: #e4c45a5c 0px -13px 25px 0px inset, #e4c45a5c 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+#topo-corpologin {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    margin-bottom: 0;
+}
+
+#topo-corpologin h2 {
+    color: white;
+    font-family: ACME;
+    font-size: 40px;
+    -webkit-text-stroke: 3px #014da7;
+}
+
+#resto-corpo {
+    display: flex;
+}
+
+#corpo-nome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#corpo-nome h2 {
+    font-family: BurbankBig;
+    color: #5087ad;
+}
+
+#nome_pinguim {
+    font-family: BurbankBig;
+    color: #5087ad;
+    text-align: center;
+    height: 30px;
+}
+
+.inserir {
+    width: 250px;
+    height: 30px;
+    border: 2px solid #FFA71B;
+    font-family: ACME;
+    color: rgb(80, 80, 80);
+}
+
+#todas-cores {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.cores {
+    display: flex;
+    gap: 4px;
+}
+
+.botaoCOR {
+    height: 45px;
+    width: 45px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+.botaoCOR:hover {
+    cursor: pointer;
+}
+
+#cor1 {
+    background-color: #003366;
+}
+
+#cor2 {
+    background-color: #009900;
+}
+
+#cor3 {
+    background-color: #ff3399;
+}
+
+#cor4 {
+    background-color: #333333;
+}
+
+#cor5 {
+    background-color: #cc0000;
+}
+
+#cor6 {
+    background-color: #ff6600;
+}
+
+#cor7 {
+    background-color: #ffcc00;
+}
+
+#cor8 {
+    background-color: #660099;
+}
+
+#cor9 {
+    background-color: #996600;
+}
+
+#cor10 {
+    background-color: #ff6666;
+}
+
+#cor11 {
+    background-color: #006600;
+}
+
+#cor12 {
+    background-color: #0099cc;
+}
+
+#cor13 {
+    background-color: #8ae302;
+}
+
+#cor14 {
+    background-color: #03a797;
+}
+
+#cor15 {
+    background-color: #f0f0d8;
+}
+
+#cor16 {
+    background-color: #93a0a4;
+}
+
+
+#final-corpo {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+#btn_continue {
+    position: fixed;
+    margin-right: 18px;
+    font-family: ACME;
+    font-size: 20px;
+    background-color: #ffb30d;
+    border: 3px solid #d47b00;
+    border-radius: 20px;
+    color: white;
+    height: 45px;
+    width: 160px;
+    -webkit-text-stroke: 1.5px black;
+}
+
+#btn_continue:hover {
+    cursor: pointer;
+}
+
+#entrarlogin {
+    margin: 0;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-family: BurbankBig;
+    color: #5087ad;
+}
+
+#entrarlogin a {
+    color: #5087ad;
+}
+
+#xis {
+    font-family: ACME;
+    font-size: 15px;
+    color: #e4c35a;
+    position: absolute;
+    margin: 0;
+    right: 20px;
+    top: 20px;
+}
+
+#xis:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
