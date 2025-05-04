@@ -49,6 +49,7 @@ body {
 
 #X:hover {
     scale: 1.1;
+    cursor: pointer;
 }
 
 #pergunta {
@@ -60,6 +61,7 @@ body {
 
 #pergunta:hover {
     scale: 1.01;
+    cursor: pointer;
 }
 
 #cartas {
@@ -78,6 +80,10 @@ body {
     height: 140px;
     width: 135px;
     position: absolute;
+}
+
+.cards:hover {
+    cursor: pointer;
 }
 
 .cards-after {
@@ -397,6 +403,11 @@ body {
     width: 170px;
 }
 
+#btn_jogar:hover {
+    cursor: pointer;
+    scale: 1.05;
+}
+
 #btn_dash {
     height: 35px;
     width: 140px;
@@ -405,6 +416,11 @@ body {
 #btn_sair {
     height: 35px;
     width: 60px;
+}
+
+#btn_sair:hover {
+    scale: 1.05;
+    cursor: pointer;
 }
 
 #div_comojogar {
@@ -433,4 +449,18 @@ body {
 #img_comojogar p:hover {
     color: rgb(180, 180, 180);
     cursor: pointer;
+}
+
+#pinguim1 {
+    position: fixed;
+    height: 290px;
+    top: 250px;
+    right: 400px;
+}
+
+#pinguim2 {
+    position: fixed;
+    height: 290px;
+    top: 250px;
+    left: 400px;
 }
