@@ -39,3 +39,21 @@ FKpinguim int not null,
 foreign key (FKpinguim) references pinguim(idPinguim),
 check (resultado in ('V', 'D', 'E')) -- V = Vitória, D = Derrota, E = Empate
 );
+
+insert into roupa (nome, tipo, preco) values
+('Azul Marinho', 'cor', 10),
+('Verde', 'cor', 10),
+('Rosa', 'cor', 10),
+('Preto', 'cor', 10),
+('Vermelho', 'cor', 10),
+('Laranja', 'cor', 10),
+('Amarelo', 'cor', 10),
+('Roxo', 'cor', 10),
+('Marrom', 'cor', 10),
+('Salmão', 'cor', 10),
+('Verde Escuro', 'cor', 10),
+('Azul Claro', 'cor', 10),
+('Verde Limão', 'cor', 10),
+('Ciano', 'cor', 10),
+('Branco', 'cor', 10),
+('Cinza', 'cor', 10);
