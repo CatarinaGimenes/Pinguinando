@@ -1,16 +1,16 @@
 @font-face {
     font-family: ClubPenguin;
-    src: url("../Blog/Fontes/bumbastika.regular.ttf");
+    src: url("Fontes/bumbastika.regular.ttf");
 }
 
 @font-face {
     font-family: Burbankbig;
-    src: url("../Blog/Fontes/BurbankBigCondensed/burbankbigcondensed_black.ttf");
+    src: url("Fontes/BurbankBigCondensed/burbankbigcondensed_black.ttf");
 }
 
 @font-face {
     font-family: ACME;
-    src: url("../Blog/Fontes/ClubPenguinFonts/A.C.M.E.\ Secret\ Agent\ Bold.ttf");
+    src: url("Fontes/ClubPenguinFonts/A.C.M.E.\ Secret\ Agent\ Bold.ttf");
 }
 
 @font-face {
@@ -186,14 +186,14 @@ body {
 .mapinha {
     width: 115px;
     height: 115px;
-    background-image: url("../Blog/Fotos/mapa.webp");
+    background-image: url("Fotos/mapa.webp");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .mapinha:hover {
-    background-image: url("../Blog/Fotos/mapa\ aberto.webp");
+    background-image: url("Fotos/mapa\ aberto.webp");
     cursor: pointer;
 }
 
@@ -271,7 +271,7 @@ p.ano {
 .mapa-inteiro {
     width: 1100px;
     height: 700px;
-    background-image: url("../Blog/Fotos/Map_June_2015.png");
+    background-image: url("Fotos/Map_June_2015.png");
     background-size: cover;
     border: 9px solid white;
     position: relative;
@@ -431,14 +431,14 @@ p.ano {
 .telefoninho {
     width: 115px;
     height: 115px;
-    background-image: url("../Blog/Fotos/EPF_Spy_Phone_icon.webp");
+    background-image: url("Fotos/EPF_Spy_Phone_icon.webp");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .telefoninho:hover {
-    background-image: url("../Blog/Fotos/EPF_Phone_New_Message.webp");
+    background-image: url("Fotos/EPF_Phone_New_Message.webp");
     cursor: pointer;
 }
 
