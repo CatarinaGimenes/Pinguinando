@@ -113,6 +113,25 @@ body {
     left: 18px;
 }
 
+.FIRECARD {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(Fotos/Cartas/Conjunto-1/FOGO-puffle.png);
+}
+
+.WATERCARD {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(Fotos/Cartas/Conjunto-1/AGUA-waterslide.png);
+}
+
+.ICECARD {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(Fotos/Cartas/Conjunto-1/NEVE-squidzoid.png);
+}
+
+/*
 #carta1 {
     background-size: 100%;
     background-repeat: no-repeat;
@@ -142,6 +161,7 @@ body {
     background-repeat: no-repeat;
     background-image: url(Fotos/Cartas/Conjunto-1/NEVE-guido.png);
 }
+    */
 
 .cards-sensei {
     position: absolute;

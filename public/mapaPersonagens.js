@@ -10,6 +10,10 @@ function redirecionarPersonagens() {
     window.location.href = "Personagens.html"
 }
 
+function redirecionarCARDJITSU() {
+    window.location.href = "PaginaInicialCADRJITSU.html"
+}
+
 function redirecionarROCKHOPPER() {
     window.location.href = "rockhopper.html"
 }

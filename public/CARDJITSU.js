@@ -16,7 +16,13 @@ var valor_machine5 = 0
 var tipo_machine = 0
 
 // Definindo o tipo da carta (Fogo, água ou gelo)
+var tipo_aleatorio = 0
 var tipo_player = 0
+var tipo_player1 = 0
+var tipo_player2 = 0
+var tipo_player3 = 0
+var tipo_player4 = 0
+var tipo_player5 = 0
 
 // Definindo as rodadas específicas
 var rodada = 0
@@ -223,6 +229,26 @@ function vencer() {
     }
 }
 
+var vt_tipos = []
+function cartarPLAYER() {
+
+    // Definindo os Tipos das cartas do player
+    for (let i = 1; i <= 5; i++) {
+        var tipo_aleatorio = Math.floor(Math.random() * 3) + 1
+        if (tipo_aleatorio == 3) {
+            document.getElementById(`carta${i}`).classList.add("FIRECARD")
+            vt_tipos.push(fogo)
+        } else if (tipo_aleatorio == 2) {
+            document.getElementById(`carta${i}`).classList.add("ICECARD")
+            vt_tipos.push(gelo)
+        } else {
+            document.getElementById(`carta${i}`).classList.add("WATERCARD")
+            vt_tipos.push(agua)
+        }
+    }
+}
+cartarPLAYER()
+
 // Funções específicas para cada carta
 function lancar1() {
     if (partida_acontecendo) {
@@ -231,7 +257,7 @@ function lancar1() {
 
     partida_acontecendo = true
     rodada++
-    tipo_player = fogo
+    tipo_player = vt_tipos[0]
     jogada_maquina()
     comparar()
 
@@ -300,10 +326,8 @@ function lancar1() {
     }, 3500)
 
 
-    console.log('vitória:' + won_rounds)
-    console.log('derrota:' + lost_rounds)
-    console.log('empate:' + tied_rounds)
-    console.log(resultado_rodada == jogador_win)
+    console.log(tipo_player)
+    console.log(tipo_machine)
 }
 
 function lancar2() {
@@ -313,7 +337,7 @@ function lancar2() {
 
     partida_acontecendo = true
     rodada++
-    tipo_player = gelo
+    tipo_player = vt_tipos[1]
     jogada_maquina()
     comparar()
 
@@ -379,10 +403,8 @@ function lancar2() {
         fundo.appendChild(novaDiv)
     }, 3500)
 
-    console.log('vitória:' + won_rounds)
-    console.log('derrota:' + lost_rounds)
-    console.log('empate:' + tied_rounds)
-    console.log(resultado_rodada == jogador_win)
+    console.log(tipo_player)
+    console.log(tipo_machine)
 }
 
 function lancar3() {
@@ -392,7 +414,7 @@ function lancar3() {
 
     partida_acontecendo = true
     rodada++
-    tipo_player = agua
+    tipo_player = vt_tipos[2]
     jogada_maquina()
     comparar()
 
@@ -457,10 +479,8 @@ function lancar3() {
         fundo.appendChild(novaDiv)
     }, 3500)
 
-    console.log('vitória:' + won_rounds)
-    console.log('derrota:' + lost_rounds)
-    console.log('empate:' + tied_rounds)
-    console.log(resultado_rodada == jogador_win)
+    console.log(tipo_player)
+    console.log(tipo_machine)
 }
 
 function lancar4() {
@@ -470,7 +490,7 @@ function lancar4() {
 
     partida_acontecendo = true
     rodada++
-    tipo_player = agua
+    tipo_player = vt_tipos[3]
     jogada_maquina()
     comparar()
 
@@ -535,10 +555,8 @@ function lancar4() {
         fundo.appendChild(novaDiv)
     }, 3500)
 
-    console.log('vitória:' + won_rounds)
-    console.log('derrota:' + lost_rounds)
-    console.log('empate:' + tied_rounds)
-    console.log(resultado_rodada == jogador_win)
+    console.log(tipo_player)
+    console.log(tipo_machine)
 }
 
 function lancar5() {
@@ -548,7 +566,7 @@ function lancar5() {
 
     partida_acontecendo = true
     rodada++
-    tipo_player = gelo
+    tipo_player = vt_tipos[4]
     jogada_maquina()
     comparar()
 
@@ -613,10 +631,8 @@ function lancar5() {
         fundo.appendChild(novaDiv)
     }, 3500)
 
-    console.log('vitória:' + won_rounds)
-    console.log('derrota:' + lost_rounds)
-    console.log('empate:' + tied_rounds)
-    console.log(resultado_rodada == jogador_win)
+    console.log(tipo_player)
+    console.log(tipo_machine)
 }
 
 inicial()
