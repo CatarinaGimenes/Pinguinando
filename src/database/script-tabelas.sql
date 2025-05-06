@@ -29,13 +29,14 @@ foreign key (FKroupa) references roupa(idRoupa)
 );
 
 create table partida (
-idPartida int primary key auto_increment,
+idPartida int auto_increment,
 resultado char(1) not null,
 pontosPLAYER int not null,
 pontosMAQUINA int not null,
 dtFinal datetime default current_timestamp not null,
 XP int not null,
 FKpinguim int not null,
+primary key (idPartida, FKpinguim),
 foreign key (FKpinguim) references pinguim(idPinguim),
 check (resultado in ('V', 'D', 'E')) -- V = Vitória, D = Derrota, E = Empate
 );
@@ -54,6 +55,6 @@ insert into roupa (nome, tipo, preco) values
 ('Verde Escuro', 'cor', 10),
 ('Azul Claro', 'cor', 10),
 ('Verde Limão', 'cor', 10),
-('Ciano', 'cor', 10),
+('Turquesa', 'cor', 10),
 ('Branco', 'cor', 10),
 ('Cinza', 'cor', 10);
