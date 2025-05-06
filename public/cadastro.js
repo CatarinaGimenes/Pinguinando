@@ -216,7 +216,7 @@ function logar() {
         .then(function (resposta) {
             resposta.json().then((resposta2) => {
                 console.log(resposta2)
-                localStorage.id = resposta2[0].idPinguim
+                localStorage.idPinguim = resposta2[0].idPinguim
                 localStorage.nome = resposta2[0].nome
                 fecharlogin()
             })

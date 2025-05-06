@@ -46,6 +46,9 @@ var won_rounds = 0
 var lost_rounds = 0
 var tied_rounds = 0
 
+//Variavel de resultado definitivo
+var RESULTADO_TOTAL = "V"
+
 // Função que aleatoriza e define os valores das cartas
 var index = 1
 function inicial() {
@@ -182,6 +185,7 @@ function jogada_maquina() {
 function vencer() {
     if (rodada == 5) {
         if (won_rounds > lost_rounds) {
+            RESULTADO_TOTAL = "V"
             fundo.innerHTML += `
         <div id="finalizar">
             <p>Você Venceu!!</p>
@@ -190,8 +194,10 @@ function vencer() {
             <button onclick="sair()" class="botao" id="btn_sair">Sair</button>
         </div>
             `
+            salvarPartida()
         }
         if (lost_rounds > won_rounds) {
+            RESULTADO_TOTAL = "D"
             fundo.innerHTML += `
             <div id="finalizar">
                 <p>Que pena, você perdeu!</p>
@@ -200,8 +206,10 @@ function vencer() {
                 <button onclick="sair()" class="botao" id="btn_sair">Sair</button>
             </div>
                 `
+                salvarPartida()
         }
         if (lost_rounds == won_rounds) {
+            RESULTADO_TOTAL = "E"
             fundo.innerHTML += `
             <div id="finalizar">
                 <p>Empate!</p>
@@ -210,6 +218,7 @@ function vencer() {
                 <button onclick="sair()" class="botao" id="btn_sair">Sair</button>
             </div>
                 `
+                salvarPartida()
         }
     }
 }
@@ -611,3 +620,36 @@ function lancar5() {
 }
 
 inicial()
+
+
+
+function salvarPartida() {
+    if (!localStorage.idPinguim) {
+        return
+    }
+
+    var fkpinguimVar = localStorage.idPinguim
+    var resultadoVar = RESULTADO_TOTAL
+    var pontosPlayerVar = won_rounds
+    var pontosMaquinaVar = lost_rounds
+
+    fetch("/pinguim/salvarPartida", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+            fkpinguim: fkpinguimVar,
+            resultado: resultadoVar,
+            pontosPlayer: pontosPlayerVar,
+            pontosMaquina: pontosMaquinaVar,
+        }),
+    })
+        .then(function (resposta) {
+            console.log("resposta: ", resposta);
+        })
+        .catch(function (resposta) {
+            console.log(`#ERRO: ${resposta}`);
+        });
+
+}
