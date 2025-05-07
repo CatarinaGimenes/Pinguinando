@@ -1,0 +1,229 @@
+@font-face {
+    font-family: BurbankBig;
+    src: url(Fontes/BurbankBigCondensed/burbankbigcondensed_bold.ttf);
+}
+
+@font-face {
+    font-family: ACME;
+    src: url(Fontes/ClubPenguinFonts/Action\ Man\ Italic.ttf);
+}
+
+body {
+    background-color: #b4ab8b;
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+h4 {
+    margin: 0;
+}
+
+.dash {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.elementos-todos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.topo {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    font-family: BurbankBig;
+    font-size: 50px;
+    gap: 80px;
+    color: #6f6557;
+    color: #a16e15;
+}
+
+.topo h2 {
+    margin-bottom: 4px;
+}
+
+.aba-pinguim {
+    height: 100px;
+    transform: scaleX(-1);
+}
+
+.corpo {
+    width: 1050px;
+    height: 625px;
+    background-color: #f6f1d7;
+    border-radius: 20px;
+}
+
+.topo-corpo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35%;
+}
+
+#caixa-progressao {
+    width: 1000px;
+    height: 180px;
+    border-radius: 25px;
+    background-color: #f4ebdf;
+    border: 4px solid #d7d0be;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#caixa-progressao img {
+    width: 110px;
+}
+
+#caixa-progressao h4 {
+    font-family: ACME;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #6f6557;
+}
+
+.faixas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#BARRA {
+    height: 55px;
+    width: 750px;
+    background-color: #6f6557;
+    border-radius: 50px;
+    border: 4px solid #97928b;
+    display: flex;
+    align-items: center;
+}
+
+#barra_XP {
+    height: 45px;
+    width: 350px;
+    border-radius: 25px;
+    background-color: #fdb732;
+    margin-left: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -35px 36px -28px inset;
+}
+
+.resto-corpo {
+    display: flex;
+    height: 65%;
+    justify-content: space-around;
+}
+
+#graf-pizza {
+    display: flex;
+    height: 100%;
+    width: 360px;
+    align-items: center;
+    justify-content: center;
+}
+
+#direita {
+    display: flex;
+    gap: 10px;
+}
+
+#KPIs {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.KPI {
+    height: 125px;
+    width: 225px;
+    border-radius: 25px;
+    background-color: #dfd3ac;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+
+.KPI h2 {
+    font-family: BurbankBig;
+    font-size: 30px;
+    text-align: center;
+    color: #a16e15;
+}
+
+.KPI h1 {
+    font-family: BurbankBig;
+    font-size: 40px;
+    color: #a16e15;
+}
+
+#ultimas-partidas {
+    height: 385px;
+    width: 385px;
+    border-radius: 25px;
+    background-color: #dfd3ac;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#alerts {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#ultimas-partidas h2 {
+    font-family: BurbankBig;
+    font-size: 30px;
+    text-align: center;
+    color: #a16e15;
+}
+
+.alerta {
+    height: 35px;
+    width: 330px;
+    background-color: #f4ebdf;
+    border: 4px solid #d7d0be;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.alerta img {
+    height: 85%;
+    margin-left: 5px;
+}
+
+.alerta h5 {
+    margin: 0;
+    margin-top: 5px;
+    font-family: BurbankBig;
+    font-size: 30px;
+    color: #5b5449;
+}
+
+.alerta h3 {
+    font-family: BurbankBig;
+    color: #5b5449;
+    font-size: 18px;
+    align-self: flex-start;
+    margin-right: 15px;
+}

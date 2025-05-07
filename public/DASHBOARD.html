@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="DASHBOARD.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1"></script>
+    <title>Dashboard Card-Jitsu</title>
+</head>
+
+<body>
+    <section class="dash">
+        <div class="elementos-todos">
+            <div class="topo">
+                <img class="aba-pinguim" src="Fotos/Ninja.png">
+                <h2>Card Jitsu: Progresso</h2>
+            </div>
+            <div class="corpo">
+                <div class="topo-corpo">
+                    <div id="caixa-progressao">
+                        <div class="faixas">
+                            <h4>Faixa Atual</h4>
+                            <img src="Fotos/faixaBRANCA.webp">
+                        </div>
+                        <div id="barrinha">
+                            <div id="BARRA">
+                                <div id="barra_XP"></div>
+                            </div>
+                        </div>
+                        <div class="faixas">
+                            <h4>Próxima Faixa</h4>
+                            <img src="Fotos/faixaAMARELA.webp">
+                        </div>
+                    </div>
+                </div>
+                <div class="resto-corpo">
+                    <div id="graf-pizza">
+                        <canvas id="graficoPartidas" style="width: 100%; height: 100%;"></canvas>
+                    </div>
+                    <div id="direita">
+                        <div id="KPIs">
+                            <div class="KPI">
+                                <h2>XP necessário para subir de nível:</h2>
+                                <h1>125</h1>
+                            </div>
+                            <div class="KPI">
+                                <h2>Maior sequência de vitórias:</h2>
+                                <h1>6</h1>
+                            </div>
+                            <div class="KPI">
+                                <h2>Dias sem jogar:</h2>
+                                <h1>3</h1>
+                            </div>
+                        </div>
+                        <div id="Tabela">
+                            <div id="ultimas-partidas">
+                                <h2>Resultados das últimas partidas:</h2>
+                                <div id="alerts">
+                                    <div class="alerta">
+                                        <img src="Fotos/Happy_emoticon.webp">
+                                        <h5>Vitória</h5>
+                                        <h3>07/05/2025 - 22:27</h3>
+                                    </div>
+                                    <div class="alerta">
+                                        <img src="Fotos/Moody_Emoticon.webp">
+                                        <h5>Derrota</h5>
+                                        <h3>07/05/2025 - 20:33</h3>
+                                    </div>
+                                    <div class="alerta">
+                                        <img src="Fotos/Hmm_Emoticon.webp">
+                                        <h5>Empate</h5>
+                                        <h3>07/05/2025 - 17:30</h3>
+                                    </div>
+                                    <div class="alerta">
+                                        <img src="Fotos/Happy_emoticon.webp">
+                                        <h5>Vitória</h5>
+                                        <h3>07/05/2025 - 17:00</h3>
+                                    </div>
+                                    <div class="alerta">
+                                        <img src="Fotos/Happy_emoticon.webp">
+                                        <h5>Vitória</h5>
+                                        <h3>07/05/2025 - 12:45</h3>
+                                    </div>
+                                    <div class="alerta">
+                                        <img src="Fotos/Moody_Emoticon.webp">
+                                        <h5>Derrota</h5>
+                                        <h3>07/05/2025 - 11:23</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
+<script src="DASHBOARD.js"></script>
