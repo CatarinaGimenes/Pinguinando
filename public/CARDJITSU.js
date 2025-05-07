@@ -1,5 +1,12 @@
 var partida_acontecendo = false
 
+// Vetores com as imagens dos Backgrounds das cartas
+var vt_fogo = ['FOGO-puffle.png', 'FOGO-fogoartificio.png', 'FOGO-pirotecnista.png', 'FOGO-ninjafogo.png', 'FOGO-pufflelaranja.png', 'FOGO-lovepuffle.png', 'FOGO-lapis.png', 'FOGO-desentupidor.png', 'FOGO-tapete.png']
+
+var vt_agua = ['AGUA-waterslide.png', 'AGUA-iceberg.png', 'AGUA-polvo.png', 'AGUA-puffleverde.png', 'AGUA-trabalhador.png', 'AGUA-puffledourado.png', 'AGUA-chuva.png', 'AGUA-rockhopper.png', 'AGUA-touro.png', 'AGUA-gary.png']
+
+var vt_gelo = ['NEVE-guido.png', 'NEVE-squidzoid.png', 'NEVE-pufflebranco.png', 'NEVE-alien.png', 'NEVE-puffleperdido.png', 'NEVE-arcondicionado.png', 'NEVE-aniversario.png', 'NEVE-halloween.png', 'NEVE-tecladista.png', 'NEVE-boiacross.png']
+
 // Definindo os valores das cartas do player
 var valor_carta1 = 0
 var valor_carta2 = 0
@@ -18,11 +25,6 @@ var tipo_machine = 0
 // Definindo o tipo da carta (Fogo, água ou gelo)
 var tipo_aleatorio = 0
 var tipo_player = 0
-var tipo_player1 = 0
-var tipo_player2 = 0
-var tipo_player3 = 0
-var tipo_player4 = 0
-var tipo_player5 = 0
 
 // Definindo as rodadas específicas
 var rodada = 0
@@ -36,10 +38,6 @@ var rodada_5 = 0
 var fogo = 3;
 var gelo = 2;
 var agua = 1;
-
-// Variável para exibição dos resultados
-var tipo_string_machine = 0
-var string_rodada = 0
 
 // Definindo os resultados das rodadas
 var resultado_rodada = 0
@@ -212,7 +210,7 @@ function vencer() {
                 <button onclick="sair()" class="botao" id="btn_sair">Sair</button>
             </div>
                 `
-                salvarPartida()
+            salvarPartida()
         }
         if (lost_rounds == won_rounds) {
             RESULTADO_TOTAL = "E"
@@ -224,7 +222,7 @@ function vencer() {
                 <button onclick="sair()" class="botao" id="btn_sair">Sair</button>
             </div>
                 `
-                salvarPartida()
+            salvarPartida()
         }
     }
 }
@@ -235,15 +233,27 @@ function cartarPLAYER() {
     // Definindo os Tipos das cartas do player
     for (let i = 1; i <= 5; i++) {
         var tipo_aleatorio = Math.floor(Math.random() * 3) + 1
+        var img_tipofogo = Math.floor(Math.random() * vt_fogo.length)
+        var img_tipogelo = Math.floor(Math.random() * vt_gelo.length)
+        var img_tipoagua = Math.floor(Math.random() * vt_agua.length)
+
         if (tipo_aleatorio == 3) {
             document.getElementById(`carta${i}`).classList.add("FIRECARD")
             vt_tipos.push(fogo)
+
+            document.getElementById(`carta${i}`).style.backgroundImage = `url('Fotos/Cartas/Conjunto-1/${vt_fogo[img_tipofogo]}')`;
+
         } else if (tipo_aleatorio == 2) {
             document.getElementById(`carta${i}`).classList.add("ICECARD")
             vt_tipos.push(gelo)
+
+            document.getElementById(`carta${i}`).style.backgroundImage = `url('Fotos/Cartas/Conjunto-1/${vt_gelo[img_tipogelo]}')`;
+
         } else {
             document.getElementById(`carta${i}`).classList.add("WATERCARD")
             vt_tipos.push(agua)
+
+            document.getElementById(`carta${i}`).style.backgroundImage = `url('Fotos/Cartas/Conjunto-1/${vt_agua[img_tipoagua]}')`;
         }
     }
 }
