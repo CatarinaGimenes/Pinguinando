@@ -131,45 +131,8 @@ body {
     background-image: url(Fotos/Cartas/Conjunto-1/NEVE-squidzoid.png);
 }
 
-/*
-#carta1 {
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-image: url(Fotos/Cartas/Conjunto-1/FOGO-puffle.png);
-}
-
-#carta2 {
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-image: url(Fotos/Cartas/Conjunto-1/NEVE-squidzoid.png);
-}
-
-#carta3 {
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-image: url(Fotos/Cartas/Conjunto-1/AGUA-waterslide.png);
-}
-
-#carta4 {
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-image: url(Fotos/Cartas/Conjunto-1/AGUA-iceberg.png);
-}
-
-#carta5 {
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-image: url(Fotos/Cartas/Conjunto-1/NEVE-guido.png);
-}
-    */
-
 .cards-sensei {
     position: absolute;
-    /*    background-image: url(Fotos/Card-Jitsu_card_back.webp);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    */
     height: 60px;
     width: 50px;
 }
@@ -472,15 +435,15 @@ body {
 }
 
 #pinguim1 {
-    position: fixed;
+    position: absolute;
     height: 290px;
-    top: 250px;
-    right: 400px;
+    top: 230px;
+    right: 300px;
 }
 
 #pinguim2 {
-    position: fixed;
+    position: absolute;
     height: 290px;
-    top: 250px;
-    left: 400px;
+    top: 230px;
+    left: 300px;
 }
