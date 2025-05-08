@@ -6,16 +6,20 @@ function salvarPartida(req, res) {
     var pontosPlayer = req.body.pontosPlayer;
     var pontosMaquina = req.body.pontosMaquina;
     var xp = 0;
+    var moedas = 0;
 
     if (resultado == "V") {
         xp = 40
+        moedas = 250
     } else if (resultado == "D") {
         xp = 0
+        moedas = 0
     } else {
         xp = 20
+        moedas = 100
     }
 
-    cardModel.salvarPartida(fkpinguim, resultado, pontosPlayer, pontosMaquina, xp).then((resultado) => {
+    cardModel.salvarPartida(fkpinguim, resultado, pontosPlayer, pontosMaquina, xp, moedas).then((resultado) => {
         res.status(201).json(resultado);
     });
 }

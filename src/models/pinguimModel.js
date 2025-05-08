@@ -2,7 +2,7 @@ var database = require("../database/config");
 
 function cadastrar(nome, senha) {
     var instrucaoSql = `
-    INSERT INTO pinguim (nome, senha, moedas, agente_secreto) VALUES ('${nome}', '${senha}', 0, 0);
+    INSERT INTO pinguim (nome, senha, moedas, agente_secreto) VALUES ('${nome}', '${senha}', 1000, 0);
     `
 
     return database.executar(instrucaoSql);
