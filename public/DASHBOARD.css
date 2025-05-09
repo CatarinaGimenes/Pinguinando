@@ -243,3 +243,16 @@ h4 {
     align-self: flex-start;
     margin-right: 15px;
 }
+
+.seta {
+    rotate: -90deg;
+    width: 80px;
+    position: fixed;
+    top: 15px;
+    left: 20px;
+}
+
+.seta:hover {
+    scale: 1.1;
+    cursor: pointer;
+}

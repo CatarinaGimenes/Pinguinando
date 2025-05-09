@@ -194,7 +194,7 @@ function vencer() {
         <div id="finalizar">
             <p>Você Venceu!!</p>
             <button onclick="jogardnovo()" class="botao" id="btn_jogar">Jogar Novamente</button>
-            <button class="botao" id="btn_dash">Dashboard</button>
+            <button onclick="redirecionarDASHBOARD()" class="botao" id="btn_dash">Dashboard</button>
             <button onclick="sair()" class="botao" id="btn_sair">Sair</button>
         </div>
             `
@@ -206,7 +206,7 @@ function vencer() {
             <div id="finalizar">
                 <p>Que pena, você perdeu!</p>
                 <button onclick="jogardnovo()" class="botao" id="btn_jogar">Jogar Novamente</button>
-                <button class="botao" id="btn_dash">Dashboard</button>
+                <button onclick="redirecionarDASHBOARD()" class="botao" id="btn_dash">Dashboard</button>
                 <button onclick="sair()" class="botao" id="btn_sair">Sair</button>
             </div>
                 `
@@ -218,7 +218,7 @@ function vencer() {
             <div id="finalizar">
                 <p>Empate!</p>
                 <button onclick="jogardnovo()" class="botao" id="btn_jogar">Jogar Novamente</button>
-                <button class="botao" id="btn_dash">Dashboard</button>
+                <button onclick="redirecionarDASHBOARD()" class="botao" id="btn_dash">Dashboard</button>
                 <button onclick="sair()" class="botao" id="btn_sair">Sair</button>
             </div>
                 `

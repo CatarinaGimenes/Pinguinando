@@ -396,6 +396,11 @@ body {
     width: 140px;
 }
 
+#btn_dash:hover {
+    cursor: pointer;
+    scale: 1.05;
+}
+
 #btn_sair {
     height: 35px;
     width: 60px;

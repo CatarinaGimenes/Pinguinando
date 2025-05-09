@@ -77,6 +77,11 @@ div {
     background-color: #dfd3ac;
 }
 
+#btn_dashboard:hover {
+    scale: 0.965;
+    cursor: pointer;
+}
+
 #esquerda {
     display: flex;
     flex-direction: column;

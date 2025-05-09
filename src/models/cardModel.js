@@ -7,5 +7,3 @@ function salvarPartida(fkpinguim, resultado, pontosPlayer, pontosMaquina, xp, mo
 
     return database.executar(instrucaoSql);
 }
-
-module.exports = { salvarPartida };
