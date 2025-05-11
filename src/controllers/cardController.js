@@ -24,6 +24,15 @@ function salvarPartida(req, res) {
     });
 }
 
+function selecinardadosgrafico(req, res) {
+    var fkpinguim = req.params.fkpinguim;
+
+    cardModel.selecinardadosgrafico(fkpinguim).then((resultado) => {
+        res.status(201).json(resultado);
+    });
+}
+
 module.exports = {
     salvarPartida,
+    selecinardadosgrafico,
 };
