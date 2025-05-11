@@ -9,13 +9,13 @@ function salvarPartida(req, res) {
     var moedas = 0;
 
     if (resultado == "V") {
-        xp = 40
+        xp = 50
         moedas = 250
     } else if (resultado == "D") {
         xp = 0
         moedas = 0
     } else {
-        xp = 20
+        xp = 25
         moedas = 100
     }
 
