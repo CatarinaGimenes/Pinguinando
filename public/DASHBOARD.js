@@ -127,13 +127,107 @@ function selecinardadosgrafico() {
                         resultadoImage = "Fotos/Hmm_Emoticon.webp"
                     }
 
-                    var datahora = new Date(resposta2[resposta2.length - i].dtFinal) 
+                    var datahora = new Date(resposta2[resposta2.length - i].dtFinal)
 
                     alerts.innerHTML += `
                     <div class="alerta">
                         <img src="${resultadoImage}">
                         <h5>${resultadoTexto}</h5>
                         <h3>${datahora.toLocaleString("en-GB", { timeZone: "UTC" })}</h3>
+                    </div>
+                    `
+                }
+
+                // Exibindo alterações em 'Faixa Atual'/'Próxima Faixa'
+                var XPTOTAL = 0
+                var faixas = {}
+
+                for (let i = 0; i < resposta2.length; i++) {
+                    XPTOTAL += resposta2[i].XP
+                }
+
+                if (XPTOTAL < 500) {
+                    faixas = {
+                        faixa_atual: "Fotos/faixaBRANCA.webp",
+                        proxima_faixa: "Fotos/faixaAMARELA.webp",
+                        xp_atual: XPTOTAL,
+                        xp_necessario: 500,
+                    }
+                } else if (XPTOTAL < 1500) {
+                    faixas = {
+                        faixa_atual: "Fotos/faixaAMARELA.webp",
+                        proxima_faixa: "Fotos/faixaLARANJA.webp",
+                        xp_atual: XPTOTAL - 500,
+                        xp_necessario: 1000,
+                    }
+                } else if (XPTOTAL < 3000) {
+                    faixas = {
+                        faixa_atual: "Fotos/faixaLARANJA.webp",
+                        proxima_faixa: "Fotos/faixaVERDE.webp",
+                        xp_atual: XPTOTAL - 1500,
+                        xp_necessario: 1500,
+                    }
+                } else if (XPTOTAL < 5000) {
+                    faixas = {
+                        faixa_atual: "Fotos/faixaVERDE.webp",
+                        proxima_faixa: "Fotos/faixaAZUL.webp",
+                        xp_atual: XPTOTAL - 3000,
+                        xp_necessario: 2000,
+                    }
+                } else if (XPTOTAL < 7500) {
+                    faixas = {
+                        faixa_atual: "Fotos/faixaAZUL.webp",
+                        proxima_faixa: "Fotos/faixaVERMELHA.webp",
+                        xp_atual: XPTOTAL - 5000,
+                        xp_necessario: 2500,
+                    }
+                } else if (XPTOTAL < 10500) {
+                    faixas = {
+                        faixa_atual: "Fotos/faixaVERMELHA.webp",
+                        proxima_faixa: "Fotos/faixaROXA.webp",
+                        xp_atual: XPTOTAL - 7500,
+                        xp_necessario: 3000,
+                    }
+                } else if (XPTOTAL < 14000) {
+                    faixas = {
+                        faixa_atual: "Fotos/faixaROXA.webp",
+                        proxima_faixa: "Fotos/faixaMARROM.webp",
+                        xp_atual: XPTOTAL - 10500,
+                        xp_necessario: 3500,
+                    }
+                } else if (XPTOTAL < 18000) {
+                    faixas = {
+                        faixa_atual: "Fotos/faixaMARROM.webp",
+                        proxima_faixa: "Fotos/faixaPRETA.webp",
+                        xp_atual: XPTOTAL - 14000,
+                        xp_necessario: 4000,
+                    }
+                }
+                faixas.tamanho = 100 / faixas.xp_necessario * faixas.xp_atual
+
+                caixa_progressao.innerHTML = `
+                <div class="faixas">
+                    <h4>Faixa Atual</h4>
+                    <img src="${faixas.faixa_atual}">
+                </div>
+                <div id="barrinha">
+                    <div id="BARRA">
+                        <div style="width: ${faixas.tamanho}%;" id="barra_XP">
+                            <h2>${faixas.xp_atual} / ${faixas.xp_necessario} XP</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="faixas" id="prox_faixa">
+                    <h4>Próxima Faixa</h4>
+                    <img id="proxima_faixa" src="${faixas.proxima_faixa}">
+                </div>
+                `
+
+                if (XPTOTAL >= 18000) {
+                    caixa_progressao.innerHTML = `
+                    <div id="faixapreta">
+                        <h2>Faixa Preta</h2>
+                        <img id="proxima_faixa" src="Fotos/faixaPRETA.webp">
                     </div>
                     `
                 }

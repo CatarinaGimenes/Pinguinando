@@ -74,7 +74,7 @@ h4 {
     height: 35%;
 }
 
-#caixa-progressao {
+#caixa_progressao {
     width: 1000px;
     height: 180px;
     border-radius: 25px;
@@ -85,15 +85,22 @@ h4 {
     justify-content: space-around;
 }
 
-#caixa-progressao img {
+#caixa_progressao img {
     width: 110px;
 }
 
-#caixa-progressao h4 {
+#caixa_progressao h4 {
     font-family: ACME;
     margin-bottom: 5px;
     font-size: 20px;
     color: #6f6557;
+}
+
+#caixa_progressao h2 {
+    font-family: BurbankBig;
+    margin-top: 5px;
+    font-size: 100px;
+    color: #2b2a2a;
 }
 
 .faixas {
@@ -102,7 +109,7 @@ h4 {
     align-items: center;
 }
 
-#prox-faixa:hover {
+#prox_faixa:hover {
     scale: 1.05;
     cursor: pointer;
 }
@@ -118,8 +125,9 @@ h4 {
 }
 
 #barra_XP {
+    max-width: 690px;
+    min-width: 130px;
     height: 45px;
-    width: 350px;
     border-radius: 25px;
     background-color: #fdb732;
     margin-left: 5px;
@@ -255,4 +263,9 @@ h4 {
 .seta:hover {
     scale: 1.1;
     cursor: pointer;
+}
+
+#faixapreta {
+    display: flex;
+    gap: 20px;
 }
