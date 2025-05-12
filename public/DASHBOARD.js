@@ -219,7 +219,7 @@ function selecinardadosgrafico() {
                 </div>
                 <div class="faixas" id="prox_faixa">
                     <h4>Próxima Faixa</h4>
-                    <img id="proxima_faixa" src="${faixas.proxima_faixa}">
+                    <img onclick="mostrar()" id="proxima_faixa" src="${faixas.proxima_faixa}">
                 </div>
                 `
 
@@ -237,6 +237,20 @@ function selecinardadosgrafico() {
             console.log(`#ERRO: ${resposta}`);
         });
 
+}
+
+function mostrar() {
+    mostrar_tabela.innerHTML = `
+    <div id="telatoda">
+        <div  id="tabla">
+            <img onclick="fechar()" id="ex" src="Fotos/Xtabela.png">
+        </div>
+    </div>
+    `
+}
+
+function fechar() {
+    mostrar_tabela.innerHTML = ""
 }
 
 selecinardadosgrafico()

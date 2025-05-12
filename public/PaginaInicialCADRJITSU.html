@@ -15,24 +15,24 @@
         <div class="elementos-principais">
             <!-- <img class="aba-pinguim" src="Fotos/Uniforme_Ninja_Sombras.PNG"> -->
             <div class="corpo">
-                    <div id="esquerda">
-                        <img class="selos" src="Fotos/selo_sensei.webp">
-                        <img class="selos" src="Fotos/selo_pinguim.webp">
-                        <img class="selos" src="Fotos/selo_agua.webp">
+                <div id="esquerda">
+                    <img class="selos" src="Fotos/selo_sensei.webp">
+                    <img class="selos" src="Fotos/selo_pinguim.webp">
+                    <img class="selos" src="Fotos/selo_agua.webp">
+                </div>
+                <div id="centro">
+                    <img id="logo-card" src="Fotos/card-jistu.png">
+                    <div id="botoes">
+                        <button onclick="redirecionarJOGO()" id="btn_jogar">Jogar</button>
+                        <button onclick="redirecionarDASHBOARD()" id="btn_dashboard">Dashboard</button>
                     </div>
-                    <div id="centro">
-                        <img id="logo-card" src="Fotos/card-jistu.png">
-                        <div id="botoes">
-                            <button onclick="redirecionarJOGO()" id="btn_jogar">Jogar</button>
-                            <button onclick="redirecionarDASHBOARD()" id="btn_dashboard">Dashboard</button>
-                        </div>
-                        <img src="Fotos/ninja5.png" alt="">
-                    </div>
-                    <div id="direita">
-                        <img class="selos" src="Fotos/selo_pinguim9.webp">
-                        <img class="selos" src="Fotos/selo_mascara.webp">
-                        <img class="selos" src="Fotos/selo_faixa.webp">
-                    </div>
+                    <img src="Fotos/ninja5.png" alt="">
+                </div>
+                <div id="direita">
+                    <img class="selos" src="Fotos/selo_pinguim9.webp">
+                    <img class="selos" src="Fotos/selo_mascara.webp">
+                    <img class="selos" src="Fotos/selo_faixa.webp">
+                </div>
             </div>
             <div onclick="abrirMapa()" class="mapa">
                 <div class="mapinha"></div>
@@ -60,6 +60,17 @@
     }
 
     function redirecionarDASHBOARD() {
-        window.location.href = "DASHBOARD.html"
+        if (!localStorage.idPinguim) {
+            blogId.innerHTML = `
+            <div class="telainteira">
+                <div id="mensagem">
+                    <h2>Sinto muito! Você não pode visualizar a Dashboard se não estiver logado</h2>
+                    <button onclick="fechar()">Okay </button>
+                </div>
+            </div>
+            `
+        } else {
+            window.location.href = "DASHBOARD.html"
+        }
     }
 </script>

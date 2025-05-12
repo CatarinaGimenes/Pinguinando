@@ -12,7 +12,7 @@ function salvarPartida(req, res) {
         xp = 300
         moedas = 250
     } else if (resultado == "D") {
-        xp = 0
+        xp = 75
         moedas = 0
     } else {
         xp = 150

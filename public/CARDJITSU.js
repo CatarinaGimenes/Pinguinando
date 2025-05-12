@@ -190,38 +190,68 @@ function vencer() {
     if (rodada == 5) {
         if (won_rounds > lost_rounds) {
             RESULTADO_TOTAL = "V"
-            fundo.innerHTML += `
-        <div id="finalizar">
-            <p>Você Venceu!!</p>
-            <button onclick="jogardnovo()" class="botao" id="btn_jogar">Jogar Novamente</button>
-            <button onclick="redirecionarDASHBOARD()" class="botao" id="btn_dash">Dashboard</button>
-            <button onclick="sair()" class="botao" id="btn_sair">Sair</button>
-        </div>
-            `
+            if (!localStorage.idPinguim) {
+                fundo.innerHTML += `
+                <div id="finalizar">
+                    <p>Você Venceu!!</p>
+                    <button onclick="jogardnovo()" class="botao" id="btn_jogar">Jogar Novamente</button>
+                    <button onclick="sair()" class="botao" id="btn_sair">Sair</button>
+                </div>
+                    `
+            } else {
+                fundo.innerHTML += `
+                <div id="finalizar">
+                    <p>Você Venceu!!</p>
+                    <button onclick="jogardnovo()" class="botao" id="btn_jogar">Jogar Novamente</button>
+                    <button onclick="redirecionarDASHBOARD()" class="botao" id="btn_dash">Dashboard</button>
+                    <button onclick="sair()" class="botao" id="btn_sair">Sair</button>
+                </div>
+                    `
+            }
             salvarPartida()
         }
         if (lost_rounds > won_rounds) {
             RESULTADO_TOTAL = "D"
-            fundo.innerHTML += `
-            <div id="finalizar">
-                <p>Que pena, você perdeu!</p>
-                <button onclick="jogardnovo()" class="botao" id="btn_jogar">Jogar Novamente</button>
-                <button onclick="redirecionarDASHBOARD()" class="botao" id="btn_dash">Dashboard</button>
-                <button onclick="sair()" class="botao" id="btn_sair">Sair</button>
-            </div>
+            if (!localStorage.idPinguim){
+                fundo.innerHTML += `
+                <div id="finalizar">
+                    <p>Que pena, você perdeu!</p>
+                    <button onclick="jogardnovo()" class="botao" id="btn_jogar">Jogar Novamente</button>
+                    <button onclick="sair()" class="botao" id="btn_sair">Sair</button>
+                </div>
                 `
+            } else {
+                fundo.innerHTML += `
+                <div id="finalizar">
+                    <p>Que pena, você perdeu!</p>
+                    <button onclick="jogardnovo()" class="botao" id="btn_jogar">Jogar Novamente</button>
+                    <button onclick="redirecionarDASHBOARD()" class="botao" id="btn_dash">Dashboard</button>
+                    <button onclick="sair()" class="botao" id="btn_sair">Sair</button>
+                </div>
+                    `
+            }
             salvarPartida()
         }
         if (lost_rounds == won_rounds) {
             RESULTADO_TOTAL = "E"
-            fundo.innerHTML += `
-            <div id="finalizar">
-                <p>Empate!</p>
-                <button onclick="jogardnovo()" class="botao" id="btn_jogar">Jogar Novamente</button>
-                <button onclick="redirecionarDASHBOARD()" class="botao" id="btn_dash">Dashboard</button>
-                <button onclick="sair()" class="botao" id="btn_sair">Sair</button>
-            </div>
+            if (!localStorage.idPinguim) {
+                fundo.innerHTML += `
+                <div id="finalizar">
+                    <p>Empate!</p>
+                    <button onclick="jogardnovo()" class="botao" id="btn_jogar">Jogar Novamente</button>
+                    <button onclick="sair()" class="botao" id="btn_sair">Sair</button>
+                </div>
                 `
+            } else {
+                fundo.innerHTML += `
+                <div id="finalizar">
+                    <p>Empate!</p>
+                    <button onclick="jogardnovo()" class="botao" id="btn_jogar">Jogar Novamente</button>
+                    <button onclick="redirecionarDASHBOARD()" class="botao" id="btn_dash">Dashboard</button>
+                    <button onclick="sair()" class="botao" id="btn_sair">Sair</button>
+                </div>
+                    `
+            }
             salvarPartida()
         }
     }

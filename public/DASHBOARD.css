@@ -126,7 +126,7 @@ h4 {
 
 #barra_XP {
     max-width: 690px;
-    min-width: 130px;
+    min-width: 150px;
     height: 45px;
     border-radius: 25px;
     background-color: #fdb732;
@@ -268,4 +268,38 @@ h4 {
 #faixapreta {
     display: flex;
     gap: 20px;
+}
+
+#telatoda {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2b2a2a69;
+}
+
+#tabla {
+    background-image: url("Fotos/tabelasFAIXA.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 400px;
+    height: 635px;
+    position: relative;
+}
+
+#ex {
+    position: absolute;
+    width: 40px;
+    top: 11px;
+    left: 343px;
+}
+
+#ex:hover {
+    scale: 1.1;
+    cursor: pointer;
 }
