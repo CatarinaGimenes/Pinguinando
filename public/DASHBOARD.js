@@ -231,6 +231,9 @@ function selecinardadosgrafico() {
                     </div>
                     `
                 }
+
+                // Exibindo o total de partidas jogadas
+                total_partidas.innerHTML = `Total de partidas jogadas: ${resposta2.length}`
             })
         })
         .catch(function (resposta) {
