@@ -182,7 +182,7 @@ function cadastrar() {
         <div class="telainteira">
             <div id="mensagem">
                 <h2>Você deixou alguns campos em branco, seu cadastro não pôde ser realizado</h2>
-                <button onclick="fechar()">Okay</button>
+                <button onclick="fecharerro()">Okay</button>
             </div>
         </div>
         `
@@ -199,7 +199,7 @@ function cadastrar() {
                         <div class="telainteira">
                             <div id="mensagem">
                                 <h2>Que pena! Já existe outro usuário com esse nome</h2>
-                                <button onclick="fechar()">Okay</button>
+                                <button onclick="fecharerro()">Okay</button>
                             </div>
                         </div>
                         `
@@ -237,41 +237,52 @@ function logar() {
     var nomeVar = logar_nome.value
     var senhaVar = logar_senha.value
 
-    fetch("/pinguim/logar", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-            nome: nomeVar,
-            senha: senhaVar,
-        }),
-    })
-        .then(function (resposta) {
-            resposta.json().then((resposta2) => {
-                console.log(resposta2)
-                if (resposta2.length == 0) {
-                    msg_erro.innerHTML = `
-                        <div class="telainteira">
-                            <div id="mensagem">
-                                <h2>Nome ou senha inválidos</h2>
-                                <button onclick="fechar()">Okay</button>
-                            </div>
-                        </div>
-                        `
-                } else {
-                    localStorage.idPinguim = resposta2[0].idPinguim
-                    localStorage.nome = resposta2[0].nome
-                    fecharlogin()
-                }
-            })
+    if (logar_nome.value == "" || logar_senha.value == "") {
+        msg_erro.innerHTML = `
+        <div class="telainteira">
+            <div id="mensagem">
+                <h2>Você deixou alguns campos em branco, seu cadastro não pôde ser realizado</h2>
+                <button onclick="fecharerro()">Okay</button>
+            </div>
+        </div>
+        `
+    } else {
+        fetch("/pinguim/logar", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                nome: nomeVar,
+                senha: senhaVar,
+            }),
         })
-        .catch(function (resposta) {
-            console.log(`#ERRO: ${resposta}`);
-        });
+            .then(function (resposta) {
+                resposta.json().then((resposta2) => {
+                    console.log(resposta2)
+                    if (resposta2.length == 0) {
+                        msg_erro.innerHTML = `
+                            <div class="telainteira">
+                                <div id="mensagem">
+                                    <h2>Nome ou senha inválidos</h2>
+                                    <button onclick="fecharerro()">Okay</button>
+                                </div>
+                            </div>
+                            `
+                    } else {
+                        localStorage.idPinguim = resposta2[0].idPinguim
+                        localStorage.nome = resposta2[0].nome
+                        fecharlogin()
+                    }
+                })
+            })
+            .catch(function (resposta) {
+                console.log(`#ERRO: ${resposta}`);
+            });
+    }
 
 }
 
-function fechar() {
+function fecharerro() {
     msg_erro.innerHTML = ""
 }
