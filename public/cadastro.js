@@ -177,25 +177,59 @@ function cadastrar() {
     var senhaVar = senha.value
     var corVar = colorido
 
-    fetch("/pinguim/cadastrar", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-            nome: nomeVar,
-            senha: senhaVar,
-            cor: corVar,
-        }),
-    })
-        .then(function (resposta) {
-            console.log("resposta: ", resposta);
-            irlogin()
+    if (nome_usuario.value == "" || senha.value == "") {
+        msg_erro.innerHTML = `
+        <div class="telainteira">
+            <div id="mensagem">
+                <h2>Você deixou alguns campos em branco, seu cadastro não pôde ser realizado</h2>
+                <button onclick="fechar()">Okay</button>
+            </div>
+        </div>
+        `
+    } else {
+        fetch(`/pinguim/validar/${nomeVar}`, {
+            method: "GET",
         })
-        .catch(function (resposta) {
-            console.log(`#ERRO: ${resposta}`);
-        });
+            .then(function (resposta) {
+                resposta.json().then((resposta2) => {
+                    console.log(resposta2)
 
+                    if (resposta2.length > 0) {
+                        msg_erro.innerHTML = `
+                        <div class="telainteira">
+                            <div id="mensagem">
+                                <h2>Que pena! Já existe outro usuário com esse nome</h2>
+                                <button onclick="fechar()">Okay</button>
+                            </div>
+                        </div>
+                        `
+                        return
+                    }
+
+                    fetch("/pinguim/cadastrar", {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json",
+                        },
+                        body: JSON.stringify({
+                            nome: nomeVar,
+                            senha: senhaVar,
+                            cor: corVar,
+                        }),
+                    })
+                        .then(function (resposta) {
+                            console.log("resposta: ", resposta);
+                            irlogin()
+                        })
+                        .catch(function (resposta) {
+                            console.log(`#ERRO: ${resposta}`);
+                        });
+                })
+            })
+            .catch(function (resposta) {
+                console.log(`#ERRO: ${resposta}`);
+            });
+    }
 }
 
 function logar() {
@@ -216,13 +250,28 @@ function logar() {
         .then(function (resposta) {
             resposta.json().then((resposta2) => {
                 console.log(resposta2)
-                localStorage.idPinguim = resposta2[0].idPinguim
-                localStorage.nome = resposta2[0].nome
-                fecharlogin()
+                if (resposta2.length == 0) {
+                    msg_erro.innerHTML = `
+                        <div class="telainteira">
+                            <div id="mensagem">
+                                <h2>Nome ou senha inválidos</h2>
+                                <button onclick="fechar()">Okay</button>
+                            </div>
+                        </div>
+                        `
+                } else {
+                    localStorage.idPinguim = resposta2[0].idPinguim
+                    localStorage.nome = resposta2[0].nome
+                    fecharlogin()
+                }
             })
         })
         .catch(function (resposta) {
             console.log(`#ERRO: ${resposta}`);
         });
 
+}
+
+function fechar() {
+    msg_erro.innerHTML = ""
 }

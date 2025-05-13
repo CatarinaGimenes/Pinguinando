@@ -24,4 +24,11 @@ function logar(nome, senha) {
     return database.executar(instrucaoSql);
 }
 
-module.exports = { cadastrar, inserirRoupa, logar };
+function validar(nome) {
+    var instrucaoSql = `
+    select nome from pinguim where nome = '${nome}';
+    `
+    return database.executar(instrucaoSql);
+}
+
+module.exports = { cadastrar, inserirRoupa, logar, validar };

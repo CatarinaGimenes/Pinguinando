@@ -20,4 +20,8 @@ router.get("/selecionardadosgrafico/:fkpinguim", function (req, res) {
     cardController.selecinardadosgrafico(req, res);
 })
 
+router.get("/validar/:nome", function (req, res) {
+    pinguimController.validar(req, res);
+})
+
 module.exports = router;

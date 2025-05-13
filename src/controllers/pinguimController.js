@@ -21,7 +21,16 @@ function logar(req, res) {
 	});
 }
 
+function validar(req, res) {
+	var nome = req.params.nome;
+
+	pinguimModel.validar(nome).then((resultado) => {
+		res.status(201).json(resultado);
+	});
+}
+
 module.exports = {
 	cadastrar,
 	logar,
+	validar,
 };
