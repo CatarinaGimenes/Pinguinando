@@ -1,4 +1,3 @@
-
 const labels = [
     'Vitórias',
     'Derrotas',
@@ -22,6 +21,19 @@ const data = {
 const config = {
     type: 'pie',
     data: data,
+        options: {
+        plugins: {
+            tooltip: {
+                callbacks: {
+                    label: function(context) {
+                        let label = context.label || '';
+                        let value = context.raw || 0;
+                        return `${label}: ${value}%`
+                    }
+                }
+            }
+        }
+    }
 };
 
 

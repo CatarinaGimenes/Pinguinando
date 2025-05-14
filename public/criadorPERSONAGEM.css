@@ -1,0 +1,183 @@
+body {
+    margin: 0;
+    background-color: #33aaff;
+}
+
+.paginatoda {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.livro {
+    position: fixed;
+    right: 25px;
+    bottom: 155px;
+    background-image: url("Fotos/penguinstyle.webp");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 120px;
+    width: 120px;
+}
+
+.livro:hover {
+    background-image: url("Fotos/openpenguinstyle.png");
+    cursor: pointer;
+}
+
+.revista {
+    display: flex;
+    height: 700px;
+    width: 1135px;
+    background-image: url("Fotos/paginaCATALOGO.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.lado_esquerdo {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lado_direito {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.produtos {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.linhaprods {
+    display: flex;
+    gap: 20px;
+}
+
+.roupinha {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.roupinha img {
+    height: 120px;
+    width: 120px;
+}
+
+.botbot {
+    height: 38px;
+    width: 130px;
+    background-image: url("Fotos/botaoCOMPRAR.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #33aaff00;
+    border: none;
+}
+
+.botbot:hover {
+    scale: 1.05;
+    cursor: pointer;
+}
+
+.mudadorir {
+    background-image: url("Fotos/abacatalogo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: 13px;
+    bottom: 10px;
+    width: 80px;
+    height: 150px;
+}
+
+.mudadorir:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.mudadorvoltar {
+    background-image: url("Fotos/abacatalogo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 6px;
+    bottom: 10px;
+    width: 80px;
+    height: 150px;
+    transform: scaleX(-1);
+}
+
+.mudadorvoltar:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.xiscat {
+    background-image: url("Fotos/XPenguin_Style.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    height: 40px;
+    width: 40px;
+}
+
+.xiscat:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.caparevista {
+    height: 680px;
+    width: 525px;
+    background-image: url("Fotos/Penguin_Style_April_2006.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    display: flex;
+}
+
+.xiscata {
+    background-image: url("Fotos/XPenguin_Style.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    height: 50px;
+    width: 50px;
+}
+
+.xiscata:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+#apertar {
+    align-self: flex-end;
+    height: 600px;
+    width: 100%;
+    cursor: pointer;
+}
