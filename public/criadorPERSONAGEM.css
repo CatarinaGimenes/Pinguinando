@@ -1,3 +1,8 @@
+@font-face {
+    font-family: BurbankBig;
+    src: url("Fontes/BurbankBigCondensed/burbankbigcondensed_black.ttf");
+}
+
 body {
     margin: 0;
     background-color: #33aaff;
@@ -180,4 +185,23 @@ body {
     height: 600px;
     width: 100%;
     cursor: pointer;
+}
+
+.lado_esquerdo h2 {
+    margin: 0;
+    font-family: BurbankBig;
+    color: white;
+}
+
+#todascores {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.linhade4 img {
+    width: 100px;
+    height: 100px;
 }
