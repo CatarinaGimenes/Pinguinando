@@ -13,47 +13,7 @@
 
 <body>
     <section class="paginatoda">
-        <div id="blogRevista">
-                <div class="revista">
-                <div class="lado_esquerdo">
-                    <div id="todascores">
-                        <h2>Cores</h2>
-                        <div>
-                            <div class="linhade4">
-                                <img src="Fotos/catalogo/Icon/1.png">
-                                <img src="Fotos/catalogo/Icon/2.png">
-                                <img src="Fotos/catalogo/Icon/3.png">
-                                <img src="Fotos/catalogo/Icon/4.png">
-                                <img src="Fotos/catalogo/Icon/5.png">
-                            </div>
-                            <div class="linhade4">
-                                <img src="Fotos/catalogo/Icon/6.png">
-                                <img src="Fotos/catalogo/Icon/7.png">
-                                <img src="Fotos/catalogo/Icon/8.png">
-                                <img src="Fotos/catalogo/Icon/9.png">
-                                <img src="Fotos/catalogo/Icon/10.png">
-                            </div>
-                            <div class="linhade4">
-                                <img src="Fotos/catalogo/Icon/11.png">
-                                <img src="Fotos/catalogo/Icon/12.png">
-                                <img src="Fotos/catalogo/Icon/13.png">
-                                <img src="Fotos/catalogo/Icon/14.png">
-                                <img src="Fotos/catalogo/Icon/15.png">
-                            </div>
-                        </div>
-                        <div id="botaocomprarcor">
-                            <button class="botbot"></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="lado_direito">
-                    
-                </div>
-                <div onclick="abrirpagina6()" class="mudadorir"></div>
-                <div onclick="abrirpagina4()" class="mudadorvoltar"></div>
-                <div onclick="fecharcatalogo()" class="xiscat"></div>
-            </div>
-        </div>
+            <div id="blogRevista"></div>
         <div onclick="abrirMapa()" class="mapa">
             <div class="mapinha"></div>
         </div>
@@ -71,3 +31,9 @@
 
 </html>
 <script src="criadorPERSONAGEM.js"></script>
+
+<script>
+    function mudarcor(color) {
+        document.getElementById("pinguimcolorido").src = `Fotos/catalogo/${color}CATALOGO.png`
+    }
+</script>

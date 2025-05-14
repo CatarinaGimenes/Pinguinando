@@ -17,7 +17,7 @@ function redirecionarIndex() {
     function abrircatalogo() {
         blogRevista.innerHTML = `
         <div class="caparevista">
-            <div onclick="abrirpagina1()"  id="apertar"></div>
+            <div onclick="abrirpaginacores()"  id="apertar"></div>
             <div onclick="fecharcatalogo()" class="xiscata"></div>
         </div>
         `
@@ -123,7 +123,7 @@ function redirecionarIndex() {
                     </div>
                 </div>
                 <div onclick="abrirpagina2()" class="mudadorir"></div>
-                <div onclick="abrircatalogo()" class="mudadorvoltar"></div>
+                <div onclick="abrirpaginacores()" class="mudadorvoltar"></div>
                 <div onclick="fecharcatalogo()" class="xiscat"></div>
             </div>
         `
@@ -619,6 +619,50 @@ function redirecionarIndex() {
                     </div>
                 </div>
                 <div onclick="abrirpagina5()" class="mudadorvoltar"></div>
+                <div onclick="fecharcatalogo()" class="xiscat"></div>
+            </div>
+        `
+    }
+
+    function abrirpaginacores() {
+        blogRevista.innerHTML = `
+        <div class="revista">
+                <div class="lado_esquerdo">
+                    <div id="todascores">
+                        <div>
+                            <h2>Cores</h2>
+                            <div class="linhade4">
+                                <img onclick="mudarcor(1)" src="Fotos/catalogo/Icon/1.png">
+                                <img onclick="mudarcor(2)" src="Fotos/catalogo/Icon/2.png">
+                                <img onclick="mudarcor(3)" src="Fotos/catalogo/Icon/3.png">
+                                <img onclick="mudarcor(4)" src="Fotos/catalogo/Icon/4.png">
+                                <img onclick="mudarcor(5)" src="Fotos/catalogo/Icon/5.png">
+                            </div>
+                            <div class="linhade4">
+                                <img onclick="mudarcor(6)" src="Fotos/catalogo/Icon/6.png">
+                                <img onclick="mudarcor(7)" src="Fotos/catalogo/Icon/7.png">
+                                <img onclick="mudarcor(8)" src="Fotos/catalogo/Icon/8.png">
+                                <img onclick="mudarcor(9)" src="Fotos/catalogo/Icon/9.png">
+                                <img onclick="mudarcor(10)" src="Fotos/catalogo/Icon/10.png">
+                            </div>
+                            <div class="linhade4">
+                                <img onclick="mudarcor(11)" src="Fotos/catalogo/Icon/11.png">
+                                <img onclick="mudarcor(12)" src="Fotos/catalogo/Icon/12.png">
+                                <img onclick="mudarcor(13)" src="Fotos/catalogo/Icon/13.png">
+                                <img onclick="mudarcor(14)" src="Fotos/catalogo/Icon/14.png">
+                                <img onclick="mudarcor(15)" src="Fotos/catalogo/Icon/15.png">
+                            </div>
+                        </div>
+                        <div id="botaocomprarcor">
+                            <button class="botbot"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="lado_direito">
+                    <img id="pinguimcolorido" src="Fotos/catalogo/1CATALOGO.png">
+                </div>
+                <div onclick="abrirpagina1()" class="mudadorir"></div>
+                <div onclick="abrircatalogo()" class="mudadorvoltar"></div>
                 <div onclick="fecharcatalogo()" class="xiscat"></div>
             </div>
         `

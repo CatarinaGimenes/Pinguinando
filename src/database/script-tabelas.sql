@@ -43,19 +43,32 @@ check (resultado in ('V', 'D', 'E')) -- V = Vitória, D = Derrota, E = Empate
 );
 
 insert into roupa (nome, tipo, preco) values
-('Azul Marinho', 'cor', 10),
-('Verde', 'cor', 10),
-('Rosa', 'cor', 10),
-('Preto', 'cor', 10),
-('Vermelho', 'cor', 10),
-('Laranja', 'cor', 10),
-('Amarelo', 'cor', 10),
-('Roxo', 'cor', 10),
-('Marrom', 'cor', 10),
-('Salmão', 'cor', 10),
-('Verde Escuro', 'cor', 10),
-('Azul Claro', 'cor', 10),
-('Verde Limão', 'cor', 10),
-('Turquesa', 'cor', 10),
-('Branco', 'cor', 10),
-('Cinza', 'cor', 10);
+('Azul Marinho', 'cor', 20),
+('Verde', 'cor', 20),
+('Rosa', 'cor', 20),
+('Preto', 'cor', 20),
+('Vermelho', 'cor', 20),
+('Laranja', 'cor', 20),
+('Amarelo', 'cor', 20),
+('Roxo', 'cor', 20),
+('Marrom', 'cor', 20),
+('Salmão', 'cor', 20),
+('Verde Escuro', 'cor', 20),
+('Azul Claro', 'cor', 20),
+('Verde Limão', 'cor', 20),
+('Turquesa', 'cor', 20),
+('Branco', 'cor', 20),
+('Cinza', 'cor', 20);
+
+select * from partida;
+
+select resultado from partida where FKpinguim = 6;
+
+insert into partida values
+(default, 'D', 2, 3, default, 0, 0, 1);
+
+select * from pinguim;
+
+select count(idPartida) from partida where FKpinguim = 1;
+
+select * from pinguimroupa;

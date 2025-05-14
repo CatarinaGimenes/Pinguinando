@@ -190,6 +190,8 @@ body {
 .lado_esquerdo h2 {
     margin: 0;
     font-family: BurbankBig;
+    font-size: 40px;
+    text-align: center;
     color: white;
 }
 
@@ -204,4 +206,14 @@ body {
 .linhade4 img {
     width: 100px;
     height: 100px;
+}
+
+.linhade4 img:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+#pinguimcolorido {
+    width: 400px;
+    margin-bottom: 60px;
 }

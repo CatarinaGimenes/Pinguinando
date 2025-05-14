@@ -125,7 +125,8 @@ function selecinardadosgrafico() {
                     console.log(resposta2[resposta2.length - 1].resultado)
                 }*/
 
-                for (let i = 1; i <= 6; i++) {
+                if (resposta2.length < 6) {
+                    for (let i = 1; i <= resposta2.length; i++) {
                     var resultadoTexto = ""
                     var resultadoImage = ""
                     if (resposta2[resposta2.length - i].resultado == "V") {
@@ -149,6 +150,34 @@ function selecinardadosgrafico() {
                     </div>
                     `
                 }
+                } else {
+
+                    for (let i = 1; i <= 6; i++) {
+                        var resultadoTexto = ""
+                        var resultadoImage = ""
+                        if (resposta2[resposta2.length - i].resultado == "V") {
+                            resultadoTexto = "Vitória"
+                            resultadoImage = "Fotos/Happy_emoticon.webp"
+                        } else if (resposta2[resposta2.length - i].resultado == "D") {
+                            resultadoTexto = "Derrota"
+                            resultadoImage = "Fotos/Moody_Emoticon.webp"
+                        } else {
+                            resultadoTexto = "Empate"
+                            resultadoImage = "Fotos/Hmm_Emoticon.webp"
+                        }
+    
+                        var datahora = new Date(resposta2[resposta2.length - i].dtFinal)
+    
+                        alerts.innerHTML += `
+                        <div class="alerta">
+                            <img src="${resultadoImage}">
+                            <h5>${resultadoTexto}</h5>
+                            <h3>${datahora.toLocaleString("en-GB", { timeZone: "UTC" })}</h3>
+                        </div>
+                        `
+                    }
+                }
+
 
                 // Exibindo alterações em 'Faixa Atual'/'Próxima Faixa'
                 var XPTOTAL = 0
