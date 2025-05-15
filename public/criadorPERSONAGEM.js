@@ -1,34 +1,37 @@
 function redirecionarIndex() {
-        window.location.href = "index.html"
-    }
+    window.location.href = "index.html"
+}
 
-    function redirecionarLinhaTempo() {
-        window.location.href = "LinhadoTempo.html"
-    }
+function redirecionarLinhaTempo() {
+    window.location.href = "LinhadoTempo.html"
+}
 
-    function redirecionarPersonagens() {
-        window.location.href = "Personagens.html"
-    }
+function redirecionarPersonagens() {
+    window.location.href = "Personagens.html"
+}
 
-    function redirecionarCARDJITSU() {
-        window.location.href = "PaginaInicialCADRJITSU.html"
-    }
+function redirecionarCARDJITSU() {
+    window.location.href = "PaginaInicialCADRJITSU.html"
+}
 
-    function abrircatalogo() {
-        blogRevista.innerHTML = `
+function abrircatalogo() {
+    blogRevista.innerHTML = `
+        <div class='allpag'>
         <div class="caparevista">
             <div onclick="abrirpaginacores()"  id="apertar"></div>
             <div onclick="fecharcatalogo()" class="xiscata"></div>
         </div>
+        </div>
         `
-    }
+}
 
-    function comprar(id) {
-        console.log(id)
-    }
+function comprar(id) {
+    console.log(id)
+}
 
-    function abrirpagina1() {
-        blogRevista.innerHTML = `
+function abrirpagina1() {
+    blogRevista.innerHTML = `
+        <div class="allpag">
         <div class="revista">
                 <div class="lado_esquerdo">
                     <div class="produtos">
@@ -126,11 +129,13 @@ function redirecionarIndex() {
                 <div onclick="abrirpaginacores()" class="mudadorvoltar"></div>
                 <div onclick="fecharcatalogo()" class="xiscat"></div>
             </div>
+            </div>
         `
-    }
+}
 
-    function abrirpagina2() {
-        blogRevista.innerHTML = `
+function abrirpagina2() {
+    blogRevista.innerHTML = `
+        <div class="allpag">
         <div class="revista">
                 <div class="lado_esquerdo">
                     <div class="produtos">
@@ -228,11 +233,13 @@ function redirecionarIndex() {
                 <div onclick="abrirpagina1()" class="mudadorvoltar"></div>
                 <div onclick="fecharcatalogo()" class="xiscat"></div>
             </div>
+            </div>
         `
-    }
+}
 
-    function abrirpagina3() {
-        blogRevista.innerHTML = `
+function abrirpagina3() {
+    blogRevista.innerHTML = `
+        <div class="allpag">
         <div class="revista">
                 <div class="lado_esquerdo">
                     <div class="produtos">
@@ -330,11 +337,13 @@ function redirecionarIndex() {
                 <div onclick="abrirpagina2()" class="mudadorvoltar"></div>
                 <div onclick="fecharcatalogo()" class="xiscat"></div>
             </div>
+            </div>
         `
-    }
+}
 
-    function abrirpagina4() {
-        blogRevista.innerHTML = `
+function abrirpagina4() {
+    blogRevista.innerHTML = `
+        <div class="allpag">
         <div class="revista">
                 <div class="lado_esquerdo">
                     <div class="produtos">
@@ -432,11 +441,13 @@ function redirecionarIndex() {
                 <div onclick="abrirpagina3()" class="mudadorvoltar"></div>
                 <div onclick="fecharcatalogo()" class="xiscat"></div>
             </div>
+            </div>
         `
-    }
+}
 
-    function abrirpagina5() {
-        blogRevista.innerHTML = `
+function abrirpagina5() {
+    blogRevista.innerHTML = `
+        <div class="allpag">
         <div class="revista">
                 <div class="lado_esquerdo">
                     <div class="produtos">
@@ -534,11 +545,13 @@ function redirecionarIndex() {
                 <div onclick="abrirpagina4()" class="mudadorvoltar"></div>
                 <div onclick="fecharcatalogo()" class="xiscat"></div>
             </div>
+            </div>
         `
-    }
+}
 
-    function abrirpagina6() {
-        blogRevista.innerHTML = `
+function abrirpagina6() {
+    blogRevista.innerHTML = `
+        <div class="allpag">
         <div class="revista">
                 <div class="lado_esquerdo">
                     <div class="produtos">
@@ -621,11 +634,13 @@ function redirecionarIndex() {
                 <div onclick="abrirpagina5()" class="mudadorvoltar"></div>
                 <div onclick="fecharcatalogo()" class="xiscat"></div>
             </div>
+            </div>
         `
-    }
+}
 
-    function abrirpaginacores() {
-        blogRevista.innerHTML = `
+function abrirpaginacores() {
+    blogRevista.innerHTML = `
+        <div class="allpag">
         <div class="revista">
                 <div class="lado_esquerdo">
                     <div id="todascores">
@@ -665,9 +680,10 @@ function redirecionarIndex() {
                 <div onclick="abrircatalogo()" class="mudadorvoltar"></div>
                 <div onclick="fecharcatalogo()" class="xiscat"></div>
             </div>
+            </div>
         `
-    }
+}
 
-    function fecharcatalogo() {
-        blogRevista.innerHTML = ""
-    }
+function fecharcatalogo() {
+    blogRevista.innerHTML = ""
+}

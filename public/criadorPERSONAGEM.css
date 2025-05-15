@@ -217,3 +217,33 @@ body {
     width: 400px;
     margin-bottom: 60px;
 }
+
+.allpag {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trocador {
+    height: 620px;
+    width: 918px;
+    position: relative;
+}
+
+#esqueleto {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.positionpenguin {
+    position: absolute;
+    width: 400px;
+    left: 10px;
+    top: 95px;
+}
