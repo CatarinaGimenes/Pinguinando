@@ -14,13 +14,18 @@
 <body>
     <section class="paginatoda">
         <div class="trocador">
-            <img class="positionpenguin" src="Fotos/catalogo/paper/939.png"> <!--Papel de parede-->
+            <img class="positionpenguin" src="Fotos/catalogo/paper/508.png"> <!--Papel de parede-->
             <img class="positionpenguin" src="Fotos/catalogo/paper/7.png"> <!--Pinguim-->
-            <img class="positionpenguin" src="Fotos/catalogo/paper/386.png"> <!--Sapato-->
-            <img class="positionpenguin" src="Fotos/catalogo/paper/766.png"> <!--Roupa-->
-            <img class="positionpenguin" src="Fotos/catalogo/paper/315.png"> <!--Capa-->
-            <img class="positionpenguin" src="Fotos/catalogo/paper/124.png"> <!--Cabeca-->
+            <img class="positionpenguin" src="Fotos/catalogo/paper/303.png"> <!--Pes-->
+            <img class="positionpenguin" src="Fotos/catalogo/paper/103.png"> <!--Corpo-->
+            <img class="positionpenguin" src="Fotos/catalogo/paper/1090.png"> <!--Capa-->
+            <img class="positionpenguin" src="Fotos/catalogo/paper/202.png"> <!--Cabeca-->
+            <img class="positionpenguin" src="Fotos/catalogo/paper/402.png"> <!--Mão-->
+            <img class="positionpenguin" src="Fotos/catalogo/paper/604.png"> <!--Pin-->
             <img id="esqueleto" src="Fotos/trocadorSKIN.png">
+            <div id="div_itens" class="itens"></div>
+            <img onclick="voltar()" id="btn_voltar" src="Fotos/botaoCARTAO.png">
+            <img onclick="ir()" id="btn_ir" src="Fotos/botaoCARTAO.png">
         </div>
         <div id="blogRevista"></div>
         <div onclick="abrirMapa()" class="mapa">
@@ -40,9 +45,3 @@
 
 </html>
 <script src="criadorPERSONAGEM.js"></script>
-
-<script>
-    function mudarcor(color) {
-        document.getElementById("pinguimcolorido").src = `Fotos/catalogo/${color}CATALOGO.png`
-    }
-</script>

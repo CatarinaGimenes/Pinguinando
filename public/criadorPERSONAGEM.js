@@ -37,43 +37,43 @@ function abrirpagina1() {
                     <div class="produtos">
                         <div class="linhaprods">
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/corpo/100.png">
+                                <img src="Fotos/catalogo/Icon/100.png">
                                 <button onclick="comprar(100)" class="botbot"></button>
                             </div>
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/corpo/101.png">
+                                <img src="Fotos/catalogo/Icon/101.png">
                                 <button onclick="comprar(101)" class="botbot"></button>
                             </div>
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/corpo/102.png">
+                                <img src="Fotos/catalogo/Icon/102.png">
                                 <button onclick="comprar(102)" class="botbot"></button>
                             </div>
                         </div>
                         <div class="linhaprods">
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/corpo/103.png">
+                                <img src="Fotos/catalogo/Icon/103.png">
                                 <button onclick="comprar(103)" class="botbot"></button>
                             </div>
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/corpo/104.png">
+                                <img src="Fotos/catalogo/Icon/104.png">
                                 <button onclick="comprar(104)" class="botbot"></button>
                             </div>
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/corpo/105.png">
+                                <img src="Fotos/catalogo/Icon/105.png">
                                 <button onclick="comprar(105)" class="botbot"></button>
                             </div>
                         </div>
                         <div class="linhaprods">
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/corpo/106.png">
+                                <img src="Fotos/catalogo/Icon/106.png">
                                 <button onclick="comprar(106)" class="botbot"></button>
                             </div>
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/corpo/107.png">
+                                <img src="Fotos/catalogo/Icon/107.png">
                                 <button onclick="comprar(107)" class="botbot"></button>
                             </div>
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/corpo/108.png">
+                                <img src="Fotos/catalogo/Icon/108.png">
                                 <button onclick="comprar(108)" class="botbot"></button>
                             </div>
                         </div>
@@ -83,43 +83,43 @@ function abrirpagina1() {
                     <div class="produtos">
                         <div class="linhaprods">
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/corpo/109.png">
+                                <img src="Fotos/catalogo/Icon/109.png">
                                 <button onclick="comprar(109)" class="botbot"></button>
                             </div>
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/corpo/110.png">
+                                <img src="Fotos/catalogo/Icon/110.png">
                                 <button onclick="comprar(110)" class="botbot"></button>
                             </div>
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/corpo/111.png">
+                                <img src="Fotos/catalogo/Icon/111.png">
                                 <button onclick="comprar(111)" class="botbot"></button>
                             </div>
                         </div>
                         <div class="linhaprods">
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/corpo/112.png">
+                                <img src="Fotos/catalogo/Icon/112.png">
                                 <button onclick="comprar(112)" class="botbot"></button>
                             </div>
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/corpo/113.png">
+                                <img src="Fotos/catalogo/Icon/113.png">
                                 <button onclick="comprar(113)" class="botbot"></button>
                             </div>
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/corpo/114.png">
+                                <img src="Fotos/catalogo/Icon/114.png">
                                 <button onclick="comprar(114)" class="botbot"></button>
                             </div>
                         </div>
                         <div class="linhaprods">
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/corpo/115.png">
+                                <img src="Fotos/catalogo/Icon/115.png">
                                 <button onclick="comprar(115)" class="botbot"></button>
                             </div>
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/corpo/116.png">
+                                <img src="Fotos/catalogo/Icon/116.png">
                                 <button onclick="comprar(116)" class="botbot"></button>
                             </div>
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/corpo/117.png">
+                                <img src="Fotos/catalogo/Icon/117.png">
                                 <button onclick="comprar(117)" class="botbot"></button>
                             </div>
                         </div>
@@ -141,43 +141,43 @@ function abrirpagina2() {
                     <div class="produtos">
                         <div class="linhaprods">
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/corpo/118.png">
+                                <img src="Fotos/catalogo/Icon/118.png">
                                 <button class="botbot"></button>
                             </div>
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/corpo/119.png">
+                                <img src="Fotos/catalogo/Icon/119.png">
                                 <button class="botbot"></button>
                             </div>
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/corpo/120.png">
-                                <button class="botbot"></button>
-                            </div>
-                        </div>
-                        <div class="linhaprods">
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/corpo/121.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/corpo/122.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/corpo/123.png">
+                                <img src="Fotos/catalogo/Icon/120.png">
                                 <button class="botbot"></button>
                             </div>
                         </div>
                         <div class="linhaprods">
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/corpo/124.png">
+                                <img src="Fotos/catalogo/Icon/121.png">
                                 <button class="botbot"></button>
                             </div>
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/corpo/125.png">
+                                <img src="Fotos/catalogo/Icon/122.png">
                                 <button class="botbot"></button>
                             </div>
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/corpo/126.png">
+                                <img src="Fotos/catalogo/Icon/123.png">
+                                <button class="botbot"></button>
+                            </div>
+                        </div>
+                        <div class="linhaprods">
+                            <div class="roupinha">
+                                <img src="Fotos/catalogo/Icon/124.png">
+                                <button class="botbot"></button>
+                            </div>
+                            <div class="roupinha">
+                                <img src="Fotos/catalogo/Icon/125.png">
+                                <button class="botbot"></button>
+                            </div>
+                            <div class="roupinha">
+                                <img src="Fotos/catalogo/Icon/126.png">
                                 <button class="botbot"></button>
                             </div>
                         </div>
@@ -187,43 +187,43 @@ function abrirpagina2() {
                     <div class="produtos">
                         <div class="linhaprods">
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/corpo/127.png">
+                                <img src="Fotos/catalogo/Icon/127.png">
                                 <button class="botbot"></button>
                             </div>
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/corpo/128.png">
+                                <img src="Fotos/catalogo/Icon/128.png">
                                 <button class="botbot"></button>
                             </div>
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/corpo/129.png">
-                                <button class="botbot"></button>
-                            </div>
-                        </div>
-                        <div class="linhaprods">
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/corpo/130.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/corpo/131.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/corpo/132.png">
+                                <img src="Fotos/catalogo/Icon/129.png">
                                 <button class="botbot"></button>
                             </div>
                         </div>
                         <div class="linhaprods">
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/corpo/133.png">
+                                <img src="Fotos/catalogo/Icon/130.png">
                                 <button class="botbot"></button>
                             </div>
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/corpo/134.png">
+                                <img src="Fotos/catalogo/Icon/131.png">
                                 <button class="botbot"></button>
                             </div>
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/corpo/135.png">
+                                <img src="Fotos/catalogo/Icon/132.png">
+                                <button class="botbot"></button>
+                            </div>
+                        </div>
+                        <div class="linhaprods">
+                            <div class="roupinha">
+                                <img src="Fotos/catalogo/Icon/133.png">
+                                <button class="botbot"></button>
+                            </div>
+                            <div class="roupinha">
+                                <img src="Fotos/catalogo/Icon/134.png">
+                                <button class="botbot"></button>
+                            </div>
+                            <div class="roupinha">
+                                <img src="Fotos/catalogo/Icon/135.png">
                                 <button class="botbot"></button>
                             </div>
                         </div>
@@ -245,43 +245,43 @@ function abrirpagina3() {
                     <div class="produtos">
                         <div class="linhaprods">
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/corpo/136.png">
+                                <img src="Fotos/catalogo/Icon/136.png">
                                 <button class="botbot"></button>
                             </div>
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/corpo/137.png">
+                                <img src="Fotos/catalogo/Icon/137.png">
                                 <button class="botbot"></button>
                             </div>
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/corpo/138.png">
-                                <button class="botbot"></button>
-                            </div>
-                        </div>
-                        <div class="linhaprods">
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/corpo/139.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/corpo/140.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/cabeca/200.png">
+                                <img src="Fotos/catalogo/Icon/138.png">
                                 <button class="botbot"></button>
                             </div>
                         </div>
                         <div class="linhaprods">
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/cabeca/201.png">
+                                <img src="Fotos/catalogo/Icon/139.png">
                                 <button class="botbot"></button>
                             </div>
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/cabeca/202.png">
+                                <img src="Fotos/catalogo/Icon/140.png">
                                 <button class="botbot"></button>
                             </div>
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/cabeca/203.png">
+                                <img src="Fotos/catalogo/Icon/200.png">
+                                <button class="botbot"></button>
+                            </div>
+                        </div>
+                        <div class="linhaprods">
+                            <div class="roupinha">
+                                <img src="Fotos/catalogo/Icon/201.png">
+                                <button class="botbot"></button>
+                            </div>
+                            <div class="roupinha">
+                                <img src="Fotos/catalogo/Icon/202.png">
+                                <button class="botbot"></button>
+                            </div>
+                            <div class="roupinha">
+                                <img src="Fotos/catalogo/Icon/203.png">
                                 <button class="botbot"></button>
                             </div>
                         </div>
@@ -291,43 +291,43 @@ function abrirpagina3() {
                     <div class="produtos">
                         <div class="linhaprods">
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/cabeca/204.png">
+                                <img src="Fotos/catalogo/Icon/204.png">
                                 <button class="botbot"></button>
                             </div>
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/cabeca/205.png">
+                                <img src="Fotos/catalogo/Icon/205.png">
                                 <button class="botbot"></button>
                             </div>
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/cabeca/206.png">
-                                <button class="botbot"></button>
-                            </div>
-                        </div>
-                        <div class="linhaprods">
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/cabeca/207.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/cabeca/208.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/cabeca/209.png">
+                                <img src="Fotos/catalogo/Icon/206.png">
                                 <button class="botbot"></button>
                             </div>
                         </div>
                         <div class="linhaprods">
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/cabeca/210.png">
+                                <img src="Fotos/catalogo/Icon/207.png">
                                 <button class="botbot"></button>
                             </div>
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/cabeca/211.png">
+                                <img src="Fotos/catalogo/Icon/208.png">
                                 <button class="botbot"></button>
                             </div>
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/cabeca/212.png">
+                                <img src="Fotos/catalogo/Icon/209.png">
+                                <button class="botbot"></button>
+                            </div>
+                        </div>
+                        <div class="linhaprods">
+                            <div class="roupinha">
+                                <img src="Fotos/catalogo/Icon/210.png">
+                                <button class="botbot"></button>
+                            </div>
+                            <div class="roupinha">
+                                <img src="Fotos/catalogo/Icon/211.png">
+                                <button class="botbot"></button>
+                            </div>
+                            <div class="roupinha">
+                                <img src="Fotos/catalogo/Icon/212.png">
                                 <button class="botbot"></button>
                             </div>
                         </div>
@@ -349,43 +349,43 @@ function abrirpagina4() {
                     <div class="produtos">
                         <div class="linhaprods">
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/cabeca/213.png">
+                                <img src="Fotos/catalogo/Icon/213.png">
                                 <button class="botbot"></button>
                             </div>
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/cabeca/214.png">
+                                <img src="Fotos/catalogo/Icon/214.png">
                                 <button class="botbot"></button>
                             </div>
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/cabeca/215.png">
-                                <button class="botbot"></button>
-                            </div>
-                        </div>
-                        <div class="linhaprods">
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/cabeca/216.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/cabeca/217.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/cabeca/218.png">
+                                <img src="Fotos/catalogo/Icon/215.png">
                                 <button class="botbot"></button>
                             </div>
                         </div>
                         <div class="linhaprods">
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/cabeca/219.png">
+                                <img src="Fotos/catalogo/Icon/216.png">
                                 <button class="botbot"></button>
                             </div>
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/cabeca/220.png">
+                                <img src="Fotos/catalogo/Icon/217.png">
                                 <button class="botbot"></button>
                             </div>
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/cabeca/221.png">
+                                <img src="Fotos/catalogo/Icon/218.png">
+                                <button class="botbot"></button>
+                            </div>
+                        </div>
+                        <div class="linhaprods">
+                            <div class="roupinha">
+                                <img src="Fotos/catalogo/Icon/219.png">
+                                <button class="botbot"></button>
+                            </div>
+                            <div class="roupinha">
+                                <img src="Fotos/catalogo/Icon/220.png">
+                                <button class="botbot"></button>
+                            </div>
+                            <div class="roupinha">
+                                <img src="Fotos/catalogo/Icon/221.png">
                                 <button class="botbot"></button>
                             </div>
                         </div>
@@ -395,43 +395,43 @@ function abrirpagina4() {
                     <div class="produtos">
                         <div class="linhaprods">
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/cabeca/222.png">
+                                <img src="Fotos/catalogo/Icon/222.png">
                                 <button class="botbot"></button>
                             </div>
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/cabeca/223.png">
+                                <img src="Fotos/catalogo/Icon/223.png">
                                 <button class="botbot"></button>
                             </div>
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/cabeca/224.png">
-                                <button class="botbot"></button>
-                            </div>
-                        </div>
-                        <div class="linhaprods">
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/cabeca/225.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/cabeca/226.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/cabeca/227.png">
+                                <img src="Fotos/catalogo/Icon/224.png">
                                 <button class="botbot"></button>
                             </div>
                         </div>
                         <div class="linhaprods">
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/cabeca/228.png">
+                                <img src="Fotos/catalogo/Icon/225.png">
                                 <button class="botbot"></button>
                             </div>
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/cabeca/229.png">
+                                <img src="Fotos/catalogo/Icon/226.png">
                                 <button class="botbot"></button>
                             </div>
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/cabeca/230.png">
+                                <img src="Fotos/catalogo/Icon/227.png">
+                                <button class="botbot"></button>
+                            </div>
+                        </div>
+                        <div class="linhaprods">
+                            <div class="roupinha">
+                                <img src="Fotos/catalogo/Icon/228.png">
+                                <button class="botbot"></button>
+                            </div>
+                            <div class="roupinha">
+                                <img src="Fotos/catalogo/Icon/229.png">
+                                <button class="botbot"></button>
+                            </div>
+                            <div class="roupinha">
+                                <img src="Fotos/catalogo/Icon/230.png">
                                 <button class="botbot"></button>
                             </div>
                         </div>
@@ -453,43 +453,43 @@ function abrirpagina5() {
                     <div class="produtos">
                         <div class="linhaprods">
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/cabeca/231.png">
+                                <img src="Fotos/catalogo/Icon/231.png">
                                 <button class="botbot"></button>
                             </div>
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/pes/300.png">
+                                <img src="Fotos/catalogo/Icon/300.png">
                                 <button class="botbot"></button>
                             </div>
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/pes/301.png">
-                                <button class="botbot"></button>
-                            </div>
-                        </div>
-                        <div class="linhaprods">
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/pes/302.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/pes/303.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/pes/304.png">
+                                <img src="Fotos/catalogo/Icon/301.png">
                                 <button class="botbot"></button>
                             </div>
                         </div>
                         <div class="linhaprods">
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/pes/305.png">
+                                <img src="Fotos/catalogo/Icon/302.png">
                                 <button class="botbot"></button>
                             </div>
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/pes/306.png">
+                                <img src="Fotos/catalogo/Icon/303.png">
                                 <button class="botbot"></button>
                             </div>
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/pes/307.png">
+                                <img src="Fotos/catalogo/Icon/304.png">
+                                <button class="botbot"></button>
+                            </div>
+                        </div>
+                        <div class="linhaprods">
+                            <div class="roupinha">
+                                <img src="Fotos/catalogo/Icon/305.png">
+                                <button class="botbot"></button>
+                            </div>
+                            <div class="roupinha">
+                                <img src="Fotos/catalogo/Icon/306.png">
+                                <button class="botbot"></button>
+                            </div>
+                            <div class="roupinha">
+                                <img src="Fotos/catalogo/Icon/307.png">
                                 <button class="botbot"></button>
                             </div>
                         </div>
@@ -499,43 +499,43 @@ function abrirpagina5() {
                     <div class="produtos">
                         <div class="linhaprods">
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/pes/308.png">
+                                <img src="Fotos/catalogo/Icon/308.png">
                                 <button class="botbot"></button>
                             </div>
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/pes/309.png">
+                                <img src="Fotos/catalogo/Icon/309.png">
                                 <button class="botbot"></button>
                             </div>
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/pes/310.png">
-                                <button class="botbot"></button>
-                            </div>
-                        </div>
-                        <div class="linhaprods">
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/pes/311.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/nadadeiras/400.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/nadadeiras/401.png">
+                                <img src="Fotos/catalogo/Icon/310.png">
                                 <button class="botbot"></button>
                             </div>
                         </div>
                         <div class="linhaprods">
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/nadadeiras/402.png">
+                                <img src="Fotos/catalogo/Icon/311.png">
                                 <button class="botbot"></button>
                             </div>
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/wallpaper/500.png">
+                                <img src="Fotos/catalogo/Icon/400.png">
                                 <button class="botbot"></button>
                             </div>
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/wallpaper/501.png">
+                                <img src="Fotos/catalogo/Icon/401.png">
+                                <button class="botbot"></button>
+                            </div>
+                        </div>
+                        <div class="linhaprods">
+                            <div class="roupinha">
+                                <img src="Fotos/catalogo/Icon/402.png">
+                                <button class="botbot"></button>
+                            </div>
+                            <div class="roupinha">
+                                <img src="Fotos/catalogo/Icon/500.png">
+                                <button class="botbot"></button>
+                            </div>
+                            <div class="roupinha">
+                                <img src="Fotos/catalogo/Icon/501.png">
                                 <button class="botbot"></button>
                             </div>
                         </div>
@@ -557,43 +557,43 @@ function abrirpagina6() {
                     <div class="produtos">
                         <div class="linhaprods">
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/wallpaper/502.png">
+                                <img src="Fotos/catalogo/Icon/502.png">
                                 <button class="botbot"></button>
                             </div>
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/wallpaper/503.png">
+                                <img src="Fotos/catalogo/Icon/503.png">
                                 <button class="botbot"></button>
                             </div>
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/wallpaper/504.png">
-                                <button class="botbot"></button>
-                            </div>
-                        </div>
-                        <div class="linhaprods">
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/wallpaper/505.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/wallpaper/506.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/wallpaper/507.png">
+                                <img src="Fotos/catalogo/Icon/504.png">
                                 <button class="botbot"></button>
                             </div>
                         </div>
                         <div class="linhaprods">
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/wallpaper/508.png">
+                                <img src="Fotos/catalogo/Icon/505.png">
                                 <button class="botbot"></button>
                             </div>
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/wallpaper/509.png">
+                                <img src="Fotos/catalogo/Icon/506.png">
                                 <button class="botbot"></button>
                             </div>
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/pin/600.png">
+                                <img src="Fotos/catalogo/Icon/507.png">
+                                <button class="botbot"></button>
+                            </div>
+                        </div>
+                        <div class="linhaprods">
+                            <div class="roupinha">
+                                <img src="Fotos/catalogo/Icon/508.png">
+                                <button class="botbot"></button>
+                            </div>
+                            <div class="roupinha">
+                                <img src="Fotos/catalogo/Icon/509.png">
+                                <button class="botbot"></button>
+                            </div>
+                            <div class="roupinha">
+                                <img src="Fotos/catalogo/Icon/600.png">
                                 <button class="botbot"></button>
                             </div>
                         </div>
@@ -603,29 +603,29 @@ function abrirpagina6() {
                     <div class="produtos">
                         <div class="linhaprods">
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/pin/601.png">
+                                <img src="Fotos/catalogo/Icon/601.png">
                                 <button class="botbot"></button>
                             </div>
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/pin/602.png">
+                                <img src="Fotos/catalogo/Icon/602.png">
                                 <button class="botbot"></button>
                             </div>
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/pin/603.png">
+                                <img src="Fotos/catalogo/Icon/603.png">
                                 <button class="botbot"></button>
                             </div>
                         </div>
                         <div class="linhaprods">
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/pin/604.png">
+                                <img src="Fotos/catalogo/Icon/604.png">
                                 <button class="botbot"></button>
                             </div>
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/pin/605.png">
+                                <img src="Fotos/catalogo/Icon/605.png">
                                 <button class="botbot"></button>
                             </div>
                             <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/pin/606.png">
+                                <img src="Fotos/catalogo/Icon/606.png">
                                 <button class="botbot"></button>
                             </div>
                         </div>
@@ -684,6 +684,61 @@ function abrirpaginacores() {
         `
 }
 
+function mudarcor(color) {
+    document.getElementById("pinguimcolorido").src = `Fotos/catalogo/${color}CATALOGO.png`
+}
+
 function fecharcatalogo() {
     blogRevista.innerHTML = ""
 }
+
+var qtdpag = 0
+var pagina = 1
+
+
+function selectarroupas() {
+    var fkpinguimVar = localStorage.idPinguim
+
+    fetch(`/pinguim/selectarroupas/${fkpinguimVar}`, {
+        method: "GET",
+    })
+        .then(function (resposta) {
+            resposta.json().then((resposta2) => {
+                console.log(resposta2)
+
+                qtdpag = Math.ceil(resposta2.length / 12)
+                console.log(qtdpag)
+
+                div_itens.innerHTML = ""
+                for (let i = ((pagina * 12) - 12); i < (pagina * 12); i++) {
+                    div_itens.innerHTML += `<img src="Fotos/catalogo/Icon/${resposta2[i].FKroupa}.png">`
+                }
+            })
+        })
+        .catch(function (resposta) {
+            console.log(`#ERRO: ${resposta}`);
+        });
+
+}
+
+function ir() {
+    if (pagina == qtdpag) {
+        return
+    } else {
+        pagina++
+        selectarroupas()
+    }
+    console.log(pagina)
+}
+
+function voltar() {
+    if (pagina == 1) {
+        return
+    } else {
+        pagina--
+        selectarroupas()
+    }
+    console.log(pagina)
+}
+
+selectarroupas()

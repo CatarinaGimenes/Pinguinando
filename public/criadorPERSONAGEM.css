@@ -247,3 +247,37 @@ body {
     left: 10px;
     top: 95px;
 }
+
+#btn_ir {
+    position: absolute;
+    top: 502px;
+    left: 812px;
+    rotate: -180deg;
+    width: 52px;
+}
+
+#btn_ir:hover {
+    cursor: pointer;
+    scale: 1.1;
+}
+
+#btn_voltar {
+    position: absolute;
+    top: 56px;
+    left: 812px;
+    width: 52px;
+}
+
+#btn_voltar:hover {
+    cursor: pointer;
+    scale: 1.1;
+}
+
+.itens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+    position: absolute;
+    top: 60px;
+    left: 434px;
+}
