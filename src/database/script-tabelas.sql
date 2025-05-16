@@ -194,3 +194,10 @@ select count(idPartida) from partida where FKpinguim = 1;
 select * from pinguimroupa;
 
 select * from roupa;
+
+desc pinguimroupa;
+
+insert into pinguimroupa values 
+(1, 112, default, false);
+
+select * from pinguimroupa;

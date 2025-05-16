@@ -706,12 +706,37 @@ function selectarroupas() {
             resposta.json().then((resposta2) => {
                 console.log(resposta2)
 
+                // Carregando as roupas que o pinguim está usando pela primeira vez
+                for (let i = 0; i < resposta2.length; i++) {
+                    if (resposta2[i].tipo == "cor" && resposta2[i].vestindo == true) {
+                        document.getElementById("rpcor").src = `Fotos/catalogo/paper/${resposta2[i].FKroupa}.png`
+                    }
+                    if (resposta2[i].tipo == "corpo" && resposta2[i].vestindo == true) {
+                        document.getElementById("rpcorpo").src = `Fotos/catalogo/paper/${resposta2[i].FKroupa}.png`
+                    }
+                    if (resposta2[i].tipo == "pes" && resposta2[i].vestindo == true) {
+                        document.getElementById("rppes").src = `Fotos/catalogo/paper/${resposta2[i].FKroupa}.png`
+                    }
+                    if (resposta2[i].tipo == "mao" && resposta2[i].vestindo == true) {
+                        document.getElementById("rpmao").src = `Fotos/catalogo/paper/${resposta2[i].FKroupa}.png`
+                    }
+                    if (resposta2[i].tipo == "pin" && resposta2[i].vestindo == true) {
+                        document.getElementById("rppin").src = `Fotos/catalogo/paper/${resposta2[i].FKroupa}.png`
+                    }
+                    if (resposta2[i].tipo == "wallpaper" && resposta2[i].vestindo == true) {
+                        document.getElementById("rppapel").src = `Fotos/catalogo/paper/${resposta2[i].FKroupa}.png`
+                    }
+                    if (resposta2[i].tipo == "cabeca" && resposta2[i].vestindo == true) {
+                        document.getElementById("rpcabeca").src = `Fotos/catalogo/paper/${resposta2[i].FKroupa}.png`
+                    }
+                }
+
                 qtdpag = Math.ceil(resposta2.length / 12)
                 console.log(qtdpag)
 
                 div_itens.innerHTML = ""
                 for (let i = ((pagina * 12) - 12); i < (pagina * 12); i++) {
-                    div_itens.innerHTML += `<img src="Fotos/catalogo/Icon/${resposta2[i].FKroupa}.png">`
+                    div_itens.innerHTML += `<img onclick="colocar(${resposta2[i].FKroupa})" src="Fotos/catalogo/Icon/${resposta2[i].FKroupa}.png">`
                 }
             })
         })
@@ -729,6 +754,48 @@ function ir() {
         selectarroupas()
     }
     console.log(pagina)
+}
+
+function colocar(roupa) {
+    var fkpinguimVar = localStorage.idPinguim
+
+    console.log(roupa)
+
+    fetch(`/pinguim/selectarroupas/${fkpinguimVar}`, {
+        method: "GET",
+    })
+        .then(function (resposta) {
+            resposta.json().then((resposta2) => {
+                console.log(resposta2)
+
+                var tipoRoupa = ""
+                for (let i = 0; i < resposta2.length; i++) {
+                    if (resposta2[i].FKroupa == roupa) {
+                        tipoRoupa = resposta2[i].tipo
+                        console.log(tipoRoupa)
+                        if (tipoRoupa == "cor") {
+                            document.getElementById("rpcor").src = `Fotos/catalogo/paper/${roupa}.png`
+                        } else if (tipoRoupa == "corpo") {
+                            document.getElementById("rpcorpo").src = `Fotos/catalogo/paper/${roupa}.png`
+                        } else if (tipoRoupa == "cabeca") {
+                            document.getElementById("rpcabeca").src = `Fotos/catalogo/paper/${roupa}.png`
+                        } else if (tipoRoupa == "pes") {
+                            document.getElementById("rppes").src = `Fotos/catalogo/paper/${roupa}.png`
+                        } else if (tipoRoupa == "mao") {
+                            document.getElementById("rpmao").src = `Fotos/catalogo/paper/${roupa}.png`
+                        } else if (tipoRoupa == "wallpaper") {
+                            document.getElementById("rppapel").src = `Fotos/catalogo/paper/${roupa}.png`
+                        } else if (tipoRoupa == "pin") {
+                            document.getElementById("rppin").src = `Fotos/catalogo/paper/${roupa}.png`
+                        }
+                    }
+                }
+
+            })
+        })
+        .catch(function (resposta) {
+            console.log(`#ERRO: ${resposta}`);
+        });
 }
 
 function voltar() {

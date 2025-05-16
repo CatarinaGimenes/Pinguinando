@@ -2,7 +2,7 @@ var database = require("../database/config");
 
 function selectarroupas(fkpinguim) {
     var instrucaoSql = `
-    select * from PinguimRoupa where FKpinguim = ${fkpinguim};
+    select * from roupa join PinguimRoupa on FKroupa = idRoupa where FKpinguim = ${fkpinguim};
     `
     return database.executar(instrucaoSql);
 }
