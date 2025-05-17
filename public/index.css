@@ -358,6 +358,7 @@ p.ano {
 
 .xis:hover {
     scale: 1.1;
+    cursor: pointer;
 }
 
 .imagem-personagens {

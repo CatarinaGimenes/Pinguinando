@@ -14,6 +14,10 @@ function redirecionarCARDJITSU() {
     window.location.href = "PaginaInicialCADRJITSU.html"
 }
 
+function redirecionarCRIADOR() {
+    window.location.href = "criadorPERSONAGEM.html"
+}
+
 function redirecionarROCKHOPPER() {
     window.location.href = "rockhopper.html"
 }
