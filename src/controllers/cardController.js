@@ -32,7 +32,17 @@ function selecinardadosgrafico(req, res) {
     });
 }
 
+function atualizardinheiro(req, res) {
+    var idPinguim = req.body.idPinguim
+    var dinheiro = req.body.dinheiro
+
+    cardModel.atualizardinheiro(idPinguim, dinheiro).then((resultado) => {
+        res.status(201).json(resultado);
+    });
+}
+
 module.exports = {
     salvarPartida,
     selecinardadosgrafico,
+    atualizardinheiro,
 };

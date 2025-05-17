@@ -185,11 +185,14 @@ function jogada_maquina() {
     }
 }
 
+var MOEDAS_GANHAS = 0
+
 // Função que determina o vencedor do game
 function vencer() {
     if (rodada == 5) {
         if (won_rounds > lost_rounds) {
             RESULTADO_TOTAL = "V"
+            MOEDAS_GANHAS = 250
             if (!localStorage.idPinguim) {
                 fundo.innerHTML += `
                 <div id="finalizar">
@@ -212,7 +215,8 @@ function vencer() {
         }
         if (lost_rounds > won_rounds) {
             RESULTADO_TOTAL = "D"
-            if (!localStorage.idPinguim){
+            MOEDAS_GANHAS = 0
+            if (!localStorage.idPinguim) {
                 fundo.innerHTML += `
                 <div id="finalizar">
                     <p>Que pena, você perdeu!</p>
@@ -234,6 +238,7 @@ function vencer() {
         }
         if (lost_rounds == won_rounds) {
             RESULTADO_TOTAL = "E"
+            MOEDAS_GANHAS = 100
             if (!localStorage.idPinguim) {
                 fundo.innerHTML += `
                 <div id="finalizar">
@@ -689,6 +694,9 @@ function salvarPartida() {
     var pontosPlayerVar = won_rounds
     var pontosMaquinaVar = lost_rounds
 
+    var idPinguimVar = localStorage.idPinguim
+    var dinheiroVar = MOEDAS_GANHAS
+
     fetch("/pinguim/salvarPartida", {
         method: "POST",
         headers: {
@@ -708,4 +716,20 @@ function salvarPartida() {
             console.log(`#ERRO: ${resposta}`);
         });
 
+    fetch("/pinguim/atualizardinheiro", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+            idPinguim: idPinguimVar,
+            dinheiro: dinheiroVar,
+        }),
+    })
+        .then(function (resposta) {
+            console.log("resposta: ", resposta);
+        })
+        .catch(function (resposta) {
+            console.log(`#ERRO: ${resposta}`);
+        });
 }

@@ -16,7 +16,15 @@ function selecinardadosgrafico(fkpinguim) {
     return database.executar(instrucaoSql);
 }
 
+function atualizardinheiro(idPinguim, dinheiro) {
+    var instrucaoSql = `
+    update pinguim set moedas = (moedas + ${dinheiro}) where idPinguim = ${idPinguim};
+    `
+    return database.executar(instrucaoSql);
+}
+
 module.exports = {
     salvarPartida,
     selecinardadosgrafico,
+    atualizardinheiro,
 }

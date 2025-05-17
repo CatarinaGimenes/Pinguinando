@@ -17,6 +17,10 @@ router.post("/salvarPartida", function (req, res) {
     cardController.salvarPartida(req, res);
 })
 
+router.post("/atualizardinheiro", function (req, res) {
+    cardController.atualizardinheiro(req, res);
+})
+
 router.get("/selecionardadosgrafico/:fkpinguim", function (req, res) {
     cardController.selecinardadosgrafico(req, res);
 })
