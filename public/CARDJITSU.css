@@ -366,9 +366,23 @@ body {
     align-self: center;
 }
 
+#finalizar img {
+    width: 30px;
+}
+
 #finalizar p {
-    margin-top: 20px;
-    margin-bottom: 30px;
+    margin-top: 5px;
+}
+
+#moedinhas {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+#txt_moedas {
+    font-size: 25px;
+    margin: 0;
 }
 
 .botao {

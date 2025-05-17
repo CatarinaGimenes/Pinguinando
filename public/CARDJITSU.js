@@ -204,11 +204,15 @@ function vencer() {
             } else {
                 fundo.innerHTML += `
                 <div id="finalizar">
-                    <p>Você Venceu!!</p>
-                    <button onclick="jogardnovo()" class="botao" id="btn_jogar">Jogar Novamente</button>
-                    <button onclick="redirecionarDASHBOARD()" class="botao" id="btn_dash">Dashboard</button>
-                    <button onclick="sair()" class="botao" id="btn_sair">Sair</button>
+                <p>Você Venceu!!</p>
+                <div id="moedinhas">
+                    <img src="Fotos/Coin_ico.webp">
+                    <p id="txt_moedas">Suas moedas: 250</p>
                 </div>
+                <button onclick="jogardnovo()" class="botao" id="btn_jogar">Jogar Novamente</button>
+                <button onclick="redirecionarDASHBOARD()" class="botao" id="btn_dash">Dashboard</button>
+                <button onclick="sair()" class="botao" id="btn_sair">Sair</button>
+            </div>
                     `
             }
             salvarPartida()
@@ -228,6 +232,10 @@ function vencer() {
                 fundo.innerHTML += `
                 <div id="finalizar">
                     <p>Que pena, você perdeu!</p>
+                    <div id="moedinhas">
+                    <img src="Fotos/Coin_ico.webp">
+                    <p id="txt_moedas">Suas moedas: 0</p>
+                    </div>
                     <button onclick="jogardnovo()" class="botao" id="btn_jogar">Jogar Novamente</button>
                     <button onclick="redirecionarDASHBOARD()" class="botao" id="btn_dash">Dashboard</button>
                     <button onclick="sair()" class="botao" id="btn_sair">Sair</button>
@@ -251,6 +259,10 @@ function vencer() {
                 fundo.innerHTML += `
                 <div id="finalizar">
                     <p>Empate!</p>
+                    <div id="moedinhas">
+                    <img src="Fotos/Coin_ico.webp">
+                    <p id="txt_moedas">Suas moedas: 100</p>
+                    </div>
                     <button onclick="jogardnovo()" class="botao" id="btn_jogar">Jogar Novamente</button>
                     <button onclick="redirecionarDASHBOARD()" class="botao" id="btn_dash">Dashboard</button>
                     <button onclick="sair()" class="botao" id="btn_sair">Sair</button>
