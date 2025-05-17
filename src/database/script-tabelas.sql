@@ -175,29 +175,3 @@ insert into roupa values
 (604, 'pin', 110),
 (605, 'pin', 110),
 (606, 'pin', 110);
-
-select * from roupa;
-
-select count(idRoupa) from roupa;
-
-select * from partida;
-
-select resultado from partida where FKpinguim = 6;
-
-insert into partida values
-(default, 'D', 2, 3, default, 0, 0, 1);
-
-select * from pinguim;
-
-select count(idPartida) from partida where FKpinguim = 1;
-
-select * from pinguimroupa;
-
-select * from roupa;
-
-desc pinguimroupa;
-
-insert into pinguimroupa values 
-(1, 112, default, false);
-
-select * from pinguimroupa;

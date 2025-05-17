@@ -8,6 +8,17 @@ function selectarroupas(req, res) {
     });
 }
 
+function updatearroupas(req, res) {
+    var FKroupa = req.body.FKroupa;
+    var FKpinguim = req.body.FKpinguim;
+    var tipo = req.body.tipo;
+
+    roupasModel.updatearroupas(FKroupa, FKpinguim, tipo).then((resultado) => {
+        res.status(201).json(resultado);
+    });
+}
+
 module.exports = {
     selectarroupas,
+    updatearroupas,
 };

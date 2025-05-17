@@ -29,4 +29,8 @@ router.get("/selectarroupas/:fkpinguim", function (req, res) {
     roupasController.selectarroupas(req, res);
 })
 
+router.post("/updatearroupas", function (req, res) {
+    roupasController.updatearroupas(req, res);
+})
+
 module.exports = router;

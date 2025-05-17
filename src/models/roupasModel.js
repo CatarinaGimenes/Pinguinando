@@ -7,6 +7,15 @@ function selectarroupas(fkpinguim) {
     return database.executar(instrucaoSql);
 }
 
+function updatearroupas(FKroupa, FKpinguim, tipo) {
+    var instrucaoSql = `
+    update PinguimRoupa pr join Roupa r on pr.FKroupa = r.idRoupa set vestindo = (FKroupa = ${FKroupa}) where FKpinguim = ${FKpinguim} and r.tipo = '${tipo}';
+    `
+
+    return database.executar(instrucaoSql);
+}
+
 module.exports = {
     selectarroupas,
+    updatearroupas,
 }

@@ -696,7 +696,8 @@ var qtdpag = 0
 var pagina = 1
 
 
-function selectarroupas() {
+let roupasDoBanco = []
+function inicializar() {
     var fkpinguimVar = localStorage.idPinguim
 
     fetch(`/pinguim/selectarroupas/${fkpinguimVar}`, {
@@ -705,9 +706,11 @@ function selectarroupas() {
         .then(function (resposta) {
             resposta.json().then((resposta2) => {
                 console.log(resposta2)
+                roupasDoBanco = resposta2
 
                 // Carregando as roupas que o pinguim está usando pela primeira vez
                 for (let i = 0; i < resposta2.length; i++) {
+
                     if (resposta2[i].tipo == "cor" && resposta2[i].vestindo == true) {
                         document.getElementById("rpcor").src = `Fotos/catalogo/paper/${resposta2[i].FKroupa}.png`
                     }
@@ -724,26 +727,33 @@ function selectarroupas() {
                         document.getElementById("rppin").src = `Fotos/catalogo/paper/${resposta2[i].FKroupa}.png`
                     }
                     if (resposta2[i].tipo == "wallpaper" && resposta2[i].vestindo == true) {
-                        document.getElementById("rppapel").src = `Fotos/catalogo/paper/${resposta2[i].FKroupa}.png`
+                        document.getElementById("rpwallpaper").src = `Fotos/catalogo/paper/${resposta2[i].FKroupa}.png`
                     }
                     if (resposta2[i].tipo == "cabeca" && resposta2[i].vestindo == true) {
                         document.getElementById("rpcabeca").src = `Fotos/catalogo/paper/${resposta2[i].FKroupa}.png`
                     }
-                }
-
-                qtdpag = Math.ceil(resposta2.length / 12)
-                console.log(qtdpag)
-
-                div_itens.innerHTML = ""
-                for (let i = ((pagina * 12) - 12); i < (pagina * 12); i++) {
-                    div_itens.innerHTML += `<img onclick="colocar(${resposta2[i].FKroupa})" src="Fotos/catalogo/Icon/${resposta2[i].FKroupa}.png">`
+                    selectarroupas()
                 }
             })
         })
         .catch(function (resposta) {
             console.log(`#ERRO: ${resposta}`);
         });
+}
 
+function selectarroupas() {
+    qtdpag = Math.ceil(roupasDoBanco.length / 12)
+
+    div_itens.innerHTML = ""
+    if (roupasDoBanco.length < 12  || pagina == qtdpag) {
+        for (let i = ((pagina * 12) - 12); i < roupasDoBanco.length; i++) {
+        div_itens.innerHTML += `<img onclick="colocar(${roupasDoBanco[i].FKroupa})" src="Fotos/catalogo/Icon/${roupasDoBanco[i].FKroupa}.png">`
+    } 
+    } else {
+        for (let i = ((pagina * 12) - 12); i < (pagina * 12); i++) {
+            div_itens.innerHTML += `<img onclick="colocar(${roupasDoBanco[i].FKroupa})" src="Fotos/catalogo/Icon/${roupasDoBanco[i].FKroupa}.png">`
+        }
+    }
 }
 
 function ir() {
@@ -756,46 +766,49 @@ function ir() {
     console.log(pagina)
 }
 
+
 function colocar(roupa) {
-    var fkpinguimVar = localStorage.idPinguim
+    var FKroupaVar = 0
+    var tipoRoupa = ""
+    for (let i = 0; i < roupasDoBanco.length; i++) {
+        if (roupasDoBanco[i].FKroupa == roupa) {
+            tipoRoupa = roupasDoBanco[i].tipo
 
-    console.log(roupa)
+            if (roupasDoBanco[i].vestindo == 1 && (tipoRoupa != "cor" && tipoRoupa != "wallpaper")) {
+                FKroupaVar = 0
+                document.getElementById(`rp${tipoRoupa}`).src = ""
+            } else {
+                FKroupaVar = roupa
+                document.getElementById(`rp${tipoRoupa}`).src = `Fotos/catalogo/paper/${roupa}.png`
+            }
+            break
+        }
+    }
 
-    fetch(`/pinguim/selectarroupas/${fkpinguimVar}`, {
-        method: "GET",
+    var FKpinguimVar = localStorage.idPinguim
+    var tipoVar = tipoRoupa
+    console.log(FKpinguimVar);
+
+
+    fetch("/pinguim/updatearroupas", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+            FKpinguim: FKpinguimVar,
+            tipo: tipoVar,
+            FKroupa: FKroupaVar,
+        }),
     })
         .then(function (resposta) {
-            resposta.json().then((resposta2) => {
-                console.log(resposta2)
-
-                var tipoRoupa = ""
-                for (let i = 0; i < resposta2.length; i++) {
-                    if (resposta2[i].FKroupa == roupa) {
-                        tipoRoupa = resposta2[i].tipo
-                        console.log(tipoRoupa)
-                        if (tipoRoupa == "cor") {
-                            document.getElementById("rpcor").src = `Fotos/catalogo/paper/${roupa}.png`
-                        } else if (tipoRoupa == "corpo") {
-                            document.getElementById("rpcorpo").src = `Fotos/catalogo/paper/${roupa}.png`
-                        } else if (tipoRoupa == "cabeca") {
-                            document.getElementById("rpcabeca").src = `Fotos/catalogo/paper/${roupa}.png`
-                        } else if (tipoRoupa == "pes") {
-                            document.getElementById("rppes").src = `Fotos/catalogo/paper/${roupa}.png`
-                        } else if (tipoRoupa == "mao") {
-                            document.getElementById("rpmao").src = `Fotos/catalogo/paper/${roupa}.png`
-                        } else if (tipoRoupa == "wallpaper") {
-                            document.getElementById("rppapel").src = `Fotos/catalogo/paper/${roupa}.png`
-                        } else if (tipoRoupa == "pin") {
-                            document.getElementById("rppin").src = `Fotos/catalogo/paper/${roupa}.png`
-                        }
-                    }
-                }
-
-            })
+            console.log("resposta: ", resposta);
+            inicializar()
         })
         .catch(function (resposta) {
             console.log(`#ERRO: ${resposta}`);
         });
+
 }
 
 function voltar() {
@@ -808,4 +821,4 @@ function voltar() {
     console.log(pagina)
 }
 
-selectarroupas()
+inicializar()
