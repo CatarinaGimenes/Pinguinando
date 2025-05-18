@@ -95,6 +95,9 @@ body {
     background-repeat: no-repeat;
     background-color: #33aaff00;
     border: none;
+    font-family: BurbankBig;
+    font-size: 20px;
+    color: #6c3703;
 }
 
 .botbot:hover {
@@ -286,4 +289,130 @@ body {
 
 .roupaicon:hover {
     cursor: pointer;
+}
+
+.pagint {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.37);
+}
+
+#modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 525px;
+    height: 425px;
+    background: #4173e8;
+    background: radial-gradient(circle, rgba(65, 115, 232, 1) 0%, rgba(41, 106, 217, 1) 14%, rgba(17, 76, 143, 1) 100%);
+    border-radius: 10px;
+    border: 3px solid #003366;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 8px 24px;
+}
+
+#modal img {
+    width: 125px;
+}
+
+#modal button {
+    width: 150px;
+    height: 75px;
+    border-radius: 10px;
+    border: 2px solid #27417e;
+    background: #5aa4ed;
+    background: linear-gradient(180deg, rgba(90, 164, 237, 1) 0%, rgba(9, 83, 153, 1) 46%, rgba(10, 93, 171, 1) 82%, rgba(96, 168, 235, 1) 100%);
+    color: white;
+    font-size: 20px;
+}
+
+#modal button:hover {
+    scale: 0.970;
+    cursor: pointer;
+}
+
+#modal h2 {
+    font-family: BurbankBig;
+    font-size: 30px;
+    font-style: normal;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0;
+}
+
+#botoes {
+    display: flex;
+    gap: 10px;
+}
+
+#modalerro {
+    width: 500px;
+    height: 375px;
+    background-color: #ff6600;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    border: 3.5px solid #983901;
+    box-shadow: #ffffff 0px 0px 2px 2px, #85a6bc 0px 0px 2px 4.5px, #ffc700 3px 3px 2px 0px inset;
+}
+
+#modalerro h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: lighter;
+    text-align: center;
+    line-height: 30px;
+    max-width: 400px;
+    margin: 0;
+}
+
+#modalerro button {
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    width: 250px;
+    height: 80px;
+    background-color: #ff6600;
+    border: 3.5px solid #983901;
+    border-radius: 25px;
+    box-shadow: #ffc700 2px 2px 3px 1px, #ffc700 2px 1.3px 3px 0px inset;
+}
+
+#modalerro button:hover {
+    scale: 0.970;
+    cursor: pointer;
+}
+
+#mostrador {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 68px;
+}
+
+#mostrador img {
+    height: 100%;
+}
+
+#mostrador h2 {
+    font-family: BurbankBig;
+    font-size: 30px;
+    margin: 0;
+    margin-top: 10px;
+    letter-spacing: 0.8px;
+    color: white;
 }

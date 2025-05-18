@@ -232,6 +232,7 @@ function cadastrar() {
     }
 }
 
+var recarregar = false
 function logar() {
 
     var nomeVar = logar_nome.value
@@ -273,6 +274,9 @@ function logar() {
                         localStorage.idPinguim = resposta2[0].idPinguim
                         localStorage.nome = resposta2[0].nome
                         fecharlogin()
+                        if (recarregar) {
+                            window.location.reload()
+                        }
                     }
                 })
             })

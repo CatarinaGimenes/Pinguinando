@@ -41,4 +41,12 @@ router.get("/exibircatalogo/:fkpinguim", function (req, res) {
     roupasController.exibircatalogo(req, res);
 })
 
+router.post("/tirardinheiro", function (req, res) {
+    roupasController.tirardinheiro(req, res);
+})
+
+router.get("/moedar/:idPinguim", function (req, res) {
+    pinguimController.moedar(req, res);
+})
+
 module.exports = router;

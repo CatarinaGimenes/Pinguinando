@@ -31,4 +31,11 @@ function validar(nome) {
     return database.executar(instrucaoSql);
 }
 
-module.exports = { cadastrar, inserirRoupa, logar, validar };
+function moedar(idPinguim) {
+    var instrucaoSql = `
+    select moedas from pinguim where idPinguim = ${idPinguim};
+    `
+    return database.executar(instrucaoSql);
+}
+
+module.exports = { cadastrar, inserirRoupa, logar, validar, moedar };

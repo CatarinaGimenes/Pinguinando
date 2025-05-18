@@ -29,8 +29,17 @@ function validar(req, res) {
 	});
 }
 
+function moedar(req, res) {
+	var idPinguim = req.params.idPinguim;
+
+	pinguimModel.moedar(idPinguim).then((resultado) => {
+		res.status(201).json(resultado);
+	});
+}
+
 module.exports = {
 	cadastrar,
 	logar,
 	validar,
+	moedar,
 };

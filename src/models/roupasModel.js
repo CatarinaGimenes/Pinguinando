@@ -22,8 +22,24 @@ function exibircatalogo(fkpinguim) {
     return database.executar(instrucaoSql);
 }
 
+function tirardinheiro(FKpinguim, preco) {
+    var instrucaoSql = `
+    update pinguim set moedas = (moedas - ${preco}) where idPinguim = ${FKpinguim};
+    `
+    return database.executar(instrucaoSql);
+}
+
+function darroupa(FKpinguim, FKroupa) {
+    var instrucaoSql = `
+    insert into PinguimRoupa values (${FKpinguim}, ${FKroupa}, default, 0);
+    `
+    return database.executar(instrucaoSql);
+}
+
 module.exports = {
     selectarroupas,
     updatearroupas,
     exibircatalogo,
+    tirardinheiro,
+    darroupa,
 }

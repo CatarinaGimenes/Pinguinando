@@ -7,7 +7,6 @@ var mySqlConfig = {
     user: process.env.DB_USER,
     password: process.env.DB_PASSWORD,
     port: process.env.DB_PORT,
-    timezone: "UTC",
 };
 
 function executar(instrucao) {

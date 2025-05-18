@@ -26,8 +26,21 @@ function exibircatalogo(req, res) {
     });
 }
 
+function tirardinheiro(req, res) {
+    var FKroupa = req.body.FKroupa;
+    var FKpinguim = req.body.FKpinguim;
+    var preco = req.body.preco;
+
+    roupasModel.tirardinheiro(FKpinguim, preco).then((resultado) => {
+        roupasModel.darroupa(FKpinguim, FKroupa).then((resultado2) => {
+            res.status(201).json(resultado2);
+        })
+    });
+}
+
 module.exports = {
     selectarroupas,
     updatearroupas,
     exibircatalogo,
+    tirardinheiro,
 };

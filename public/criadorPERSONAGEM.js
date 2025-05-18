@@ -1,3 +1,5 @@
+recarregar = true
+
 function redirecionarIndex() {
     window.location.href = "index.html"
 }
@@ -23,10 +25,6 @@ function abrircatalogo() {
         </div>
         </div>
         `
-}
-
-function comprar(id) {
-    console.log(id)
 }
 
 function abrirpaginacores() {
@@ -63,7 +61,7 @@ function abrirpaginacores() {
                             </div>
                         </div>
                         <div id="botaocomprarcor">
-                            <button class="botbot"></button>
+                            <button onclick="comprar(1)" id="botcolor" class="botbot">20</button>
                         </div>
                     </div>
                 </div>
@@ -99,6 +97,8 @@ function abrirpaginas() {
 
 function mudarcor(color) {
     document.getElementById("pinguimcolorido").src = `Fotos/catalogo/${color}CATALOGO.png`
+
+    document.getElementById("botcolor").outerHTML = `<button onclick="comprar(${color})" id="botcolor" class="botbot">20</button>`
 }
 
 function fecharcatalogo() {
@@ -169,14 +169,14 @@ function catalogar() {
                 div_produtos1.innerHTML += `
                     <div class="roupinha">
                         <img src="Fotos/catalogo/Icon/${vt_semcor[i].idRoupa}.png">
-                        <button onclick="comprar(${vt_semcor[i].idRoupa})" class="botbot"></button>
+                        <button onclick="comprar(${vt_semcor[i].idRoupa})" class="botbot">${vt_semcor[i].preco}</button>
                     </div>
                     `
             } else {
                 div_produtos2.innerHTML += `
                     <div class="roupinha">
                         <img src="Fotos/catalogo/Icon/${vt_semcor[i].idRoupa}.png">
-                        <button onclick="comprar(${vt_semcor[i].idRoupa})" class="botbot"></button>
+                        <button onclick="comprar(${vt_semcor[i].idRoupa})" class="botbot">${vt_semcor[i].preco}</button>
                     </div>
                     `
             }
@@ -189,19 +189,94 @@ function catalogar() {
                 div_produtos1.innerHTML += `
                     <div class="roupinha">
                         <img src="Fotos/catalogo/Icon/${vt_semcor[i].idRoupa}.png">
-                        <button onclick="comprar(${vt_semcor[i].idRoupa})" class="botbot"></button>
+                        <button onclick="comprar(${vt_semcor[i].idRoupa})" class="botbot">${vt_semcor[i].preco}</button>
                     </div>
                     `
             } else {
                 div_produtos2.innerHTML += `
                     <div class="roupinha">
                         <img src="Fotos/catalogo/Icon/${vt_semcor[i].idRoupa}.png">
-                        <button onclick="comprar(${vt_semcor[i].idRoupa})" class="botbot"></button>
+                        <button onclick="comprar(${vt_semcor[i].idRoupa})" class="botbot">${vt_semcor[i].preco}</button>
                     </div>
                     `
             }
         }
     }
+}
+
+function comprar(clothesId) {
+    for (let i = 0; i < TUDOcatalogo.length; i++) {
+        if (TUDOcatalogo[i].idRoupa == clothesId) {
+            if (TUDOcatalogo[i].preco > minhasmoedas) {
+                catalogoId.innerHTML = `
+                    <div class="pagint">
+                    <div id="modalerro">
+                        <h2>Que pena, você não tem dinheiro para efetuar esta compra</h2>
+                        <button onclick="nao()">Okay</button>
+                    </div>
+                    </div>
+                    `
+            } else {
+                if (TUDOcatalogo[i].FKpinguim == null) {
+                    catalogoId.innerHTML = `
+                    <div class="pagint">
+                    <div id="modal">
+                        <h2>Deseja mesmo comprar este item?</h2>
+                        <img src="Fotos/catalogo/Icon/${TUDOcatalogo[i].idRoupa}.png">
+                        <div id="botoes">
+                            <button onclick="sim(${TUDOcatalogo[i].idRoupa}, ${TUDOcatalogo[i].preco})">Sim</button>
+                            <button onclick="nao()">Não</button>
+                        </div>
+                    </div>
+                    </div>
+                    `
+                } else {
+                    // mensagem de já ter
+                    console.log("Já tem")
+                    catalogoId.innerHTML = `
+                    <div class="pagint">
+                    <div id="modalerro">
+                        <h2>Você já possui este item! Não gaste suas moedinhas à toa</h2>
+                        <button onclick="nao()">Okay</button>
+                    </div>
+                    </div>
+                    `
+                }
+            }
+        }
+    }
+}
+
+function nao() {
+    catalogoId.innerHTML = ""
+}
+
+function sim(roupinha, precinho) {
+    var FKpinguimVar = localStorage.idPinguim
+    var FKroupaVar = roupinha
+    var precoVar = precinho
+
+    fetch("/pinguim/tirardinheiro", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+            FKpinguim: FKpinguimVar,
+            FKroupa: FKroupaVar,
+            preco: precoVar,
+        }),
+    })
+        .then(function (resposta) {
+            console.log("resposta: ", resposta);
+            inicializar()
+            exibircatalogo()
+            moedar()
+            catalogoId.innerHTML = ""
+        })
+        .catch(function (resposta) {
+            console.log(`#ERRO: ${resposta}`);
+        });
 }
 
 function proximapagina() {
@@ -331,4 +406,25 @@ function criarvetor() {
     }
 }
 
+var minhasmoedas = 0
+
+function moedar() {
+    var idPinguimVar = localStorage.idPinguim
+
+    fetch(`/pinguim/moedar/${idPinguimVar}`, {
+        method: "GET",
+    })
+        .then(function (resposta) {
+            resposta.json().then((resposta2) => {
+                console.log("mais", resposta2)
+                minhasmoedas = resposta2[0].moedas
+                textomostrador.innerHTML = resposta2[0].moedas
+            })
+        })
+        .catch(function (resposta) {
+            console.log(`#ERRO: ${resposta}`);
+        });
+}
+
+moedar()
 inicializar()
