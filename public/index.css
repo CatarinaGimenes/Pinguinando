@@ -492,6 +492,10 @@ p.ano {
     height: 30px;
 }
 
+#img_pinguim {
+    width: 300px;
+}
+
 .inserir {
     width: 250px;
     height: 30px;
@@ -583,7 +587,7 @@ p.ano {
 }
 
 #cor16 {
-    background-color: #93a0a4;
+    background-color: #c478cf;
 }
 
 

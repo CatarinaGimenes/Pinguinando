@@ -15,7 +15,15 @@ function updatearroupas(FKroupa, FKpinguim, tipo) {
     return database.executar(instrucaoSql);
 }
 
+function exibircatalogo(fkpinguim) {
+    var instrucaoSql = `
+    select * from roupa left join PinguimRoupa on FKroupa = idRoupa and FKpinguim = ${fkpinguim};
+    `
+    return database.executar(instrucaoSql);
+}
+
 module.exports = {
     selectarroupas,
     updatearroupas,
+    exibircatalogo,
 }

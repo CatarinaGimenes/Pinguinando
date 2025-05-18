@@ -18,7 +18,16 @@ function updatearroupas(req, res) {
     });
 }
 
+function exibircatalogo(req, res) {
+    var fkpinguim = req.params.fkpinguim;
+
+    roupasModel.exibircatalogo(fkpinguim).then((resultado) => {
+        res.status(201).json(resultado);
+    });
+}
+
 module.exports = {
     selectarroupas,
     updatearroupas,
+    exibircatalogo,
 };

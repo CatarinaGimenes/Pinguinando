@@ -29,615 +29,6 @@ function comprar(id) {
     console.log(id)
 }
 
-function abrirpagina1() {
-    blogRevista.innerHTML = `
-        <div class="allpag">
-        <div class="revista">
-                <div class="lado_esquerdo">
-                    <div class="produtos">
-                        <div class="linhaprods">
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/100.png">
-                                <button onclick="comprar(100)" class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/101.png">
-                                <button onclick="comprar(101)" class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/102.png">
-                                <button onclick="comprar(102)" class="botbot"></button>
-                            </div>
-                        </div>
-                        <div class="linhaprods">
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/103.png">
-                                <button onclick="comprar(103)" class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/104.png">
-                                <button onclick="comprar(104)" class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/105.png">
-                                <button onclick="comprar(105)" class="botbot"></button>
-                            </div>
-                        </div>
-                        <div class="linhaprods">
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/106.png">
-                                <button onclick="comprar(106)" class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/107.png">
-                                <button onclick="comprar(107)" class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/108.png">
-                                <button onclick="comprar(108)" class="botbot"></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="lado_direito">
-                    <div class="produtos">
-                        <div class="linhaprods">
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/109.png">
-                                <button onclick="comprar(109)" class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/110.png">
-                                <button onclick="comprar(110)" class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/111.png">
-                                <button onclick="comprar(111)" class="botbot"></button>
-                            </div>
-                        </div>
-                        <div class="linhaprods">
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/112.png">
-                                <button onclick="comprar(112)" class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/113.png">
-                                <button onclick="comprar(113)" class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/114.png">
-                                <button onclick="comprar(114)" class="botbot"></button>
-                            </div>
-                        </div>
-                        <div class="linhaprods">
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/115.png">
-                                <button onclick="comprar(115)" class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/116.png">
-                                <button onclick="comprar(116)" class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/117.png">
-                                <button onclick="comprar(117)" class="botbot"></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div onclick="abrirpagina2()" class="mudadorir"></div>
-                <div onclick="abrirpaginacores()" class="mudadorvoltar"></div>
-                <div onclick="fecharcatalogo()" class="xiscat"></div>
-            </div>
-            </div>
-        `
-}
-
-function abrirpagina2() {
-    blogRevista.innerHTML = `
-        <div class="allpag">
-        <div class="revista">
-                <div class="lado_esquerdo">
-                    <div class="produtos">
-                        <div class="linhaprods">
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/118.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/119.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/120.png">
-                                <button class="botbot"></button>
-                            </div>
-                        </div>
-                        <div class="linhaprods">
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/121.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/122.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/123.png">
-                                <button class="botbot"></button>
-                            </div>
-                        </div>
-                        <div class="linhaprods">
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/124.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/125.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/126.png">
-                                <button class="botbot"></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="lado_direito">
-                    <div class="produtos">
-                        <div class="linhaprods">
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/127.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/128.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/129.png">
-                                <button class="botbot"></button>
-                            </div>
-                        </div>
-                        <div class="linhaprods">
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/130.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/131.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/132.png">
-                                <button class="botbot"></button>
-                            </div>
-                        </div>
-                        <div class="linhaprods">
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/133.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/134.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/135.png">
-                                <button class="botbot"></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div onclick="abrirpagina3()" class="mudadorir"></div>
-                <div onclick="abrirpagina1()" class="mudadorvoltar"></div>
-                <div onclick="fecharcatalogo()" class="xiscat"></div>
-            </div>
-            </div>
-        `
-}
-
-function abrirpagina3() {
-    blogRevista.innerHTML = `
-        <div class="allpag">
-        <div class="revista">
-                <div class="lado_esquerdo">
-                    <div class="produtos">
-                        <div class="linhaprods">
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/136.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/137.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/138.png">
-                                <button class="botbot"></button>
-                            </div>
-                        </div>
-                        <div class="linhaprods">
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/139.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/140.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/200.png">
-                                <button class="botbot"></button>
-                            </div>
-                        </div>
-                        <div class="linhaprods">
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/201.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/202.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/203.png">
-                                <button class="botbot"></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="lado_direito">
-                    <div class="produtos">
-                        <div class="linhaprods">
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/204.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/205.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/206.png">
-                                <button class="botbot"></button>
-                            </div>
-                        </div>
-                        <div class="linhaprods">
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/207.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/208.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/209.png">
-                                <button class="botbot"></button>
-                            </div>
-                        </div>
-                        <div class="linhaprods">
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/210.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/211.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/212.png">
-                                <button class="botbot"></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div onclick="abrirpagina4()" class="mudadorir"></div>
-                <div onclick="abrirpagina2()" class="mudadorvoltar"></div>
-                <div onclick="fecharcatalogo()" class="xiscat"></div>
-            </div>
-            </div>
-        `
-}
-
-function abrirpagina4() {
-    blogRevista.innerHTML = `
-        <div class="allpag">
-        <div class="revista">
-                <div class="lado_esquerdo">
-                    <div class="produtos">
-                        <div class="linhaprods">
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/213.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/214.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/215.png">
-                                <button class="botbot"></button>
-                            </div>
-                        </div>
-                        <div class="linhaprods">
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/216.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/217.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/218.png">
-                                <button class="botbot"></button>
-                            </div>
-                        </div>
-                        <div class="linhaprods">
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/219.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/220.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/221.png">
-                                <button class="botbot"></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="lado_direito">
-                    <div class="produtos">
-                        <div class="linhaprods">
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/222.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/223.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/224.png">
-                                <button class="botbot"></button>
-                            </div>
-                        </div>
-                        <div class="linhaprods">
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/225.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/226.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/227.png">
-                                <button class="botbot"></button>
-                            </div>
-                        </div>
-                        <div class="linhaprods">
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/228.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/229.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/230.png">
-                                <button class="botbot"></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div onclick="abrirpagina5()" class="mudadorir"></div>
-                <div onclick="abrirpagina3()" class="mudadorvoltar"></div>
-                <div onclick="fecharcatalogo()" class="xiscat"></div>
-            </div>
-            </div>
-        `
-}
-
-function abrirpagina5() {
-    blogRevista.innerHTML = `
-        <div class="allpag">
-        <div class="revista">
-                <div class="lado_esquerdo">
-                    <div class="produtos">
-                        <div class="linhaprods">
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/231.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/300.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/301.png">
-                                <button class="botbot"></button>
-                            </div>
-                        </div>
-                        <div class="linhaprods">
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/302.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/303.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/304.png">
-                                <button class="botbot"></button>
-                            </div>
-                        </div>
-                        <div class="linhaprods">
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/305.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/306.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/307.png">
-                                <button class="botbot"></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="lado_direito">
-                    <div class="produtos">
-                        <div class="linhaprods">
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/308.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/309.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/310.png">
-                                <button class="botbot"></button>
-                            </div>
-                        </div>
-                        <div class="linhaprods">
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/311.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/400.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/401.png">
-                                <button class="botbot"></button>
-                            </div>
-                        </div>
-                        <div class="linhaprods">
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/402.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/500.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/501.png">
-                                <button class="botbot"></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div onclick="abrirpagina6()" class="mudadorir"></div>
-                <div onclick="abrirpagina4()" class="mudadorvoltar"></div>
-                <div onclick="fecharcatalogo()" class="xiscat"></div>
-            </div>
-            </div>
-        `
-}
-
-function abrirpagina6() {
-    blogRevista.innerHTML = `
-        <div class="allpag">
-        <div class="revista">
-                <div class="lado_esquerdo">
-                    <div class="produtos">
-                        <div class="linhaprods">
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/502.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/503.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/504.png">
-                                <button class="botbot"></button>
-                            </div>
-                        </div>
-                        <div class="linhaprods">
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/505.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/506.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/507.png">
-                                <button class="botbot"></button>
-                            </div>
-                        </div>
-                        <div class="linhaprods">
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/508.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/509.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/600.png">
-                                <button class="botbot"></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="lado_direito">
-                    <div class="produtos">
-                        <div class="linhaprods">
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/601.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/602.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/603.png">
-                                <button class="botbot"></button>
-                            </div>
-                        </div>
-                        <div class="linhaprods">
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/604.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/605.png">
-                                <button class="botbot"></button>
-                            </div>
-                            <div class="roupinha">
-                                <img src="Fotos/catalogo/Icon/606.png">
-                                <button class="botbot"></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div onclick="abrirpagina5()" class="mudadorvoltar"></div>
-                <div onclick="fecharcatalogo()" class="xiscat"></div>
-            </div>
-            </div>
-        `
-}
-
 function abrirpaginacores() {
     blogRevista.innerHTML = `
         <div class="allpag">
@@ -651,21 +42,24 @@ function abrirpaginacores() {
                                 <img onclick="mudarcor(2)" src="Fotos/catalogo/Icon/2.png">
                                 <img onclick="mudarcor(3)" src="Fotos/catalogo/Icon/3.png">
                                 <img onclick="mudarcor(4)" src="Fotos/catalogo/Icon/4.png">
-                                <img onclick="mudarcor(5)" src="Fotos/catalogo/Icon/5.png">
                             </div>
                             <div class="linhade4">
+                                <img onclick="mudarcor(5)" src="Fotos/catalogo/Icon/5.png">
                                 <img onclick="mudarcor(6)" src="Fotos/catalogo/Icon/6.png">
                                 <img onclick="mudarcor(7)" src="Fotos/catalogo/Icon/7.png">
                                 <img onclick="mudarcor(8)" src="Fotos/catalogo/Icon/8.png">
-                                <img onclick="mudarcor(9)" src="Fotos/catalogo/Icon/9.png">
-                                <img onclick="mudarcor(10)" src="Fotos/catalogo/Icon/10.png">
                             </div>
                             <div class="linhade4">
+                                <img onclick="mudarcor(9)" src="Fotos/catalogo/Icon/9.png">
+                                <img onclick="mudarcor(10)" src="Fotos/catalogo/Icon/10.png">
                                 <img onclick="mudarcor(11)" src="Fotos/catalogo/Icon/11.png">
                                 <img onclick="mudarcor(12)" src="Fotos/catalogo/Icon/12.png">
+                                </div>
+                            <div class="linhade4">
                                 <img onclick="mudarcor(13)" src="Fotos/catalogo/Icon/13.png">
                                 <img onclick="mudarcor(14)" src="Fotos/catalogo/Icon/14.png">
                                 <img onclick="mudarcor(15)" src="Fotos/catalogo/Icon/15.png">
+                                <img onclick="mudarcor(16)" src="Fotos/catalogo/Icon/16.png">
                             </div>
                         </div>
                         <div id="botaocomprarcor">
@@ -676,12 +70,31 @@ function abrirpaginacores() {
                 <div class="lado_direito">
                     <img id="pinguimcolorido" src="Fotos/catalogo/1CATALOGO.png">
                 </div>
-                <div onclick="abrirpagina1()" class="mudadorir"></div>
+                <div onclick="abrirpaginas()" class="mudadorir"></div>
                 <div onclick="abrircatalogo()" class="mudadorvoltar"></div>
                 <div onclick="fecharcatalogo()" class="xiscat"></div>
             </div>
             </div>
         `
+}
+
+function abrirpaginas() {
+    blogRevista.innerHTML = `
+        <div class="allpag">
+            <div class="revista">
+                <div class="lado_esquerdo">
+                <div id="div_produtos1" class="produtos"></div>
+                </div>
+                <div class="lado_direito">
+                <div id="div_produtos2" class="produtos"></div>
+                </div>
+                <div onclick="proximapagina()" class="mudadorir"></div>
+                <div onclick="ultimapagina()" class="mudadorvoltar"></div>
+                <div onclick="fecharcatalogo()" class="xiscat"></div>
+            </div>
+        </div>
+    `
+    catalogar()
 }
 
 function mudarcor(color) {
@@ -694,7 +107,8 @@ function fecharcatalogo() {
 
 var qtdpag = 0
 var pagina = 1
-
+var qtdpartes = 0
+var parte = 1
 
 let roupasDoBanco = []
 function inicializar() {
@@ -741,17 +155,84 @@ function inicializar() {
         });
 }
 
+
+function catalogar() {
+    qtdpartes = Math.ceil(vt_semcor.length / 18)
+
+    div_produtos1.innerHTML = ""
+    div_produtos2.innerHTML = ""
+    if (parte == qtdpartes) {
+        var contadoriteracoes = 0
+        for (let i = ((parte * 18) - 18); i < vt_semcor.length; i++) {
+            contadoriteracoes++
+            if (contadoriteracoes <= 9) {
+                div_produtos1.innerHTML += `
+                    <div class="roupinha">
+                        <img src="Fotos/catalogo/Icon/${vt_semcor[i].idRoupa}.png">
+                        <button onclick="comprar(${vt_semcor[i].idRoupa})" class="botbot"></button>
+                    </div>
+                    `
+            } else {
+                div_produtos2.innerHTML += `
+                    <div class="roupinha">
+                        <img src="Fotos/catalogo/Icon/${vt_semcor[i].idRoupa}.png">
+                        <button onclick="comprar(${vt_semcor[i].idRoupa})" class="botbot"></button>
+                    </div>
+                    `
+            }
+        }
+    } else {
+        var contadoriteracoes = 0
+        for (let i = ((parte * 18) - 18); i < (parte * 18); i++) {
+            contadoriteracoes++
+            if (contadoriteracoes <= 9) {
+                div_produtos1.innerHTML += `
+                    <div class="roupinha">
+                        <img src="Fotos/catalogo/Icon/${vt_semcor[i].idRoupa}.png">
+                        <button onclick="comprar(${vt_semcor[i].idRoupa})" class="botbot"></button>
+                    </div>
+                    `
+            } else {
+                div_produtos2.innerHTML += `
+                    <div class="roupinha">
+                        <img src="Fotos/catalogo/Icon/${vt_semcor[i].idRoupa}.png">
+                        <button onclick="comprar(${vt_semcor[i].idRoupa})" class="botbot"></button>
+                    </div>
+                    `
+            }
+        }
+    }
+}
+
+function proximapagina() {
+    if (parte == qtdpartes) {
+        return
+    } else {
+        parte++
+        catalogar()
+    }
+}
+
+function ultimapagina() {
+    if (parte == 1) {
+        abrirpaginacores()
+    } else {
+        parte--
+        catalogar()
+    }
+}
+
 function selectarroupas() {
     qtdpag = Math.ceil(roupasDoBanco.length / 12)
 
     div_itens.innerHTML = ""
-    if (roupasDoBanco.length < 12  || pagina == qtdpag) {
+    if (roupasDoBanco.length < 12 || pagina == qtdpag) {
         for (let i = ((pagina * 12) - 12); i < roupasDoBanco.length; i++) {
-        div_itens.innerHTML += `<img onclick="colocar(${roupasDoBanco[i].FKroupa})" src="Fotos/catalogo/Icon/${roupasDoBanco[i].FKroupa}.png">`
-    } 
+            div_itens.innerHTML += `<img class="roupaicon" onclick="colocar(${roupasDoBanco[i].FKroupa})" src="Fotos/catalogo/Icon/${roupasDoBanco[i].FKroupa}.png">`
+        }
     } else {
         for (let i = ((pagina * 12) - 12); i < (pagina * 12); i++) {
-            div_itens.innerHTML += `<img onclick="colocar(${roupasDoBanco[i].FKroupa})" src="Fotos/catalogo/Icon/${roupasDoBanco[i].FKroupa}.png">`
+            div_itens.innerHTML += `<img class="roupaicon" onclick="colocar(${roupasDoBanco[i].FKroupa})" src="Fotos/catalogo/Icon/${roupasDoBanco[i].FKroupa}.png">`
         }
     }
 }
@@ -761,6 +242,16 @@ function ir() {
         return
     } else {
         pagina++
+        selectarroupas()
+    }
+    console.log(pagina)
+}
+
+function voltar() {
+    if (pagina == 1) {
+        return
+    } else {
+        pagina--
         selectarroupas()
     }
     console.log(pagina)
@@ -811,14 +302,33 @@ function colocar(roupa) {
 
 }
 
-function voltar() {
-    if (pagina == 1) {
-        return
-    } else {
-        pagina--
-        selectarroupas()
+let TUDOcatalogo = []
+function exibircatalogo() {
+    var fkpinguimVar = localStorage.idPinguim
+
+    fetch(`/pinguim/exibircatalogo/${fkpinguimVar}`, {
+        method: "GET",
+    })
+        .then(function (resposta) {
+            resposta.json().then((resposta2) => {
+                console.log(resposta2)
+                TUDOcatalogo = resposta2
+                criarvetor()
+            })
+        })
+        .catch(function (resposta) {
+            console.log(`#ERRO: ${resposta}`);
+        });
+}
+exibircatalogo()
+
+var vt_semcor = []
+function criarvetor() {
+    for (let i = 0; i < TUDOcatalogo.length; i++) {
+        if (i >= 16) {
+            vt_semcor.push(TUDOcatalogo[i])
+        }
     }
-    console.log(pagina)
 }
 
 inicializar()

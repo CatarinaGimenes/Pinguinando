@@ -63,8 +63,10 @@ body {
 
 .produtos {
     display: flex;
-    flex-direction: column;
     margin-top: 20px;
+    flex-wrap: wrap;
+    max-width: 430px;
+    gap: 20px;
 }
 
 .linhaprods {
@@ -280,4 +282,8 @@ body {
     position: absolute;
     top: 60px;
     left: 434px;
+}
+
+.roupaicon:hover {
+    cursor: pointer;
 }

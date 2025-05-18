@@ -37,4 +37,8 @@ router.post("/updatearroupas", function (req, res) {
     roupasController.updatearroupas(req, res);
 })
 
+router.get("/exibircatalogo/:fkpinguim", function (req, res) {
+    roupasController.exibircatalogo(req, res);
+})
+
 module.exports = router;
