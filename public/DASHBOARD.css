@@ -321,3 +321,60 @@ h4 {
     scale: 1.1;
     cursor: pointer;
 }
+
+.telainteira {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #27282951;
+}
+
+#mensagem {
+    width: 525px;
+    height: 375px;
+    background-color: #ff6600;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+#mensagem button {
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    width: 250px;
+    height: 80px;
+    background-color: #ff6600;
+    border: 3.5px solid #983901;
+    border-radius: 25px;
+    box-shadow: #ffc700 2px 2px 3px 1px, #ffc700 2px 1.3px 3px 0px inset;
+}
+
+#mensagem button:hover {
+    scale: 0.970;
+    cursor: pointer;
+}
+
+#mensagem h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: lighter;
+    text-align: center;
+    line-height: 30px;
+    max-width: 400px;
+    margin: 0;
+}
+
+/* BOX SHADOW - MENSAGEM */
+#mensagem {
+    border: 3.5px solid #983901;
+    box-shadow: #ffffff 0px 0px 2px 2px, #85a6bc 0px 0px 2px 4.5px, #ffc700 3px 3px 2px 0px inset;
+}

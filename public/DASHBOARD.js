@@ -21,11 +21,11 @@ const data = {
 const config = {
     type: 'pie',
     data: data,
-        options: {
+    options: {
         plugins: {
             tooltip: {
                 callbacks: {
-                    label: function(context) {
+                    label: function (context) {
                         let label = context.label || '';
                         let value = context.raw || 0;
                         return `${label}: ${value}%`
@@ -127,29 +127,29 @@ function selecinardadosgrafico() {
 
                 if (resposta2.length < 6) {
                     for (let i = 1; i <= resposta2.length; i++) {
-                    var resultadoTexto = ""
-                    var resultadoImage = ""
-                    if (resposta2[resposta2.length - i].resultado == "V") {
-                        resultadoTexto = "Vitória"
-                        resultadoImage = "Fotos/Happy_emoticon.webp"
-                    } else if (resposta2[resposta2.length - i].resultado == "D") {
-                        resultadoTexto = "Derrota"
-                        resultadoImage = "Fotos/Moody_Emoticon.webp"
-                    } else {
-                        resultadoTexto = "Empate"
-                        resultadoImage = "Fotos/Hmm_Emoticon.webp"
-                    }
+                        var resultadoTexto = ""
+                        var resultadoImage = ""
+                        if (resposta2[resposta2.length - i].resultado == "V") {
+                            resultadoTexto = "Vitória"
+                            resultadoImage = "Fotos/Happy_emoticon.webp"
+                        } else if (resposta2[resposta2.length - i].resultado == "D") {
+                            resultadoTexto = "Derrota"
+                            resultadoImage = "Fotos/Moody_Emoticon.webp"
+                        } else {
+                            resultadoTexto = "Empate"
+                            resultadoImage = "Fotos/Hmm_Emoticon.webp"
+                        }
 
-                    var datahora = new Date(resposta2[resposta2.length - i].dtFinal)
+                        var datahora = new Date(resposta2[resposta2.length - i].dtFinal)
 
-                    alerts.innerHTML += `
+                        alerts.innerHTML += `
                     <div class="alerta">
                         <img src="${resultadoImage}">
                         <h5>${resultadoTexto}</h5>
                         <h3>${datahora.toLocaleString("en-GB", { timeZone: "UTC" })}</h3>
                     </div>
                     `
-                }
+                    }
                 } else {
 
                     for (let i = 1; i <= 6; i++) {
@@ -165,9 +165,9 @@ function selecinardadosgrafico() {
                             resultadoTexto = "Empate"
                             resultadoImage = "Fotos/Hmm_Emoticon.webp"
                         }
-    
+
                         var datahora = new Date(resposta2[resposta2.length - i].dtFinal)
-    
+
                         alerts.innerHTML += `
                         <div class="alerta">
                             <img src="${resultadoImage}">
@@ -275,12 +275,27 @@ function selecinardadosgrafico() {
 
                 // Exibindo o total de partidas jogadas
                 total_partidas.innerHTML = `Total de partidas jogadas: ${resposta2.length}`
+
+                if (resposta2.length == 0) {
+                    msg_erro.innerHTML = `
+                    <div class="telainteira">
+                        <div id="mensagem">
+                            <h2>Você não pode visualizar a dashboard se ainda não tiver jogado nenhuma partida</h2>
+                            <button onclick="voltar()">Voltar</button>
+                        </div>
+                    </div>
+                    `
+                }
             })
         })
         .catch(function (resposta) {
             console.log(`#ERRO: ${resposta}`);
         });
 
+}
+
+function voltar() {
+    window.location.href = "PaginaInicialCADRJITSU.html"
 }
 
 function mostrar() {

@@ -103,6 +103,7 @@ function mudarcor(color) {
 
 function fecharcatalogo() {
     blogRevista.innerHTML = ""
+    parte = 1
 }
 
 var qtdpag = 0
@@ -399,6 +400,7 @@ exibircatalogo()
 
 var vt_semcor = []
 function criarvetor() {
+    vt_semcor = []
     for (let i = 0; i < TUDOcatalogo.length; i++) {
         if (i >= 16) {
             vt_semcor.push(TUDOcatalogo[i])
