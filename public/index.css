@@ -277,6 +277,11 @@ p.ano {
     position: relative;
 }
 
+.localizacao {
+    position: absolute;
+    color: rgba(255, 255, 255, 0);
+}
+
 .montanha {
     position: absolute;
     width: 200px;
@@ -287,6 +292,17 @@ p.ano {
 .montanha:hover {
     scale: 1.1;
     cursor: pointer;
+}
+
+.montanha:hover + #locmontanha {
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background-color: #ffef80;
+    border: 2px solid #986b03;
+    box-shadow: 0px 0px 0px 1px #bd9a30 inset;
+    left: 270px;
+    top: 180px;
 }
 
 .EPF {
@@ -301,6 +317,17 @@ p.ano {
     cursor: pointer;
 }
 
+.EPF:hover + #locEPF {
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background-color: #ffef80;
+    border: 2px solid #986b03;
+    box-shadow: 0px 0px 0px 1px #bd9a30 inset;
+    left: 340px;
+    top: 280px;
+}
+
 .farol {
     position: absolute;
     height: 109px;
@@ -311,6 +338,17 @@ p.ano {
 .farol:hover {
     scale: 1.1;
     cursor: pointer;
+}
+
+.farol:hover + #locpersonagens {
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background-color: #ffef80;
+    border: 2px solid #986b03;
+    box-shadow: 0px 0px 0px 1px #bd9a30 inset;
+    left:50px;
+    top: 370px;
 }
 
 .catalogo {
@@ -325,6 +363,17 @@ p.ano {
     cursor: pointer;
 }
 
+.catalogo:hover + #loccatalogo {
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background-color: #ffef80;
+    border: 2px solid #986b03;
+    box-shadow: 0px 0px 0px 1px #bd9a30 inset;
+    left:440px;
+    top: 360px;
+}
+
 .plaza {
     position: absolute;
     height: 91px;
@@ -337,6 +386,17 @@ p.ano {
     cursor: pointer;
 }
 
+.plaza:hover + #loclinhatempo {
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background-color: #ffef80;
+    border: 2px solid #986b03;
+    box-shadow: 0px 0px 0px 1px #bd9a30 inset;
+    left:740px;
+    top: 380px;
+}
+
 .dojo {
     position: absolute;
     height: 43px;
@@ -347,6 +407,17 @@ p.ano {
 .dojo:hover {
     scale: 1.1;
     cursor: pointer;
+}
+
+.dojo:hover + #locdojo {
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background-color: #ffef80;
+    border: 2px solid #986b03;
+    box-shadow: 0px 0px 0px 1px #bd9a30 inset;
+    left:660px;
+    top: 160px;
 }
 
 .xis {
