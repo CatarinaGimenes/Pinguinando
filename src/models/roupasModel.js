@@ -17,7 +17,7 @@ function updatearroupas(FKroupa, FKpinguim, tipo) {
 
 function exibircatalogo(fkpinguim) {
     var instrucaoSql = `
-    select * from roupa left join PinguimRoupa on FKroupa = idRoupa and FKpinguim = ${fkpinguim};
+    select * from roupa left join PinguimRoupa on FKroupa = idRoupa and FKpinguim = ${fkpinguim} where preco != 0;
     `
     return database.executar(instrucaoSql);
 }

@@ -10,7 +10,7 @@ function cadastrar(nome, senha) {
 
 function inserirRoupa(FKpinguim, FKroupa, vestindo) {
     var instrucaoSql = `
-    INSERT INTO PinguimRoupa (FKpinguim, FKroupa, vestindo) VALUES (${FKpinguim}, ${FKroupa}, ${vestindo});
+    INSERT INTO PinguimRoupa (FKpinguim, FKroupa, vestindo) VALUES (${FKpinguim}, ${FKroupa}, ${vestindo}), (${FKpinguim}, 510, 1);
     `
 
     return database.executar(instrucaoSql);
