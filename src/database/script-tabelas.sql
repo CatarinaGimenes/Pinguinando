@@ -11,11 +11,6 @@ foto BLOB,
 agente_secreto BOOLEAN not null
 );
 
-select * from pinguim;
-insert into PinguimRoupa values (1, 1, default, 0);
-select sum(moedas) from partida where FKpinguim = 1;	
-update pinguim set moedas = (select sum(moedas) - 60 from partida where FKpinguim = 1) where idPinguim = 1;
-
 create table roupa (
 idRoupa int primary key auto_increment,
 tipo varchar(45) not null,

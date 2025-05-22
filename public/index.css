@@ -18,6 +18,11 @@
     src: url("Fontes/BarnetSans-Regular.otf");
 }
 
+@font-face {
+    font-family: squares;
+    src: url("Fontes/Square.ttf");
+}
+
 /*Fontes que serão usadas no blog :)*/
 
 body {
@@ -294,7 +299,7 @@ p.ano {
     cursor: pointer;
 }
 
-.montanha:hover + #locmontanha {
+.montanha:hover+#locmontanha {
     padding: 5px;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
@@ -317,7 +322,7 @@ p.ano {
     cursor: pointer;
 }
 
-.EPF:hover + #locEPF {
+.EPF:hover+#locEPF {
     padding: 5px;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
@@ -340,14 +345,14 @@ p.ano {
     cursor: pointer;
 }
 
-.farol:hover + #locpersonagens {
+.farol:hover+#locpersonagens {
     padding: 5px;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
     background-color: #ffef80;
     border: 2px solid #986b03;
     box-shadow: 0px 0px 0px 1px #bd9a30 inset;
-    left:50px;
+    left: 50px;
     top: 370px;
 }
 
@@ -363,14 +368,14 @@ p.ano {
     cursor: pointer;
 }
 
-.catalogo:hover + #loccatalogo {
+.catalogo:hover+#loccatalogo {
     padding: 5px;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
     background-color: #ffef80;
     border: 2px solid #986b03;
     box-shadow: 0px 0px 0px 1px #bd9a30 inset;
-    left:440px;
+    left: 440px;
     top: 360px;
 }
 
@@ -386,14 +391,14 @@ p.ano {
     cursor: pointer;
 }
 
-.plaza:hover + #loclinhatempo {
+.plaza:hover+#loclinhatempo {
     padding: 5px;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
     background-color: #ffef80;
     border: 2px solid #986b03;
     box-shadow: 0px 0px 0px 1px #bd9a30 inset;
-    left:740px;
+    left: 740px;
     top: 380px;
 }
 
@@ -409,14 +414,14 @@ p.ano {
     cursor: pointer;
 }
 
-.dojo:hover + #locdojo {
+.dojo:hover+#locdojo {
     padding: 5px;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
     background-color: #ffef80;
     border: 2px solid #986b03;
     box-shadow: 0px 0px 0px 1px #bd9a30 inset;
-    left:660px;
+    left: 660px;
     top: 160px;
 }
 
@@ -864,4 +869,115 @@ p.ano {
 #mensagem {
     border: 3.5px solid #983901;
     box-shadow: #ffffff 0px 0px 2px 2px, #85a6bc 0px 0px 2px 4.5px, #ffc700 3px 3px 2px 0px inset;
+}
+
+#celular {
+    position: relative;
+    width: 450px;
+    height: 730px;
+    background-image: url("Fotos/BLANK_EPF_PHONE_HD.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.icons {
+    position: absolute;
+    width: 120px;
+}
+
+.icons:hover {
+    scale: 1.08;
+    cursor: pointer;
+}
+
+#escudoicon {
+    top: 125px;
+    left: 85px;
+}
+
+#pinguimicon {
+    top: 115px;
+    right: 85px;
+}
+
+#mensagemicon {
+    top: 310px;
+    right: 85px;
+}
+
+#celular h2 {
+    font-family: squares;
+    color: #6da39b;
+}
+
+#excudotxt {
+    position: absolute;
+    text-align: center;
+    width: 120px;
+    top: 230px;
+    left: 85px;
+}
+
+#mensagemtxt {
+    position: absolute;
+    text-align: center;
+    width: 120px;
+    top: 405px;
+    left: 85px;
+}
+
+#pinguimtxt {
+    position: absolute;
+    text-align: center;
+    width: 120px;
+    top: 230px;
+    right: 85px;
+}
+
+#btnsair {
+    position: absolute;
+    width: 56px;
+    bottom: 20px;
+    left: 198px;
+}
+
+#btnsair:hover {
+    scale: 1.05;
+    cursor: pointer;
+}
+
+#LOGINicon {
+    top: 290px;
+    left: 85px;
+}
+
+#TABELASicon {
+    top: 460px;
+    left: 85px;
+}
+
+#doctxt {
+    position: absolute;
+    text-align: center;
+    top: 405px;
+    right: 65px;
+}
+
+#modelagemtxt {
+    position: absolute;
+    text-align: center;
+    top: 570px;
+    left: 80px;
+}
+
+#imgmodelagem {
+    width: 900px;
+    border: 4.5px solid white;
+    border-radius: 40px;
+    box-shadow: #ffffff 0px 0px 2px 2px, #85a6bc 0px 0px 2px 4.5px, #ffc700 3px 3px 2px 0px inset;
+}
+
+#imgmodelagem:hover {
+    cursor: pointer;
 }

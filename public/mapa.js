@@ -23,3 +23,43 @@ function abrirMapa() {
 function fechar() {
     blogId.innerHTML = ""
 }
+
+function abrirtelefone() {
+    blogCelular.innerHTML = `
+    <div class="telainteira">
+            <div id="celular">
+                <img onclick="abrirLogin()" id="escudoicon" class="icons" src="Fotos/iconeescudo.png">
+                <h2 id="excudotxt">Cadastro</h2>
+                <img onclick="abrirdoc()" id="mensagemicon" class="icons" src="Fotos/iconemensagem.png">
+                <h2 id="mensagemtxt">Creditos</h2>
+                <img onclick="irlogin()" id="pinguimicon" class="icons" src="Fotos/IconePinguim.png">
+                <h2 id="pinguimtxt">Login</h2>
+                <img id="LOGINicon" class="icons" src="Fotos/IconeLOGIN.png">
+                <h2 id="doctxt">Documentação</h2>
+                <img onclick="exibirtabelas()" id="TABELASicon" class="icons" src="Fotos/IconeTABELAS.png">
+                <h2 id="modelagemtxt">Modelagem</h2>
+                <img onclick="fechartelefone()" id="btnsair" src="Fotos/botaoEPF.png">
+            </div>
+        </div>
+    `
+}
+
+function abrirdoc() {
+    window.open('Pinguinando.pdf')
+}
+
+function fechartelefone() {
+    blogCelular.innerHTML = ""
+}
+
+function exibirtabelas() {
+    msg_erro.innerHTML = `
+    <div class="telainteira">
+        <img onclick="fecharmodelagem()" id="imgmodelagem" src="Fotos/modelagemlogica.png">
+    </div>
+    `
+}
+
+function fecharmodelagem() {
+    msg_erro.innerHTML = ""
+}
