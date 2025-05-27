@@ -981,3 +981,26 @@ p.ano {
 #imgmodelagem:hover {
     cursor: pointer;
 }
+
+#TOAST {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    width: 265px;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.92);
+    border: 4px solid #30beec;
+    border-radius: 20px;
+}
+
+#TOAST img {
+    width: 80px;
+}
+
+#TOAST h4 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}

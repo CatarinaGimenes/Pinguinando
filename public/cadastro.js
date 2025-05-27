@@ -88,7 +88,7 @@ function mostrar() {
 
 // Funções que alteram a cor do Pinguim
 
-var colorido = 0
+var colorido = 1
 
 function Acor1() {
     img_pinguim.src = "Fotos/criadordPersonagem/1.png"
@@ -238,6 +238,8 @@ function cadastrar() {
                         .then(function (resposta) {
                             console.log("resposta: ", resposta);
                             irlogin()
+                            colorido = 1
+                            exibirtoast("Fotos/blue-puffle-512x512.png", "Cadastro realizado com sucesso")
                         })
                         .catch(function (resposta) {
                             console.log(`#ERRO: ${resposta}`);
@@ -292,6 +294,7 @@ function logar() {
                         localStorage.idPinguim = resposta2[0].idPinguim
                         localStorage.nome = resposta2[0].nome
                         fecharlogin()
+                        exibirtoast("Fotos/blue-puffle-512x512.png", "Login realizado com sucesso")
                         if (recarregar) {
                             window.location.reload()
                         }
@@ -307,4 +310,18 @@ function logar() {
 
 function fecharerro() {
     msg_erro.innerHTML = ""
+}
+
+function exibirtoast(imagem, mensagem) {
+    setTimeout(() => {        
+        EXIBIRTOAST.innerHTML = `
+        <div id="TOAST">
+            <img src="${imagem}">
+            <h4>${mensagem}</h4>
+        </div>
+        `
+    }, 150);
+    setTimeout(() => {
+        EXIBIRTOAST.innerHTML = ""
+    }, 1700);
 }
