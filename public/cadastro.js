@@ -186,6 +186,24 @@ function cadastrar() {
             </div>
         </div>
         `
+    } else if ((nome_usuario.value).includes(' ')) {
+        msg_erro.innerHTML = `
+        <div class="telainteira">
+            <div id="mensagem">
+                <h2>Sinto muito! Seu nome não pode conter espaços</h2>
+                <button onclick="fecharerro()">Okay</button>
+            </div>
+        </div>
+        `
+    } else if ((senha.value).length < 8) {
+        msg_erro.innerHTML = `
+        <div class="telainteira">
+            <div id="mensagem">
+                <h2>Sua senha deve ter no minímo 8 caracteres</h2>
+                <button onclick="fecharerro()">Okay</button>
+            </div>
+        </div>
+        `
     } else {
         fetch(`/pinguim/validar/${nomeVar}`, {
             method: "GET",
