@@ -34,7 +34,7 @@ function abrirtelefone() {
                 <h2 id="mensagemtxt">Creditos</h2>
                 <img onclick="irlogin()" id="pinguimicon" class="icons" src="Fotos/IconePinguim.png">
                 <h2 id="pinguimtxt">Login</h2>
-                <img id="LOGINicon" class="icons" src="Fotos/IconeLOGIN.png">
+                <img onclick="redirecionarCREDITOS()" id="LOGINicon" class="icons" src="Fotos/IconeLOGIN.png">
                 <h2 id="doctxt">Documentação</h2>
                 <img onclick="exibirtabelas()" id="TABELASicon" class="icons" src="Fotos/IconeTABELAS.png">
                 <h2 id="modelagemtxt">Modelagem</h2>
@@ -62,4 +62,8 @@ function exibirtabelas() {
 
 function fecharmodelagem() {
     msg_erro.innerHTML = ""
+}
+
+function redirecionarCREDITOS() {
+    window.location.href = "creditos.html"
 }

@@ -1004,3 +1004,60 @@ p.ano {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+#subagradecimentos {
+    text-align: center;
+    font-size: 50px;
+    padding-left: 0px;
+}
+
+#subagradecimentos h2 {
+    margin-top: 10px;
+}
+
+.subcred {
+    text-align: center;
+    font-family: BurbankBig;
+    font-size: 45px;
+    color: #036cb7;
+}
+
+.conteudo {
+    justify-self: center;
+    margin: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    max-width: 600px;
+}
+
+.conteudo img {
+    width: 400px;
+}
+
+.imagens-familia {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.imagens-familia img {
+    width: 300px;
+}
+
+#pnina {
+    margin: 20px;
+    text-align: center;
+    font-family: BurbankBig;
+    font-size: 100px;
+    color: rgb(249, 109, 156);
+}
+
+#divjuntos {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+#divjuntos img {
+    width: 500px;
+}
