@@ -1061,3 +1061,20 @@ p.ano {
 #divjuntos img {
     width: 500px;
 }
+
+#itemescondido:hover {
+    cursor: pointer;
+}
+
+#botoculto {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: #00336600;
+    margin-left: 145px;
+    margin-top: 15px;
+}
+
+#botoculto:hover {
+    cursor: pointer;
+}
