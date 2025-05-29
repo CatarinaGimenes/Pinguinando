@@ -30,7 +30,7 @@
                 </div>
                 <div class="infos">
                     <div id="rock">
-                            <img class="imagem-personagens" src="Fotos/Rockhopper-0.webp">
+                        <img class="imagem-personagens" src="Fotos/Rockhopper-0.webp">
                         <div id="infos-personagens">
                             <h2 class="titulo-personagem">Capitão Rockhopper</h2>
                             <p class="texto">
@@ -38,7 +38,7 @@
                                 com seu barco, Migrator, Rockhopper está sempre acompanhado de seu puffle vermelho,
                                 Yarr. É possível encontrar o diário das aventuras do capitão na biblieoteca do jogo.
                                 Sempre que ele chega na ilha, leva consigo um item grátis para os jogadores e um
-                                catálogo de <span id="itemescondido" onclick="encontrar(512)">Itens Raros do
+                                catálogo de <span class="itemescondido" onclick="encontrar(512)">Itens Raros do
                                     Rockhopper.</span>
                             </p>
                         </div>
@@ -56,6 +56,7 @@
                         </div>
                     </div>
                     <div onclick="encontrar(232)" id="botoculto"></div>
+                    <div onclick="encontrar(233)" id="botcaveira"></div>
                 </div>
             </div>
         </div>
@@ -74,34 +75,11 @@
     <div id="EXIBIRTOAST"></div>
     <audio id="backgroundMusic" src="audios/King of Kingston - Coffee Shop ｜ Club Penguin OST.mp3" autoplay loop
         muted></audio>
+    <img src="">
 </body>
 
 </html>
 
 <script src="sons.js"></script>
 
-<script>
-    function encontrar(roupinha) {
-        var FKpinguimVar = localStorage.idPinguim
-        var FKroupaVar = roupinha
-        var precoVar = 0
-
-        fetch("/pinguim/tirardinheiro", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-                FKpinguim: FKpinguimVar,
-                FKroupa: FKroupaVar,
-                preco: precoVar,
-            }),
-        })
-            .then(function (resposta) {
-                console.log("resposta: ", resposta);
-            })
-            .catch(function (resposta) {
-                console.log(`#ERRO: ${resposta}`);
-            });
-    }
-</script>
+<script src="roupasescondidas.js"></script>

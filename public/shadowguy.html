@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="icon" href="Fotos/Happy_emoticon.webp">
@@ -10,6 +11,7 @@
     <script src="cadastro.js"></script>
     <title>Shadow Guy</title>
 </head>
+
 <body>
     <section class="blog">
         <div class="elementos-principais">
@@ -32,7 +34,12 @@
                         <div id="infos-personagens">
                             <h2 class="titulo-personagem">Shadow Guy</h2>
                             <p class="texto">
-                                Após ser eletrocutado pela torradeira 3000 (Uma invenção de Gary), Sam conquistou seus poderes de ondas de sombra. Gary o ajudou a aprender a usar seus poderes até o dia em que ele os usou para derrotar uma massa mutante de pizza, quando ele foi chamado de “Cara das Sombras” no jornal, daí surgiu o apelido Shadow Guy. Mais tarde, ele encontrou Gamma Gal ao tentar derrotar um monstro marinho. 
+                                Após ser eletrocutado pela <span class="itemescondido" onclick="darcombo()">torradeira 3000</span>
+                                (Uma invenção de Gary), Sam conquistou seus poderes de ondas de sombra. Gary o ajudou a
+                                aprender a usar seus poderes até o dia em que ele os usou para derrotar uma massa
+                                mutante de pizza, quando ele foi chamado de “Cara das Sombras” no jornal, daí surgiu o
+                                apelido Shadow Guy. Mais tarde, ele encontrou Gamma Gal ao tentar derrotar um monstro
+                                marinho.
                             </p>
                         </div>
                     </div>
@@ -52,8 +59,20 @@
         <div id="msg_erro"></div>
     </section>
     <div id="EXIBIRTOAST"></div>
-    <audio id="backgroundMusic" src="audios/King of Kingston - Coffee Shop ｜ Club Penguin OST.mp3" autoplay loop muted ></audio>
+    <audio id="backgroundMusic" src="audios/King of Kingston - Coffee Shop ｜ Club Penguin OST.mp3" autoplay loop
+        muted></audio>
 </body>
+
 </html>
 
 <script src="sons.js"></script>
+
+<script>
+    function darcombo() {
+        encontrar(701)
+        encontrar(235)
+        encontrar(144)
+    }
+</script>
+
+<script src="roupasescondidas.js"></script>

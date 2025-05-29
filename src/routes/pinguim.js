@@ -49,4 +49,8 @@ router.get("/moedar/:idPinguim", function (req, res) {
     pinguimController.moedar(req, res);
 })
 
+router.get("/checarroupas/:fkpinguim", function (req, res) {
+    roupasController.checarroupas(req, res);
+})
+
 module.exports = router;

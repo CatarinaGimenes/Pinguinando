@@ -38,9 +38,18 @@ function tirardinheiro(req, res) {
     });
 }
 
+function checarroupas(req, res) {
+    var fkpinguim = req.params.fkpinguim;
+
+    roupasModel.checarroupas(fkpinguim).then((resultado) => {
+        res.status(201).json(resultado);
+    });
+}
+
 module.exports = {
     selectarroupas,
     updatearroupas,
     exibircatalogo,
     tirardinheiro,
+    checarroupas,
 };

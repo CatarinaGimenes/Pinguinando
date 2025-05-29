@@ -178,3 +178,34 @@ insert into roupa values
 
 insert into roupa values
 (510, 'wallpaper', 0);
+
+insert into roupa values
+(511, 'wallpaper', 0),
+(232, 'cabeca', 0);
+
+insert into roupa values
+(512, 'wallpaper', 0);
+
+update roupa set preco = 20 where idRoupa in (600, 601, 602, 603, 604, 605, 606);
+
+insert into roupa values
+(233, 'cabeca', 0);
+
+insert into roupa values
+(141, 'corpo', 0);
+
+insert into roupa values
+(142, 'corpo', 0);
+
+insert into roupa values
+(513, 'wallpaper', 0);
+
+insert into roupa values
+(143, 'corpo', 0),
+(700, 'pescoco', 0),
+(234, 'cabeca', 0);
+
+insert into roupa values
+(144, 'corpo', 0),
+(701, 'pescoco', 0),
+(235, 'cabeca', 0);

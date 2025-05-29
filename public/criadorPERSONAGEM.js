@@ -147,6 +147,9 @@ function inicializar() {
                     if (resposta2[i].tipo == "cabeca" && resposta2[i].vestindo == true) {
                         document.getElementById("rpcabeca").src = `Fotos/catalogo/paper/${resposta2[i].FKroupa}.png`
                     }
+                    if (resposta2[i].tipo == "pescoco" && resposta2[i].vestindo == true) {
+                        document.getElementById("rppescoco").src = `Fotos/catalogo/paper/${resposta2[i].FKroupa}.png`
+                    }
                     selectarroupas()
                 }
             })

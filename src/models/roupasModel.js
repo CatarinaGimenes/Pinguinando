@@ -36,10 +36,18 @@ function darroupa(FKpinguim, FKroupa) {
     return database.executar(instrucaoSql);
 }
 
+function checarroupas(fkpinguim) {
+    var instrucaoSql = `
+    select * from roupa left join PinguimRoupa on FKroupa = idRoupa and FKpinguim = ${fkpinguim};
+    `
+    return database.executar(instrucaoSql);
+}
+
 module.exports = {
     selectarroupas,
     updatearroupas,
     exibircatalogo,
     tirardinheiro,
     darroupa,
+    checarroupas,
 }

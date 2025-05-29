@@ -1062,7 +1062,7 @@ p.ano {
     width: 500px;
 }
 
-#itemescondido:hover {
+.itemescondido:hover {
     cursor: pointer;
 }
 
@@ -1076,5 +1076,18 @@ p.ano {
 }
 
 #botoculto:hover {
+    cursor: pointer;
+}
+
+#botcaveira {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #00336600;
+    margin-left: 790px;
+    margin-top: 760px;
+}
+
+#botcaveira:hover {
     cursor: pointer;
 }
