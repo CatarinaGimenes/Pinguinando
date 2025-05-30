@@ -53,4 +53,8 @@ router.get("/checarroupas/:fkpinguim", function (req, res) {
     roupasController.checarroupas(req, res);
 })
 
+router.get("/checarXP/:fkpinguim", function (req, res) {
+    cardController.checarXP(req, res);
+})
+
 module.exports = router;

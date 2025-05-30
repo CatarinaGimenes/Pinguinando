@@ -723,6 +723,7 @@ function salvarPartida() {
     })
         .then(function (resposta) {
             console.log("resposta: ", resposta);
+            checarXP()
         })
         .catch(function (resposta) {
             console.log(`#ERRO: ${resposta}`);
@@ -740,6 +741,47 @@ function salvarPartida() {
     })
         .then(function (resposta) {
             console.log("resposta: ", resposta);
+        })
+        .catch(function (resposta) {
+            console.log(`#ERRO: ${resposta}`);
+        });
+}
+
+function checarXP() {
+    var fkpinguimVar = localStorage.idPinguim
+
+    fetch(`/pinguim/checarXP/${fkpinguimVar}`, {
+        method: "GET",
+    })
+        .then(function (resposta) {
+            resposta.json().then((resposta2) => {
+                var somaxp = resposta2[0].XP
+                encontrar(145)
+                if (somaxp >= 500) {
+                    encontrar(146)
+                }
+                if (somaxp >= 1500) {
+                    encontrar(147)
+                }
+                if (somaxp >= 3000) {
+                    encontrar(148)
+                }
+                if (somaxp >= 5000) {
+                    encontrar(149)
+                }
+                if (somaxp >= 7500) {
+                    encontrar(150)
+                }
+                if (somaxp >= 10500) {
+                    encontrar(151)
+                }
+                if (somaxp >= 14000) {
+                    encontrar(152)
+                }
+                if (somaxp >= 18000) {
+                    encontrar(153)
+                }
+            })
         })
         .catch(function (resposta) {
             console.log(`#ERRO: ${resposta}`);

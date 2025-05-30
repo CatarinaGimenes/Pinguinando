@@ -23,8 +23,16 @@ function atualizardinheiro(idPinguim, dinheiro) {
     return database.executar(instrucaoSql);
 }
 
+function checarXP(fkpinguim) {
+    var instrucaoSql = `
+    select sum(XP) as XP from partida where FKpinguim = ${fkpinguim};
+    `
+    return database.executar(instrucaoSql);
+}
+
 module.exports = {
     salvarPartida,
     selecinardadosgrafico,
     atualizardinheiro,
+    checarXP,
 }

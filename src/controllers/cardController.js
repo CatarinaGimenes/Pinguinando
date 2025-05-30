@@ -41,8 +41,17 @@ function atualizardinheiro(req, res) {
     });
 }
 
+function checarXP(req, res) {
+    var fkpinguim = req.params.fkpinguim;
+
+    cardModel.checarXP(fkpinguim).then((resultado) => {
+        res.status(201).json(resultado);
+    });
+}
+
 module.exports = {
     salvarPartida,
     selecinardadosgrafico,
     atualizardinheiro,
+    checarXP,
 };

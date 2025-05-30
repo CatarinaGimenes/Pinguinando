@@ -209,3 +209,20 @@ insert into roupa values
 (144, 'corpo', 0),
 (701, 'pescoco', 0),
 (235, 'cabeca', 0);
+
+insert into roupa values
+(145, 'corpo', 0),
+(146, 'corpo', 0),
+(147, 'corpo', 0),
+(148, 'corpo', 0),
+(149, 'corpo', 0),
+(150, 'corpo', 0),
+(151, 'corpo', 0),
+(152, 'corpo', 0),
+(153, 'corpo', 0);
+
+select * from pinguim;
+
+select * from roupa;
+
+select sum(XP) from partida where FKpinguim = 1;
