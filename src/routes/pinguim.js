@@ -57,4 +57,12 @@ router.get("/checarXP/:fkpinguim", function (req, res) {
     cardController.checarXP(req, res);
 })
 
+router.post("/upload/:idPinguim", function (req, res) {
+    roupasController.upload(req, res);
+})
+
+router.get("/obterImagem/:idPinguim", function (req, res) {
+    pinguimController.obterImagem(req, res);
+})
+
 module.exports = router;

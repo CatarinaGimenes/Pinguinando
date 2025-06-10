@@ -9,26 +9,37 @@
     <link rel="stylesheet" href="index.css">
     <script src="mapa.js"></script>
     <script src="cadastro.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <title>Loja de Roupas</title>
 </head>
 
 <body>
     <section class="paginatoda">
         <div class="trocador">
-            <img id="rpwallpaper" class="positionpenguin" src=""> <!--Papel de parede-->
-            <img id="rpcor" class="positionpenguin" src=""> <!--Pinguim-->
-            <img id="rppes" class="positionpenguin" src=""> <!--Pes-->
-            <img id="rpcabeca" class="positionpenguin" src=""> <!--Cabeca-->
-            <img id="rpcorpo" class="positionpenguin" src=""> <!--Corpo-->
-            <img id="rppescoco" class="positionpenguin" src=""> <!--Pescoço-->
-            <img id="rpmao" class="positionpenguin" src=""> <!--Mão-->
-            <img id="rppin" class="positionpenguin" src=""> <!--Pin-->
+            <div id="capture">
+                <img id="rpwallpaper" class="positionpenguin" src=""> <!--Papel de parede-->
+                <img id="rpcor" class="positionpenguin" src=""> <!--Pinguim-->
+                <img id="rppes" class="positionpenguin" src=""> <!--Pes-->
+                <img id="rpcabeca" class="positionpenguin" src=""> <!--Cabeca-->
+                <img id="rpcorpo" class="positionpenguin" src=""> <!--Corpo-->
+                <img id="rppescoco" class="positionpenguin" src=""> <!--Pescoço-->
+                <img id="rpmao" class="positionpenguin" src=""> <!--Mão-->
+                <img id="rppin" class="positionpenguin" src=""> <!--Pin-->
+            </div>
             <img id="esqueleto" src="Fotos/trocadorSKIN.png">
+            <div id="divbotao">
+                <button id="botaofotos" onclick="captureAndUpload()">
+                    <img src="Fotos/Camera_Pin.webp" alt="">
+                </button>
+                <h2 id="h2fotos">Salvar como foto de perfil:</h2>
+            </div>
+            <h2 id="h2nome"></h2>
             <div id="div_itens" class="itens"></div>
             <img onclick="voltar()" id="btn_voltar" src="Fotos/botaoCARTAO.png">
             <img onclick="ir()" id="btn_ir" src="Fotos/botaoCARTAO.png">
         </div>
         <div id="blogRevista"></div>
+        <div id="penguinpicture"></div>
         <div onclick="abrirMapa()" class="mapa">
             <div class="mapinha"></div>
         </div>
@@ -48,9 +59,46 @@
         </div>
         <div id="catalogoId"></div>
     </section>
-    <audio id="backgroundMusic" src="audios/Club Penguin Music OST： Clothes Shop AKA Gift Shop Theme 2012 (Remodeled Version).mp3" autoplay loop muted ></audio>
+    <audio id="backgroundMusic"
+        src="audios/Club Penguin Music OST： Clothes Shop AKA Gift Shop Theme 2012 (Remodeled Version).mp3" autoplay loop
+        muted></audio>
 </body>
 
 </html>
 <script src="criadorPERSONAGEM.js"></script>
 <script src="sons.js"></script>
+
+<script>
+    function captureAndUpload() {
+        const idPinguim = localStorage.idPinguim;
+        const element = document.getElementById('capture');
+
+        html2canvas(element).then((canvas) => {
+            canvas.toBlob((blob) => {
+                if (!blob) return alert('Erro ao converter imagem');
+                blob.arrayBuffer().then((arrayBuffer) => {
+                    fetch(`/pinguim/upload/${idPinguim}`, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/octet-stream',
+                        },
+                        body: arrayBuffer
+                    })
+                        .then(res => res.text())
+                        .then((res2) => {
+                            obterImagem()
+                            console.log("res2")
+                            console.log(res2)
+                        })
+                        .catch(console.error);
+                })
+            }, 'image/png');
+        });
+
+    }
+
+    function exibirnome() {
+        h2nome.innerHTML = localStorage.nome
+    }
+    exibirnome()
+</script>

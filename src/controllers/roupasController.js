@@ -46,10 +46,26 @@ function checarroupas(req, res) {
     });
 }
 
+function upload(req, res) {
+
+    var idPinguim = req.params.idPinguim
+
+    const chunks = [];
+    req.on('data', chunk => chunks.push(chunk));
+    req.on('end', () => {
+        const buffer = Buffer.concat(chunks);
+
+        roupasModel.upload(buffer, idPinguim).then((resultado) => {
+            res.status(201).json(resultado);
+        });
+    });
+}
+
 module.exports = {
     selectarroupas,
     updatearroupas,
     exibircatalogo,
     tirardinheiro,
     checarroupas,
+    upload,
 };

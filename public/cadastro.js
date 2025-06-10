@@ -295,6 +295,7 @@ function logar() {
                         localStorage.nome = resposta2[0].nome
                         fecharlogin()
                         exibirtoast("Fotos/blue-puffle-512x512.png", "Login realizado com sucesso")
+                        obterImagem()
                         if (recarregar) {
                             window.location.reload()
                         }
@@ -313,7 +314,7 @@ function fecharerro() {
 }
 
 function exibirtoast(imagem, mensagem) {
-    setTimeout(() => {        
+    setTimeout(() => {
         EXIBIRTOAST.innerHTML = `
         <div id="TOAST">
             <img src="${imagem}">
@@ -325,3 +326,37 @@ function exibirtoast(imagem, mensagem) {
         EXIBIRTOAST.innerHTML = ""
     }, 1700);
 }
+
+function exibirfoto() {
+    const idPinguim = localStorage.idPinguim;
+    var fotoperfil = `/pinguim/obterImagem/${idPinguim}`;
+
+    if (localStorage.idPinguim) {
+        penguinpicture.innerHTML = `
+            <div id="divimg">
+                <img id="fotoPinguim" src="${fotoperfil}">
+            </div>
+            `
+    }
+}
+
+function obterImagem() {
+    var idPinguimVar = localStorage.idPinguim
+
+    fetch(`/pinguim/obterImagem/${idPinguimVar}`, {
+        method: "GET",
+    })
+        .then(function (resposta) {
+            resposta.blob().then((resposta2) => {
+                if (resposta2.size != 0) {
+                    exibirfoto()
+                } else {
+                    penguinpicture.innerHTML = ""
+                }
+            })
+        })
+        .catch(function (resposta) {
+            console.log(`#ERRO: ${resposta}`);
+        });
+}
+obterImagem()

@@ -1092,3 +1092,20 @@ p.ano {
 #botcaveira:hover {
     cursor: pointer;
 }
+
+#divimg {
+    position: fixed;
+    left: 42px;
+    bottom: 160px;
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 3.5px solid #003e8a;
+}
+
+#fotoPinguim {
+    margin-top: 22px;
+    max-width: 100%;
+    scale: 2.5;
+}

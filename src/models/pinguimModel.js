@@ -38,4 +38,18 @@ function moedar(idPinguim) {
     return database.executar(instrucaoSql);
 }
 
-module.exports = { cadastrar, inserirRoupa, logar, validar, moedar };
+function obterImagem(idPinguim) {
+    const instrucaoSql = `
+        SELECT foto FROM pinguim WHERE idPinguim = ?
+    `;
+    return database.execute(instrucaoSql, [idPinguim]);
+}
+
+module.exports = { 
+    cadastrar, 
+    inserirRoupa, 
+    logar, 
+    validar, 
+    moedar,
+    obterImagem
+};

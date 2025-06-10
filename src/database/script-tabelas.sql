@@ -7,7 +7,7 @@ idPinguim int primary key auto_increment,
 nome varchar(32) unique not null,
 senha varchar(32) not null,
 moedas INT not null,
-foto BLOB,
+foto longblob,
 agente_secreto BOOLEAN not null
 );
 

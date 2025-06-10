@@ -37,9 +37,30 @@ function moedar(req, res) {
 	});
 }
 
+function obterImagem(req, res) {
+    const idPinguim = req.params.idPinguim;
+
+    pinguimModel.obterImagem(idPinguim)
+        .then((resultado) => {
+            if (resultado.length == 0 || !resultado[0].foto) {
+                return res.status(404).end();
+            }
+
+            const imagemBuffer = resultado[0].foto;
+
+            res.setHeader('Content-Type', 'image/png');
+            res.send(imagemBuffer);
+        })
+        .catch((erro) => {
+            console.error("Erro ao buscar imagem:", erro);
+            res.status(500).end();
+        });
+}
+
 module.exports = {
 	cadastrar,
 	logar,
 	validar,
 	moedar,
+	obterImagem,
 };

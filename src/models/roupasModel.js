@@ -43,6 +43,13 @@ function checarroupas(fkpinguim) {
     return database.executar(instrucaoSql);
 }
 
+function upload(bytes, idPinguim) {
+    var instrucaoSql = `
+    update pinguim set foto = ? where idPinguim = ?
+    `
+    return database.execute(instrucaoSql, [bytes, idPinguim]);
+}
+
 module.exports = {
     selectarroupas,
     updatearroupas,
@@ -50,4 +57,5 @@ module.exports = {
     tirardinheiro,
     darroupa,
     checarroupas,
+    upload,
 }
