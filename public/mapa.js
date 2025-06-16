@@ -4,8 +4,6 @@ function abrirMapa() {
             <div class="mapa-inteiro">
                 <img onclick="redirecionarIndex()" class="montanha" src="Fotos/montanha.png">
                 <div class="localizacao" id="locmontanha">Página Inicial</div>
-                <img class="EPF" src="Fotos/EstranhaParafernaliaFalante.png">
-                <div class="localizacao" id="locEPF">Estranha Parafernália Falante</div>
                 <img onclick="redirecionarPersonagens()" class="farol" src="Fotos/farol.png">
                 <div class="localizacao" id="locpersonagens">Personagens</div>
                 <img onclick="redirecionarCRIADOR()" class="catalogo" src="Fotos/catalogo.png">

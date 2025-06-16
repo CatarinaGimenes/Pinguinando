@@ -54,6 +54,9 @@ function exibirtoast(imagem, mensagem) {
 
 let TUDOcatalogo = []
 function checarroupas() {
+    if (!localStorage.idPinguim) {
+        return
+    }
     var fkpinguimVar = localStorage.idPinguim
 
     fetch(`/pinguim/checarroupas/${fkpinguimVar}`, {
